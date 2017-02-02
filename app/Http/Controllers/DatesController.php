@@ -18,22 +18,11 @@ class DatesController extends Controller{
 		$count = Dates::count();
 		//$color = '#3a87ad';
 		foreach ($dates as $d) {
-			if($d->state=='PENDIENTE') {$color='#2f903b';}else{$color = '#3a87ad';}
-			$data[] = array('title' => $d->description,'start' => $d->startdate, "end" => $d->enddate, 'color'=>$color); //	
-		}
-		//dd($dates);
-		return response()->json($data);
-	}
-    
-    public function api2(){
-    	$data = array();
-		$dates = Dates::get();
-		$count = Dates::count();
-		//$color = '#3a87ad';
-		foreach ($dates as $d) {
+			//if($d->state=='PENDIENTE') {$color='#2f903b';}else{$color = '#3a87ad';}
+			//$data[] = array('title' => $d->description,'start' => $d->startdate, "end" => $d->enddate, 'color'=>$color); //	
 			$data[] = array('title' => 'NO DISPONIBLE','start' => $d->startdate, "end" => $d->enddate, 'color'=>'#7f797b'); //	
 		}
 		//dd($dates);
 		return response()->json($data);
-    }
+	}
 }

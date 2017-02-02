@@ -24,3 +24,33 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+
+/*
+https://code.tutsplus.com/courses/build-a-cms-with-laravel
+
+https://code.tutsplus.com/courses/build-a-cms-with-laravel
+https://github.com/LavaLite/cms
+https://github.com/ozdemirburak/laravel-5-simple-cms
+http://www.lavalite.org/
+https://pyrocms.com/
+https://github.com/ozdemirburak/laravel-5-simple-cms
+https://tympanus.net/Tutorials/InteractiveSVG/
+https://tympanus.net/codrops/2013/02/06/interactive-infographic-with-svg-and-css-animations/#the-javascript
+
+https://blog.pisyek.com/create-room-booking-system-laravel-fullcalendar/2/
+
+https://blog.pisyek.com/create-room-booking-system-laravel-fullcalendar-part-2/2/
+
+https://blog.pisyek.com/create-room-booking-system-laravel-fullcalendar-part-3/
+Hola Manuel, sorry la demora, te estoy adjuntando los logos de las marcas que sí van en la web. 
+Algunas se han retirado. Arriba siempre las tres principales: Mikimoto, Patek y Mimí. Las otras marcas pueden ir abajo. Los logos deberían ir en esa tonalidad:
+R: 103
+G: 103
+B: 103
+Y con el mismo efecto que tenemos en la web actual. 
+Las direcciones de abajo también tendrían que ir en esa tonalidad de texto, que es la misma del texto de las redes. 
+Estoy poniendo en un word todos los apuntes. Se los envío hoy por la tarde.
+Gracias!
+Abrazo.
+*/
