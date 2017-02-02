@@ -15,12 +15,11 @@ class DatesController extends Controller{
 		
 		$data = array();
 		$dates = Dates::get();
-		$count = Dates::count();
 		//$color = '#3a87ad';
 		foreach ($dates as $d) {
-			//if($d->state=='PENDIENTE') {$color='#2f903b';}else{$color = '#3a87ad';}
-			//$data[] = array('title' => $d->description,'start' => $d->startdate, "end" => $d->enddate, 'color'=>$color); //	
-			$data[] = array('title' => 'NO DISPONIBLE','start' => $d->startdate, "end" => $d->enddate, 'color'=>'#7f797b'); //	
+			if($d->state=='PENDIENTE') {$color='#2f903b';}else{$color = '#3a87ad';}
+			$data[] = array('title' => $d->description,'start' => $d->startdate, "end" => $d->enddate, 'color'=>$color);
+			//$data[] = array('title' => 'NO DISPONIBLE','start' => $d->startdate, "end" => $d->enddate, 'color'=>'#7f797b'); //	
 		}
 		//dd($dates);
 		return response()->json($data);

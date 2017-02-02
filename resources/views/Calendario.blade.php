@@ -58,9 +58,9 @@
       editable: true,
         selectable: true,
       select: function(start, end, allDay) {
-          endtime = $.fullCalendar.formatDate(end,'h:mm tt');
-          starttime = $.fullCalendar.formatDate(start,'ddd, MMM d, h:mm tt');
-          var mywhen = starttime + ' - ' + endtime;
+          //endtime = $.fullCalendar.formatDate(end,'h:mm tt');
+          //starttime = $.fullCalendar.formatDate(start,'ddd, MMM d, h:mm tt');
+          var mywhen = 'Tue, Jan 31, 2:00 am - 2:30 am';
           $('#createEventModal #apptStartTime').val(start);
           $('#createEventModal #apptEndTime').val(end);
           $('#createEventModal #apptAllDay').val(allDay);

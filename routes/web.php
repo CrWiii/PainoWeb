@@ -42,6 +42,19 @@ https://blog.pisyek.com/create-room-booking-system-laravel-fullcalendar/2/
 
 https://blog.pisyek.com/create-room-booking-system-laravel-fullcalendar-part-2/2/
 
+https://scotch.io/tutorials/ultimate-guide-on-sending-email-in-laravel
+
+https://www.jqueryajaxphp.com/fullcalendar-crud-with-jquery-and-php/
+https://github.com/Zizaco/entrust/tree/master#installation
+
+http://jsfiddle.net/welnn/e2z0s43f/
+
+https://blog.pisyek.com/create-room-booking-system-laravel-fullcalendar/2/
+
+https://github.com/CrWiii/startup
+https://codyhouse.co/gem/horizontal-timeline/
+https://codyhouse.co/demo/vertical-timeline/index.html
+
 https://blog.pisyek.com/create-room-booking-system-laravel-fullcalendar-part-3/
 Hola Manuel, sorry la demora, te estoy adjuntando los logos de las marcas que sí van en la web. 
 Algunas se han retirado. Arriba siempre las tres principales: Mikimoto, Patek y Mimí. Las otras marcas pueden ir abajo. Los logos deberían ir en esa tonalidad:
