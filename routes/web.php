@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
+	Lang::setLocale('es');
     return view('welcome');
 });
 Route::get('/Calendario', 'HomeController@Calendar');
@@ -25,6 +26,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('language/{lang}','ChangeLanguageController@change');
 
 /*
 https://code.tutsplus.com/courses/build-a-cms-with-laravel

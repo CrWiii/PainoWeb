@@ -385,8 +385,8 @@
         <div id="Inicio" class="seccion" style="padding-top: 80px !important;">
             <div class="panel-body  heas">
                     <div class="col-md-12 fz"  style="opacity: 100;color:#000000; font-size: 3em; text-align: center;vertical-align: middle;">
-                        <span><strong class="ewq">Aquí es donde comienza tu cuidado con </strong></span>
-                        <span><strong class="ewq">la tecnología mas avanzada</strong></span>
+                        <span><strong class="ewq">{{trans('message.tit')}} </strong></span>
+                        <span><strong class="ewq">{{trans('message.tit2')}}</strong></span>
                     </div>
                 </div>
             </div>
@@ -405,15 +405,16 @@
                                     <h1 class="titlePai"><strong>Dr. Paino</strong></h1>
                                     <p style="text-align: justify;font-size: 0.8em;padding-right: 80px;">
 <ul style="list-style-type: none;">
-<li><strong>Cargos actuales:</strong></li>
-<li>Neurocirujano Titular; Clínica San Felipe; Lima, PERÚ</li>   
-<li>Neurocurujano Titular: Stem Cell Regenerative Medicine; West Palm Beach, USA</li>
-<li>Investigador Principal.  Proyecto Nanoparticulas y Células Madre. Cleveland Clinic, USA y Universidad Tecnológica del Perú UTEC. Miraflores PERÚ</li>
-<li>Regidor Municipalidad de San Isidro, Lima, PERÚ</li>
-<li>Profesor Adjunto - Investigación; Universidad George Washington; Washington DC, USA</li>
-<li>Profesor Adjunto - Investigación; Universidad Tecnológica del Perú UTEC. Miraflores PERÚ</li>
-<li>Profesor Titular y Director de la Cátedra - Bioquímica;  Universidad Tecnológica del Perú UTEC; Miraflores PERÚ</li>
-<li>Profesor Honoris Causa; Universidad San Martín de Porres; Lima, PERÚ</li>
+<li><strong>{{trans('message.subtit1')}}</strong></li>
+<li>{{trans('message.li1')}}</li>
+<li>{{trans('message.li2')}}</li>
+<li>{{trans('message.li3')}}</li>
+<li>{{trans('message.li4')}}</li>
+<li>{{trans('message.li5')}}</li>
+<li>{{trans('message.li6')}}</li>
+<li>{{trans('message.li7')}}</li>
+<li>{{trans('message.li8')}}</li>
+
 
 <li><strong>Licencias:</strong></li>
 <li>Colegio Médico del Perú; Licencia # CMP 27336.  Desde 1994.</li>

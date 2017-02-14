@@ -13,8 +13,12 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('guest');
+        //$lang = Session::get ('locale');
+        $lang = 'es';
+        if ($lang != null) \App::setLocale($lang);
     }
+
 
     /**
      * Show the application dashboard.

@@ -1,18 +1,18 @@
 <nav class="navbar navbar-default top-mantain" style="margin-bottom: 0px !important;">
     <div class="navbar-header" style="background-color: white;">
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-    <a class="navbar-brand">
+    <a class="navbar-brand" style="padding: 0px;">
         <div id="logo-play" class="pull-left clearfix"><a class="cms-main-logo hidden-sm" href="#"><img alt="" src="images/Logo.png" title="Paino"> </a></div>
     </a>
   </div>
 
     <div class="navbar-collapse collapse" aria-expanded="true" style="background-color: #ffffff !important;">
-        <ul class="nav navbar-nav" style="padding-left: 30px;">
+        <ul class="nav navbar-nav" style="padding-left: 5px;">
             <li><a tabindex="0" href="index.php#Inicio" class="tyti">Inicio</a>
             <li><a tabindex="0" href="index.php#DrPaino" class="tyti"><span class="menu-title">Dr. Paino</span></a></li>
             <li><a tabindex="0" href="index.php#Especializaciones" class="tyti"><span class="menu-title">Especialidades - Altos Niveles de Eficiencia</span></a></li>
@@ -30,9 +30,9 @@
                     <li><a tabindex="0" href="Otros.php#Diplomas"><span>Diplomas</span></a></li>
                 </ul>
             </li>
-            <li><a style="padding-right: 0px;" class="tyti"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-            <li><a style="padding-left: 0px;" class="tyti"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
-            <li><a tabindex="0"  data-toggle="modal" href="#Login" class="tyti"><span class="menu-title">Login</span></a></li>
+                <li><a style="padding-right: 0px;" href="{{URL::to('language',array('lang'=>1))}}" class="tyti"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
+                <li><a style="padding-left:  0px;" href="{{URL::to('language',array('lang'=>1))}}" class="tyti"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
+                <li><a tabindex="0"  data-toggle="modal" href="#Login" class="tyti"><span class="menu-title">Login</span></a></li>
         </ul>
     </div>
 </nav>
