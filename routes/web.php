@@ -15,20 +15,20 @@ Route::get('/', function () {
 	Lang::setLocale('es');
     return view('welcome');
 });
-Route::get('/Calendario', 'HomeController@Calendar');
+Route::get('/Calendario', 'DatesController@Calendar');
 Route::resource('Dates','DatesController');
 Route::get('api','DatesController@api');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index');
 
 Route::get('language/{lang}','ChangeLanguageController@change');
 
 /*
+https://cdn.auth0.com/blog/laravel-auth/mvc-diagram.png
+https://github.com/MikeSmithDev/FullCalModal-Node/tree/master/app
 https://code.tutsplus.com/courses/build-a-cms-with-laravel
 
 https://code.tutsplus.com/courses/build-a-cms-with-laravel
@@ -69,3 +69,11 @@ Estoy poniendo en un word todos los apuntes. Se los envío hoy por la tarde.
 Gracias!
 Abrazo.
 */
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

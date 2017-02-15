@@ -25,7 +25,4 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function Calendar(){
-        return view('Calendario');
-    }
 }
