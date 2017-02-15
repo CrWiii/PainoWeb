@@ -24,4 +24,8 @@ class DatesController extends Controller{
 		//dd($dates);
 		return response()->json($data);
 	}
+
+	public function Calendar(){
+        return view('Calendario');
+    }
 }

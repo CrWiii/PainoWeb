@@ -39,38 +39,6 @@
 <script>
 
   $(document).ready(function() {
-    var initialLocaleCode = 'en';
-
-
-    $('#calendar').fullCalendar({
-      locale: 'es',
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay,listMonth'
-      },
-      buttonIcons: false,
-      weekNumbers: true,
-      businessHours: true,
-      navLinks: true,
-      editable: true,
-      eventLimit: true,
-      editable: true,
-        selectable: true,
-      select: function(start, end, allDay) {
-          //endtime = $.fullCalendar.formatDate(end,'h:mm tt');
-          //starttime = $.fullCalendar.formatDate(start,'ddd, MMM d, h:mm tt');
-          var mywhen = 'Tue, Jan 31, 2:00 am - 2:30 am';
-          $('#createEventModal #apptStartTime').val(start);
-          $('#createEventModal #apptEndTime').val(end);
-          $('#createEventModal #apptAllDay').val(allDay);
-          $('#createEventModal #when').text(mywhen);
-          $('#createEventModal').modal('show');
-       },
-      events: {url:'{{URL::to('/api')}}'} 
-
-
-    });
 
     $('#submitButton').on('click', function(e){
     e.preventDefault();
@@ -94,6 +62,41 @@
         },
         true);
    }
+    var initialLocaleCode = 'en';
+
+
+    $('#calendar').fullCalendar({
+      locale: 'es',
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay,listMonth'
+      },
+      buttonIcons: false,
+      weekNumbers: true,
+      businessHours: true,
+      navLinks: true,
+      editable: true,
+      eventLimit: true,
+      editable: true,
+        selectable: true,
+      select: function(start, end, allDay) {
+          //endtime = $.fullCalendar.formatDate(end,'h:mm tt');
+          //starttime = $.fullCalendar.formatDate(start,'ddd, MMM d, h:mm tt');
+          endtime = moment(start, 'DD.MM.YYYY').format('DD-MM-YYYY HH:mm:ss');//$.fullCalendar.formatDate(start, "yyyy-MM-dd HH:mm:ss");
+          starttime = moment(end, 'DD.MM.YYYY').format('DD-MM-YYYY HH:mm:ss'); //$.fullCalendar.formatDate(end, "yyyy-MM-dd HH:mm:ss");
+          //var mywhen = 'Tue, Jan 31, 2:00 am - 2:30 am';
+          var mywhen = starttime + ' - ' + endtime;
+          $('#createEventModal #apptStartTime').val(start);
+          $('#createEventModal #apptEndTime').val(end);
+          $('#createEventModal #apptAllDay').val(allDay);
+          $('#createEventModal #when').text(mywhen);
+          $('#createEventModal').modal();
+       },
+      events: {url:'{{URL::to('/api')}}'} 
+
+
+    });
 
     $('#locale-selector').on('change', function() {
       if (this.value) {
@@ -110,7 +113,7 @@
 <body>
        <div id='calendar'></div>
 
-<div id="createEventModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+<div id="ss" class="modal fade" role="dialog" >
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
         <h3 id="myModalLabel1">Create Appointment</h3>
@@ -138,5 +141,40 @@
         <button type="submit" class="btn btn-primary" id="submitButton">Save</button>
     </div>
 </div>
+
+
+<div class="modal fade" id="createEventModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+        <form id="createAppointmentForm" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputPatient">Patient:</label>
+            <div class="controls">
+                <input type="text" name="patientName" id="patientName" tyle="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Value 1&quot;,&quot;Value 2&quot;,&quot;Value 3&quot;]">
+                  <input type="hidden" id="apptStartTime"/>
+                  <input type="hidden" id="apptEndTime"/>
+                  <input type="hidden" id="apptAllDay" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="when">Paciente:</label>
+            <div class="controls controls-row" id="when" style="margin-top:5px;">
+            </div>
+        </div>
+    </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="submitButton">Guardar</button>
+    </div>
+      </div>
+      
+    </div>
+  </div>
 </body>
 </html>
