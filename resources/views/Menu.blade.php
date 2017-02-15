@@ -13,26 +13,34 @@
 
     <div class="navbar-collapse collapse" aria-expanded="true" style="background-color: #ffffff !important;">
         <ul class="nav navbar-nav" style="padding-left: 5px;">
-            <li><a tabindex="0" href="index.php#Inicio" class="tyti">Inicio</a>
-            <li><a tabindex="0" href="index.php#DrPaino" class="tyti"><span class="menu-title">Dr. Paino</span></a></li>
-            <li><a tabindex="0" href="index.php#Especializaciones" class="tyti"><span class="menu-title">Especialidades - Altos Niveles de Eficiencia</span></a></li>
-            <li><a tabindex="0" href="Noticias.php" class="tyti"><span class="menu-title">Noticias</span></a></li>
-            <li><a tabindex="0" href="PreguntasFrecuentes.php" class="tyti"><span class="menu-title">Preguntas Frecuentes</span></a></li>
-            <li><a tabindex="0" href="index.php#Contacto" class="tyti"><span class="menu-title">Citas Médicas</span></a></li>
-            <li class="dropdown"><a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false" class="tyti">Otros<span class="caret"></span></a>
+            <li><a tabindex="0" href="index.php#Inicio" class="tyti">{{trans('message.m1')}}</a>
+            <li><a tabindex="0" href="index.php#DrPaino" class="tyti"><span class="menu-title">{{trans('message.m2')}}</span></a></li>
+            <li><a tabindex="0" href="index.php#Especializaciones" class="tyti"><span class="menu-title">{{trans('message.m3')}}</span></a></li>
+            <li><a tabindex="0" href="Noticias.php" class="tyti"><span class="menu-title">{{trans('message.m4')}}</span></a></li>
+            <li><a tabindex="0" href="PreguntasFrecuentes.php" class="tyti"><span class="menu-title">{{trans('message.m5')}}</span></a></li>
+            <li><a tabindex="0" href="index.php#Contacto" class="tyti"><span class="menu-title">{{trans('message.m6')}}</span></a></li>
+            <li class="dropdown"><a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false" class="tyti">{{trans('message.m7')}}<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a tabindex="0" href="Otros.php#Publicaciones"><span>Publicaciones</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Monografias"><span>Monografías</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Presentaciones"><span>Presentaciones</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Invitaciones"><span>Invitaciones</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Dedicatorias"><span>Dedicatorias</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Posters"><span>Posters</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Diplomas"><span>Diplomas</span></a></li>
+                    <li><a tabindex="0" href="Otros.php#Publicaciones"><span>{{trans('message.sbm71')}}</span></a></li>
+                    <li><a tabindex="0" href="Otros.php#Monografias"><span>{{trans('message.sbm72')}}</span></a></li>
+                    <li><a tabindex="0" href="Otros.php#Presentaciones"><span>{{trans('message.sbm73')}}</span></a></li>
+                    <li><a tabindex="0" href="Otros.php#Invitaciones"><span>{{trans('message.sbm74')}}</span></a></li>
+                    <li><a tabindex="0" href="Otros.php#Dedicatorias"><span>{{trans('message.sbm75')}}</span></a></li>
+                    <li><a tabindex="0" href="Otros.php#Posters"><span>{{trans('message.sbm76')}}</span></a></li>
+                    <li><a tabindex="0" href="Otros.php#Diplomas"><span>{{trans('message.sbm77')}}</span></a></li>
                 </ul>
-            </li>
-                <li><a style="padding-right: 0px;" href="{{URL::to('language',array('lang'=>1))}}" class="tyti"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-                <li><a style="padding-left:  0px;" href="{{URL::to('language',array('lang'=>1))}}" class="tyti"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
-                <li><a tabindex="0"  data-toggle="modal" href="#Login" class="tyti"><span class="menu-title">Login</span></a></li>
+            </li>   
+                <li><a style="padding-right: 0px;" href="{{URL::to('/en')}}" class="tyti"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
+                <li><a style="padding-left:  0px;" href="{{URL::to('/es')}}" class="tyti"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
+                <li><a tabindex="0"  data-toggle="modal" href="#Login" class="tyti"><span class="menu-title">{{trans('message.m8')}}</span></a></li>
         </ul>
     </div>
 </nav>
+
+
+
+
+
+
+
+

@@ -372,6 +372,11 @@
                 left: 0;
                 z-index: 1030;
             }
+
+            .tyti{
+                padding-left: 7px !important;
+                padding-right: 7px !important; 
+            }
         </style>
         <script>
         $('#test').click(function(){
@@ -416,17 +421,17 @@
 <li>{{trans('message.li8')}}</li>
 
 
-<li><strong>Licencias:</strong></li>
-<li>Colegio Médico del Perú; Licencia # CMP 27336.  Desde 1994.</li>
-<li>Registro Nacional de Especialistas - Neurocirugía. # RNE 19168.</li>
-<li>Licencia Médica, Estado de Nueva York # NYS 228347.  Desde el 2003. </li>
-<li>Marina de Guerra: Licencia de Salvamento y Buceo PERÚ # K-83064065.</li>
+<li><strong>{{trans('message.li9')}}</strong></li>
+<li>{{trans('message.li10')}}</li>
+<li>{{trans('message.li11')}}</li>
+<li>{{trans('message.li12')}}</li>
+<li>{{trans('message.li13')}}</li>
 
-<li><strong>Educación:</strong></li>
-<li>Neurocirujano Especialista: Mount Sinai School of Medicine, Nueva York, NY.  Residencia, 1998-2004.</li>
-<li>San Martín de Porres: Revalidación por competencias, Lima PERÚ 2005 – 2007.</li>
-<li>Doctorado PhD; George Washington University: Biología Molecular & Bioquímica, Washington, D.C.1994 -2000.</li>
-<li>Universidad Federal de Paraná Escuela de Medicina, Curitiba, Paraná, Brasil. Medico Cirujano, 1985-1989.</li>
+<li><strong>{{trans('message.li14')}}</strong></li>
+<li>{{trans('message.li15')}}</li>
+<li>{{trans('message.li16')}}</li>
+<li>{{trans('message.li17')}}</li>
+<li>{{trans('message.li18')}}</li>
 
 <li><strong>Post Doctorado:</strong></li>
 <li>Centro Médico Mount Sinai, Nueva York, Nueva York. Departamento de Neurocirugía.  Neurotrauma Nivel III, 2004-2005.</li>

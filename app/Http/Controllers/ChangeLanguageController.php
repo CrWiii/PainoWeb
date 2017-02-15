@@ -13,10 +13,10 @@ class ChangeLanguageController extends Controller{
 
 	public function change($lang){
 		//$lang = \Input::get('language');
-		if($lang=1){
-			\App::setLocale('en'); 
-		}elseif($lang=2){
-			\App::setLocale('es'); 
+		if($lang='2'){
+			\Lang::setLocale('en');
+		}elseif($lang='1'){
+			\Lang::setLocale('es');
 		}
 		/*(config('app.locale')) = 
 	    \Session::put('locale', $la);*/

@@ -11,6 +11,8 @@
 <script src='fullcalendar/locale-all.js'></script>
 
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.es.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.css" />-->
 <!--<script src="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
 <style>
@@ -39,6 +41,8 @@
 <script>
 
   $(document).ready(function() {
+
+    
 
     $('#submitButton').on('click', function(e){
     e.preventDefault();
@@ -80,6 +84,7 @@
       eventLimit: true,
       editable: true,
         selectable: true,
+
       select: function(start, end, allDay) {
           //endtime = $.fullCalendar.formatDate(end,'h:mm tt');
           //starttime = $.fullCalendar.formatDate(start,'ddd, MMM d, h:mm tt');
@@ -93,7 +98,35 @@
           $('#createEventModal #when').text(mywhen);
           $('#createEventModal').modal();
        },
-      events: {url:'{{URL::to('/api')}}'} 
+      events: {url:'{{URL::to('/api')}}'},
+
+      eventClick:  function(event, jsEvent, view) {
+                    $('#modalTitle').html(event.title);
+                    $('#modalBody').html(event.description);
+                    $('#eventUrl').attr('href',event.url);
+                    $('#viewDateDetails').modal();
+                    return false;
+                },
+
+
+      eventReceive: function(event){
+        var title = event.title;
+        var start = event.start.format("YYYY-MM-DD[T]HH:MM:SS");
+        $.ajax({
+          url: '/registerDate',
+          data: 'type=new&title='+title+'&startdate='+start+'&zone='+zone,
+          type: 'POST',
+          dataType: 'json',
+          success: function(response){
+            event.id = response.eventid;
+            $('#calendar').fullCalendar('updateEvent',event);
+          },
+          error: function(e){
+            console.log(e.responseText);
+          }
+        });
+          $('#calendar').fullCalendar('updateEvent',event);
+      }
 
 
     });
@@ -106,12 +139,28 @@
 
     
   });
- 
+ $('#datetimepicker4').datetimepicker();
 
 </script>
 </head>
 <body>
        <div id='calendar'></div>
+
+       <div id="viewDateDetails" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>
+                    <h4 id="modalTitle" class="modal-title"></h4>
+                </div>
+                <div id="modalBody" class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <!--<a class="btn btn-primary" id="eventUrl" target="_blank">Event Page</a>-->
+                </div>
+            </div>
+          </div>
+        </div>
 
 
 <div class="modal fade" id="createEventModal" role="dialog">
@@ -119,7 +168,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title">Agendar Cita</h4>
         </div>
         <div class="modal-body">
         <form id="createAppointmentForm" class="form-horizontal">
@@ -132,6 +181,27 @@
                   <input type="hidden" id="apptAllDay" />
             </div>
         </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputPatient">DNI:</label>
+            <div class="controls">
+                <input class="form-control" type="text" name="dni" id="dni" tyle="margin: 0 auto;" >
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputPatient">Correo:</label>
+            <div class="controls">
+                <input class="form-control" type="text" name="email" id="email" tyle="margin: 0 auto;" >
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPatient">Teléfono:</label>
+            <div class="controls">
+                <input class="form-control" type="text" name="phone" id="phone" tyle="margin: 0 auto;" >
+            </div>
+        </div>
+
         <div class="control-group">
             <label class="control-label" for="when">Fecha y Hora Inicio/Fin:</label> 
             <!--https://eonasdan.github.io/bootstrap-datetimepicker/-->
