@@ -27,6 +27,9 @@ Route::get('/home', 'HomeController@index');
 Route::get('language/{lang}','ChangeLanguageController@change');
 
 /*
+https://forums.meteor.com/t/full-calendar-modal-with-multiple-event-details/11177
+https://www.jqueryajaxphp.com/fullcalendar-crud-with-jquery-and-php/
+https://www.codeproject.com/Articles/638674/Full-calendar-A-complete-web-diary-system-for-jQue
 https://cdn.auth0.com/blog/laravel-auth/mvc-diagram.png
 https://github.com/MikeSmithDev/FullCalModal-Node/tree/master/app
 https://code.tutsplus.com/courses/build-a-cms-with-laravel
