@@ -433,56 +433,56 @@
 <li>{{trans('message.li17')}}</li>
 <li>{{trans('message.li18')}}</li>
 
-<li><strong>Post Doctorado:</strong></li>
-<li>Centro Médico Mount Sinai, Nueva York, Nueva York. Departamento de Neurocirugía.  Neurotrauma Nivel III, 2004-2005.</li>
-<li>Centro Médico Mount Sinai, Nueva York, Nueva York. Departamento de Radiología. Residencia, 1997-1998.</li>
-<li>Centro Médico Mount Sinai, Nueva York, Nueva York. Departamento de Cirugía General. Internado 1996-1997.</li>
-<li>Universidad de Miami, Escuela de Medicina, Miami, FL. Departamento de Neurocirugía, Miami, FL. Investigador Asociado, 1993-1994.</li>
-<li>Universidad de Miami, Escuela de Medicina: Investigador. Florida, EE.UU. 1992 – 1993.</li>
-<li>Universidad de Miami, Escuela de Medicina, Miami, FL. Departamento de Inmunología. Postdoctorado en Investigación, 1990-1992.</li>
+<li><strong>{{trans('message.li19')}}</strong></li>
+<li>{{trans('message.li20')}}</li>
+<li>{{trans('message.li21')}}</li>
+<li>{{trans('message.li22')}}</li>
+<li>{{trans('message.li23')}}</li>
+<li>{{trans('message.li24')}}</li>
+<li>{{trans('message.li25')}}</li>
 
-<li><strong>Docencias:</strong></li>
-<li>Universidad de Ingeniería y Tecnología UTEC, Departamento de Ingenieria Química. Profesor Titular de Bioquímica y Biología Molecular 2016.</li>
-<li>Escuela de Medicina George Washington University,  Washington, DC.</li>
-<li>Profesor Asistente de Investigación Departamento de Bioquímica y Biología Molecular 2005.</li>
-<li>Academia Stanley H. Kaplan, Washington, DC / Baltimore, MD</li>
-<li>Exámenes de Licenciatura en Médicina EE.UU, 1995-1995.</li>
-<li>Rush Medical College Chicago, IL, División ArcVentures, Miami, FL</li>
-<li>Examenes de Licenciatura en Médicina EE.UU, 1992 – 1993.</li>
+<li><strong>{{trans('message.li26')}}</strong></li>
+<li>{{trans('message.li27')}}</li>
+<li>{{trans('message.li28')}}</li>
+<li>{{trans('message.li29')}}</li>
+<li>{{trans('message.li30')}}</li>
+<li>{{trans('message.li31')}}</li>
+<li>{{trans('message.li32')}}</li>
+<li>{{trans('message.li33')}}</li>
 
-<li><strong>Asesoría:</strong></li>
-<li>Marina de Guerra del Perú, Lima Perú, Neurocirugía, Hospital Naval, Lima PERÚ. Cirugías complejas de columna vertebral y cerebro.</li>
-<li><strong>Intereses:</strong></li>
-<li>Cirugia Mínimamente  Invasiva de Columna.  Instrumentación compleja de columna vertebral.  Neuro trauma.</li>
-<li>Terapia Celular, Medicina regenerativa, enfermedades neurológicas, y quemados, Biología Molecular y Biotecnología, Laboratorio UTEC. </li>
-<li>Tumores cerebrales: 9 años de investigación y Cirugía Meningiomas Cerebrales. Dr. Sekhar, Dr. Sen</li>
+<li><strong>{{trans('message.li34')}}</strong></li>
+<li>{{trans('message.li35')}}</li>
+<li><strong>{{trans('message.li36')}}</strong></li>
+<li>{{trans('message.li37')}}</li>
+<li>{{trans('message.li38')}}</li>
+<li>{{trans('message.li39')}}</li>
 
-<li><strong>Sociedades médicas:</strong></li>
-<li>Asociación Americana de Neurocirujanos, Washington, DC.</li>
-<li>Sociedad Americana de Cirugía de la Base del Cráneo, Little Rock OK.</li>
-<li>Asociación Médica Americana, Washington, DC.</li>
-<li>Sociedad Médica de Nueva York, NY.</li>
-<li>Academia de Ciencias de Nueva York, NY.</li>
-<li>Sociedad Radiológica de Nueva York, NY.</li>
-<li>Sociedad de Neurociencia, Washington, DC</li>
-<li>Sociedad de Biología Celular, Bethesda, MD.</li>
-<li>Colegio Médico de Perú, Lima, Perú.</li>
+<li><strong>{{trans('message.li40')}}</strong></li>
+<li>{{trans('message.li41')}}</li>
+<li>{{trans('message.li42')}}</li>
+<li>{{trans('message.li43')}}</li>
+<li>{{trans('message.li44')}}</li>
+<li>{{trans('message.li45')}}</li>
+<li>{{trans('message.li46')}}</li>
+<li>{{trans('message.li47')}}</li>
+<li>{{trans('message.li48')}}</li>
+<li>{{trans('message.li49')}}</li>
 
-<li><strong>Premios:</strong></li>
-<li>"Médico del Año" Mount Sinai Hospital, 2001.</li>
-<li>"Quién es quién en América" Sociedad de Strathmore de 2002.</li>
-<li>"Quién es quién en Medicina en los Estados Unidos" Sociedad de Strathmore de 2004.</li>
-<li>"Premio William Beaumont Sociedad de Investigación". Universidad  George Washington. Categoría de cartel anual del comité, ganador del '95 y '96.</li>
-<li>"Premio de Intercambio Cultural Perú-Brasil". Becado en primer lugar en Medicina año 1982. Subvención Escuela de Medicina.</li>
+<li><strong>{{trans('message.li50')}}</strong></li>
+<li>{{trans('message.li51')}}</li>
+<li>{{trans('message.li52')}}</li>
+<li>{{trans('message.li53')}}</li>
+<li>{{trans('message.li54')}}</li>
+<li>{{trans('message.li55')}}</li>
 
-<li><strong>Proyectos financiados:</strong></li>
-<li>Fuente: Comisión PERÚana de Ciencia y Tecnología (CONCYTEC). Investigador principal.</li>
-<li>Fuente: Privada. Revisores; GWU y la Academia de Ciencias de Nueva York. Investigador principal.</li>
-<li>Fuente: Centro Médico Mount Sinai, Fundación para el incentivo en la  financiación de Investigación. Investigador principal.</li>
-<li>Fuente: Premio de Investigación Phillip Morris, Patrocinador GWU, Neurocirugía. Tesista.</li>
-<li>Fuente: Privada. Cursos prácticos en Cirugía mínimamente invasiva de la columna vertebral: Alemania.</li>
-<li>Fuente: Privada.  Microneurocirugía, Métodos para el Centro Médico de Base del Cráneo GWU, Washington, DC.</li>
-<li>Fuente: Privada.  Cardiología Avanzada y reanimación: "Harvey" Universidad de Miami, EE.UU.</li>
+<li><strong>{{trans('message.li56')}}</strong></li>
+<li>{{trans('message.li57')}}</li>
+<li>{{trans('message.li58')}}</li>
+<li>{{trans('message.li59')}}</li>
+<li>{{trans('message.li60')}}</li>
+<li>{{trans('message.li61')}}</li>
+<li>{{trans('message.li62')}}</li>
+<li>{{trans('message.li63')}}</li>
                                         </p>
                                     </div>
                             </div>
@@ -496,7 +496,7 @@
     <div id="cms-row-15679b50e7b8a3">
             <div class="panel-body" style="background-color: #88b6d2;">
                 <div style="text-align: center;" class=" clearfix" >
-                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Especialidades - Altos Niveles de Eficiencia</strong></p>
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">{{trans('message.li64')}}</strong></p>
                 </div>                                
                 <div class="wpb_text_column wpb_content_element ">
                 </div>
@@ -504,62 +504,59 @@
             <div class="panel-body" style="padding-top: 0px !important;">
             <div class="carrr">
     <article title="item12">
-        <h1>Neurocirugía de la Columna y Cerebro</h1>
+        <h1>{{trans('message.li65')}}</h1>
         <img src="images/Especialidades/Neurocirugiacolumnaa.jpg">
         <p class="contscr">
-            En Pronostico Positivo realizamos más de 100 cirugías al año y hemos expandido la especialidad en el Perú desarrollando áreas como preservación del movimiento y microcirugía con técnicas mínimamente invasivas de columna, reconstrucciones complejas, y navegación. El doctor Paino es líder en Neurocirugía y Educación, habiendo publicado importantes artículos y realizado conferencias en la especialidad.  En la sala de operaciones de la Clínica San Felipe contamos con modernos equipos, instrumentos de precisión y navegación por imágenes. Estamos en capacidad para atender casos simples y extremadamente complejos.  Nuestro equipo multidisciplinario trabaja juntos para proporcionar todo el espectro de estrategias en el tratamiento del paciente desde la terapia conservadora, la cirugía si es necesaria y la rehabilitación post operatoria.  Nuestros anestesiólogos están preparados en los mejores centros, manejan casos muy delicados con un excelente record sin complicaciones.  Estamos comprometidos con una atención de excelencia, enfocados en la seguridad de nuestros pacientes e impecables resultados. Como profesor adjunto de investigación en la Universidad George Washington, avanzamos en el desarrollo de la próxima generación de osteobiológicos  para la fusión de lesiones complejas de columna.   Somos pioneros en el uso de Monitoreo Intra Operatorio (IOM), esto nos permite medir en todo momento la integridad funcional del paciente durante las cirugías complejas de columna o Cerebro de tal manera que reducimos el riesgo de cortar algún nervio durante la cirugía.  En nuestro instituto el monitoreo es realizado por un Neurólogo en la sala de operaciones. 
+            {{trans('message.li66')}}
         </p>
     </article>
     <article title="item12">
-        <h1>Diagnóstico y Tratamiento del Dolor</h1>
+        <h1>{{trans('message.li67')}}</h1>
         <img src="images/Especialidades/Diagnosticotratamiento.jpg">
         <p class="contscr">
-            El manejo de su dolor es importante en nuestro Instituto.  Especialistas en manejo percut   áneo del dolor y rehabilitación se juntan para proporcionarle un alivio profundo y duraderos de sus dolores agudos y crónicos.  Nuestro equipo trabaja muy integrado para proporcionarle una variedad de intervenciones y estrategias que le permitan recobrar el control de su vida sin dolor.  La adición del Dr. Alejandro Castillo a nuestro equipo intervencionista fortalece nuestro programa por lo que podemos presentar excelentes resultados a nuestros pacientes.  Manejamos situaciones complejas como Neuralgias de Arnold, Neuropatías del Trigémino, bloqueos epidurales, bloqueos facetarios, etc.  Tratamos dolores de cabeza refractarios a otros tratamientos mediante un aborde multidisciplinario.  Otros diagnósticos tratados en nuestro Instituto incluyen lumbalgias, cervicalgias , radiculopatías, túnel del carpo y dolor central post derrame cerebral.  
+            {{trans('message.li68')}}  
         </p>
     </article>
     <article title="item12">
-        <h1>Terapia Física / Neuro Rehabilitación</h1>
+        <h1>{{trans('message.li69')}}</h1>
         <img src="images/Especialidades/rehabilitacion.jpg">
         <p class="contnoscr">
-            Nuestros pacientes se benefician de técnicas innovadoras en Neuro Rehabilitación de la columna vertebral.  Rehabilitamos también pacientes con afecciones degenerativas y cerebrales.  Manejamos programas que son supervisados directamente por nuestro Director Médico-Neurocirujano.
+            {{trans('message.li70')}}
         </p>
     </article>
     <article title="item12">
-        <h1>Tumores Cerebrales y de Columna</h1>
+        <h1>{{trans('message.li71')}}</h1>
         <img src="images/Especialidades/TumoresCerebrales.jpeg">
         <p class="contscr">
-            Nuestro Instituto es uno de los centros de referencia para el nuevo  programa de Radiocirugía (Gamma Knife) en el Perú, además el Dr. Paino es Medico Titular del Miami Gamma Knife Institute y referente del Instituto de Gamma Knife de la Universidad de Pittsburg en Pennsilvania, dirigida por el prestigioso Neurocirujano Dr. Douglas Kondziolka.  Nosotros sabemos que si los tumores no se tratan a tiempo o son de crecimiento rápido tal vez no respondan bien a radiocirugía por eso algunos pocos casos los pasamos a cirugía.  Para los casos quirúrgicos, Cirujanos Oncólogos trabajan con el Dr.  Paino para solucionar los casos mas complejos de tumores cerebrales y de columna como el Cordoma de Sacro y otros. En el caso de tumores cerebrales, Dr. Paino tiene varias publicaciones (ver publicaciones) en prestigiosas Revistas de los Estados Unidos con prestigiosos Neurocirujanos como el Dr.  Sekhar y El Dr Sen. El Dr. Paino ha estudiado el comportamiento de tumores como los Meningiomas por mas de 15 años y se entrenó en la cirugía de tumores bajo la tutoría del prestigioso Cirujano de Base de Cráneo Dr. Sen.  
+            {{trans('message.li72')}} 
         </p>
     </article>
     <article title="item12">
-        <h1 style="padding-bottom: 40px;">Investigación</h1>
+        <h1 style="padding-bottom: 40px;">{{trans('message.li73')}}</h1>
         <img src="images/Especialidades/Investigaciona.jpg">
         <p class="contscr">
-            La investigación en el Perú requiere de todos nosotros. El Doctor Paino, es también pionero de la investigación de Células Madre en el Mundo y lidera el laboratorio de alta tecnología de Bioingeniería en la Universidad UTEC. El Gobierno PERÚano, mediante su ente Científico CONCYTEC ha creído en él y ha financiado su proyecto a través de FONDECYT.  La Cleveland Clinic lo apoya desde el 2015 con intercambio de conocimientos  sobre nano partículas.  Más recientemente ha equipado nuestro laboratorio con donación de equipos de alta tecnología por lo cuál somos uno de los laboratorios más especializados en cultivos celulares del país según CONCYTEC.  
-            Estamos interesados en avanzar el conocimiento mediante investigación en Ciencias Básicas Biológicas. En un futuro, la unión entre las proteínas de células madre y  las nano partículas que pretendemos desarrollar podrían beneficiar directamente a cientos de pacientes quemados  y con lesiones de médula en todo el Perú.  El Dr. Paino también ha desarrollado toda un área de estudios con relación a terapia genética y células madre para enfermedades degenerativas del cerebro y la columna como ELA, Esclerosis Múltiple, Enfermedad de Tay Sachs, Enfermedad de Sandohoff, etc.   
-            Por favor contactese con nuestra oficina de investigación al 2190258 si desea participar de algunos de esos estudios.
-            Busque el estudio que le interesa en el Excel que sigue. 
+            {{trans('message.li74')}} 
         </p>
     </article>
     <article title="item12">
-        <h2>Alzheimer y Prevención de otros Desordenes</h2>
+        <h2>{{trans('message.li75')}}</h2>
         <img src="images/Especialidades/Alzheimer.jpeg">
         <p class="contscr">
-            Médicos y psicólogos de nuestro instituto afiliados al campo de los desórdenes neuro cognitivos trabajan en el Instituto de la Memoria. Atendemos pacientes con pérdida temprana de la memoria o con preocupación de deficiencias hereditarias de memoria. Alteraciones del estado de ánimo , el comportamiento, el lenguaje y la memoria son  síntomas que tienen una variedad de causas, nosotros hemos desarrollado programas personalizados que tienen la finalidad de diagnosticar y prevenir alteraciones intelectuales, incluido el Alzheimer.   Realizamos evaluaciones completas para asegurar el mejor protocolo para nuestros pacientes.  Manejamos los últimos avances en la investigación y/o tratamiento de problemas neuro cognitivos.  Nuestros tratamientos también están dirigidos a personas que en la actualidad no presentan problemas de memoria pero están interesadas en cultivar y/o ejercitar las capacidades cognitivas sobreviniendo el deterioro de las funciones intelectuales.  Manejamos protocolos de investigación con células mesenquimales para la regeneración del tejido neurológico con el propósito de prevenir la demencia tratándola prematuramente y previniendo su avance. Bajo la dirección del Dr. Paino nuestro centro de prevención es pionero en el Perú.  Estamos afiliados con modernos centros de diagnostico por imágenes para el diagnóstico temprano.  Junto con nuestros científicos asociados como el Dr. Burton Feinerman en Florida, trabajamos arduamente para desarrollar alternativas de terapia genética para la prevención y tratamiento del envejecimiento temprano del cerebro. Las enfermedades neuro degenerativas afectan a miles de PERÚanos y sus causas permanecen desconocidas.  Nuestras investigaciones se enfocan también en atacar algunos factores de riesgo que pueden prevenir el avance de la demencia como por ejemplo el uso indiscriminado de analgésicos, estrés post traumáticos, enfermedades infecciosas, etc. Asesoramos a nuestros pacientes acerca de factores electromagnéticos (antenas) que puedan causar modificaciones genéticas que aumenten los factores de riesgo de la demencia.
+            {{trans('message.li76')}}
         </p>
     </article>
     <article title="item12">
-        <h2>Trabajo Social - Misión Huascarán</h2>
+        <h2>{{trans('message.li77')}}Trabajo Social - Misión Huascarán</h2>
         <!--<img src="">-->
         <!--<video width="400" controls>-->
         <video width="320" controls preload="none">
             <source src="video/Misión-Huascarán-en-Alta-Gala-2016.webmhd" type="video/mp4">
             <source src="video/Misión-Huascarán-en-Alta-Gala-2016.webmhd" type="video/webm">
-            Your browser does not support HTML5 video.
+            {{trans('message.li78')}}
             <img alt="" src="images/previewForVideo.png" width="640" height="360"  title="" />
 </video>
         </video>
-        <p class="contnoscr">El Dr. Paino anualmente visita pacientes necesitados de comunidades alejadas en diferentes altitudes de los Andes.  Participa activamente de obras humanitarias como la Misión Huascaran en Ancash, Perú.
+        <p class="contnoscr">{{trans('message.li79')}}
         </p>
     </article>
 </div>
@@ -581,7 +578,7 @@
                                                 <div id="counter_cms-counter_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="1347">
                                                 </div>
                                                 <h3 class="cms-counter-title">
-                                                    <span>Pacientes Tratados</span>
+                                                    <span>{{trans('message.li80')}}</span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -606,7 +603,7 @@
                                                 <div id="counter_cms-counter-2_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="153">
                                                 </div>
                                                 <h3 class="cms-counter-title">
-                                                    <span>Investigaciones Realizadas</span>
+                                                    <span>{{trans('message.li81')}}</span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -631,7 +628,7 @@
                                                 <div id="counter_cms-counter-3_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="3567">
                                                 </div>
                                                 <h3 class="cms-counter-title">
-                                                    <span>Rehabilitaciones</span>
+                                                    <span>{{trans('message.li82')}}</span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -656,7 +653,7 @@
                                                 <div id="counter_cms-counter-4_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="322">
                                                 </div>
                                                 <h3 class="cms-counter-title">
-                                                    <span>Articulos Publicados</span>
+                                                    <span>{{trans('message.li83')}}</span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -672,7 +669,7 @@
         <div id="" class="seccion" style="padding-top: 0px !important">
             <div class="panel-body" style="background-color: #88b6d2;">
                 <div style="text-align: center;" class=" clearfix" id="cms-custom-headding-15679b50e50b82">
-                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Guías Descargables</strong></p>                                   
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">{{trans('message.li84')}}</strong></p>                                   
                 </div>                                
                 <div class="wpb_text_column wpb_content_element ">
                 </div>
@@ -682,25 +679,25 @@
                     <div class="col-md-2 col-sm-4 col-xs-6 tt">
                          <a href="AF_DolorDeCuello(NoImprimible).pdf" target="_blank">
                          <img src="images/covers/DolordeCuello-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">Guía 1 - Dolor de Cuello</p>
+                        <p style="text-align: center;padding: 0px !important">{{trans('message.li85')}}</p>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 tt">
                         <a href="LowBackPain.pdf" target="_blank">
                         <img src="images/covers/Dolorlumbar-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">Guía 2 - Low Back Pain</p>
+                        <p style="text-align: center;padding: 0px !important">{{trans('message.li86')}}</p>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 tt">
                         <a href="SpinalStenosis.pdf" target="_blank">
                         <img src="images/covers/SpinalStenosis-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">Guía 3 - Spinal Stenosis</p>
+                        <p style="text-align: center;padding: 0px !important">{{trans('message.li87')}}</p>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 tt">
                         <a href="http://www.youblisher.com/p/867089-Guia-Paciente-Proposit/" target="_blank">
                         <img src="images/covers/GuiadelPaciente-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">Guía 4 - Proposit</p></a>
+                        <p style="text-align: center;padding: 0px !important">{{trans('message.li88')}}</p></a>
                     </div>
                 </div>
             </div>
@@ -708,7 +705,7 @@
         <div id="Alianzas" class="seccion" style="padding-top: 0px !important">
             <div class="panel-body" style="background-color: #88b6d2;">
                 <div style="text-align: center;" class=" clearfix" id="cms-custom-headding-15679b50e50b82">
-                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Alianzas Estratégicas</strong></p>                                   
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">{{trans('message.li89')}}</strong></p>                                   
                 </div>                                
                 <div class="wpb_text_column wpb_content_element ">
                 </div>
@@ -755,15 +752,14 @@
                 <div class="panel-body">
                     <div class="vc_col-lg-offset-1 vc_col-lg-5 vc_col-md-offset-1 vc_col-md-6  wpb_column vc_column_container cf7-zk-raven4 vc_custom_1442199020596  vc_custom_1442199020596">
                         <div id="cms-custom-headding-15679b50e7c409" class="vc_custom_heading cms-title-bottom-line clearfix">
-                            <h2 class="cms-custom-headding-title text-left" style="color: #ffffff;padding-bottom: 0px;margin-bottom: 40px;">CITAS MÉDICAS</h2>
+                            <h2 class="cms-custom-headding-title text-left" style="color: #ffffff;padding-bottom: 0px;margin-bottom: 40px;">{{trans('message.li90')}}</h2>
                         </div>
                         <div id="cms-custom-headding-15679b50e7c6d9" class="vc_custom_heading vc_custom_1446626527589  clearfix" style="margin-bottom: 0px !important;">
-                            <h4 style="color: #ffffff;margin-bottom: 40px;">Déjanos tus datos para programar una cita</h4>
+                            <h4 style="color: #ffffff;margin-bottom: 40px;">{{trans('message.li91')}}</h4>
                         </div>
                         <div class="wpb_text_column wpb_content_element  vc_custom_1446626694783" style="margin-bottom: 40px !important;">
                             <div class="wpb_wrapper" style="color: #ffffff; border-radius: 0.3em; padding-top: 0.5em;">
-                                <p style="text-align: justify;"> <strong>Tus comentarios son importantes para nosotros.  
-                                    Por favor llena los campos del formulario a continuación y te responderemos en el menor tiempo posible.</strong>
+                                <p style="text-align: justify;"> <strong>{{trans('message.li92')}}</strong>
                                 </p>
                             </div>
                         </div>
@@ -805,26 +801,26 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <button id="btnReserva" name="btnReserva" type="submit" value="Send Message"  style="background: rgba(114,156,177,0.5) !important; border-color: #6f6767 !important;">ENVIAR MENSAJE</button>
+                                        <button id="btnReserva" name="btnReserva" type="submit" value="Send Message"  style="background: rgba(114,156,177,0.5) !important; border-color: #6f6767 !important;">{{trans('message.li93')}}</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
 
                         <div class="wpb_wrapper" style="color:#ffffff; border-radius: 0.3em; padding-top: 0.5em;">
-                                <p style="text-align: justify;"> <strong>Si tiene alguna pregunta pase a nuestra sección de preguntas frecuentes para resolverlas.</strong>
+                                <p style="text-align: justify;"> <strong>{{trans('message.li94')}}</strong>
                                 </p>
                             </div>
                     </div>
                     <div>
-                        <h2 class="tett" style="color:#ffffff;text-align: center;">CITA WEB</h2>
+                        <h2 class="tett" style="color:#ffffff;text-align: center;">{{trans('message.li95')}}</h2>
                         <div class="wpb_wrapper" style="margin-top: 30px;padding-right: 30px !important;padding-left: 30px !important;">
                             <!--<button class="btnLogin" id="btnLogin">Cita</button>-->
-                            <p style="text-align: justify;float: right;padding-right: 16%;color:#ffffff;font-size: 18px;line-height: 20px;    letter-spacing: -0.4px;font-weight: 900;"> <strong>ingrese a nusetro calendario y agenda tu cita </strong>
+                            <p style="text-align: justify;float: right;padding-right: 16%;color:#ffffff;font-size: 18px;line-height: 20px;    letter-spacing: -0.4px;font-weight: 900;"> <strong>{{trans('message.li96')}}</strong>
                         </div>
                         <div>
                             <!--<button class="btnRegister" id="btncalendar" data-toggle="modal" data-target=".bs-example-modal-lg">Calendario</button>-->
-                            <a style="text-align: center;padding: 10px 60px 10px 60px; margin: 50px 100px;margin-right:20%;float:right; font-size:20px !important;    border-top: 3px solid #88b6d2;border-bottom: 3px solid #88b6d2;border-left: 3px solid #88b6d2;border-right: 3px solid #88b6d2;background-color: #a0a0a0;color: #ffffff;overflow: visible;" class="modalButton" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">Calendario</a>
+                            <a style="text-align: center;padding: 10px 60px 10px 60px; margin: 50px 100px;margin-right:20%;float:right; font-size:20px !important;    border-top: 3px solid #88b6d2;border-bottom: 3px solid #88b6d2;border-left: 3px solid #88b6d2;border-right: 3px solid #88b6d2;background-color: #a0a0a0;color: #ffffff;overflow: visible;" class="modalButton" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</a>
                         </div>
                     </div>
                 </div>
@@ -844,9 +840,9 @@
                                             </div>
                                             <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
                                                 <div class="fancy-box-content geg">
-                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>Teléfono:</strong> 
-                                                    <p style="padding: 0px !important;margin: 0px !important">2190000 Anexo 8477</p>
-                                                    <p style="padding: 0px !important;margin: 0px !important">2190258/2616139/2615615</p>
+                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li98')}}</strong> 
+                                                    <p style="padding: 0px !important;margin: 0px !important">{{trans('message.li99')}}</p>
+                                                    <p style="padding: 0px !important;margin: 0px !important">{{trans('message.li100')}}</p>
                                                     </p>
                                                 </div>
                                             </div>
@@ -866,9 +862,9 @@
                                             </div>
                                             <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
                                                 <div class="fancy-box-content geg" style="color:white">
-                                                    <p style="padding: 0px !important"><strong>E-mail:</strong> 
+                                                    <p style="padding: 0px !important"><strong>{{trans('message.li101')}}</strong> 
                                                         <br />
-                                                        aliciac@neurocirugiaperu.com
+                                                        {{trans('message.li102')}}
                                                     </p>
                                                 </div>
                                             </div>
@@ -887,9 +883,9 @@
                                             </div>
                                             <div class="cms-single-fancybox-content" style="padding-top: 0px !important" >
                                                 <div class="fancy-box-content geg">
-                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>Dirección:</strong> 
+                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li103')}}</strong> 
                                                         <br />
-                                                    <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important">Av. Gregorio Escobedo 676 Torre 2 Piso 5 consultorio 511, Jesús María</p>
+                                                    <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important">{{trans('message.li104')}}</p>
                                                     </p>
                                                 </div>
                                             </div>
@@ -908,9 +904,9 @@
                                             </div>
                                             <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
                                                 <div class="fancy-box-content">
-                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>Facebook:</strong> 
+                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li105')}}</strong> 
                                                         <br />
-                                                    <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important"><strong>/neurocirugíaPERÚ</strong> 
+                                                    <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important"><strong>/{{trans('message.li106')}}</strong> 
                                                         <br />
                                                         <br>
                                                     </p>
@@ -928,7 +924,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div style="margin:15px;">
-                        Calendario
+                        {{trans('message.li107')}}
                     </div>
                 </div>
             </div>
@@ -944,13 +940,13 @@
          <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Cita Web</h4>
+                <h4 class="modal-title" id="myModalLabel">{{trans('message.li108')}}</h4>
            </div>
          <div class="modal-body">
               <iframe frameborder="0"></iframe>
          </div>
          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">{{trans('message.li109')}}</button>
             <!--<button type="button" class="btn btn-primary">Save changes</button>-->
          </div>
         </div>
@@ -962,10 +958,10 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <form method="post" action='' name="login_form" style="margin:20px;">
-              <p>Usuario: <input type="text"  name="eid" id="email" placeholder="Email"></p>
-              <p>Contraseña: <input type="password"  name="passwd" placeholder="Password"></p>
-              <p><button type="submit" >Sign in</button>
-                <a href="">Forgot Password?</a>
+              <p>{{trans('message.li110')}}<input type="text"  name="eid" id="email" placeholder="Email"></p>
+              <p>{{trans('message.li111')}} <input type="password"  name="passwd" placeholder="Password"></p>
+              <p><button type="submit" >{{trans('message.li112')}}</button>
+                <a href="">{{trans('message.li113')}}</a>
               </p>
             </form>
     </div>
@@ -976,7 +972,7 @@
             <div id="cms-footer-bottom">
                 <div class="cms-footer-bottom-social">
                 </div>
-                &copy; Site by <strong>Play</strong>Media. All Right Reserved.
+                &copy; {{trans('message.li114')}} <strong>{{trans('message.li115')}}</strong>{{trans('message.li116')}}
             </div>
         </div>
     </footer>
