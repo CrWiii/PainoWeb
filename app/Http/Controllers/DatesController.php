@@ -31,15 +31,7 @@ class DatesController extends Controller{
 
     public function registerDate(Request $Request){
     	if($Request->ajax()){
-/*
-$Request->patientName
-$Request->dni
-$Request->email
-$Request->phone
-$Request->apptStartTime
-$Request->apptEndTime
-*/
-    		$Dat = new Dates;
+	   		$Dat = new Dates;
 	   		$Dat->title = $request->patientName;
     		$Dat->start = $request->apptStartTime;
     		$Dat->end = $request->apptEndTime;
@@ -57,7 +49,7 @@ $Request->apptEndTime
     }
 
     public function updateDate(){
-
+    	
     }
 
     public function deteleDate(){
