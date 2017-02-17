@@ -39,7 +39,7 @@ class DatesController extends Controller{
     		$Dat->place = $request->phone;
     		//$Dat->description = $request->;
     		$Dat->dni = $request->dni;
-    		$Dat->state = $request->'PROGRAMADO';
+    		$Dat->state = 'PROGRAMADO';
     		$Dat->mail = $request->email;
     		//$Dat->asunt = $request->;
     		//$Dat->type = $request->;

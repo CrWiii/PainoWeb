@@ -13,7 +13,7 @@
 
     <div class="navbar-collapse collapse" aria-expanded="true" style="background-color: #ffffff !important;">
         <ul class="nav navbar-nav" style="padding-left: 5px;">
-            <li><a tabindex="0" href="index.php#Inicio" class="tyti">{{trans('message.m1')}}</a>
+            <li><a tabindex="0" href="{{URL::to('/')}}" class="tyti">{{trans('message.m1')}}</a>
             <li><a tabindex="0" href="index.php#DrPaino" class="tyti"><span class="menu-title">{{trans('message.m2')}}</span></a></li>
             <li><a tabindex="0" href="index.php#Especializaciones" class="tyti"><span class="menu-title">{{trans('message.m3')}}</span></a></li>
             <li><a tabindex="0" href="Noticias.php" class="tyti"><span class="menu-title">{{trans('message.m4')}}</span></a></li>
@@ -21,13 +21,13 @@
             <li><a tabindex="0" href="index.php#Contacto" class="tyti"><span class="menu-title">{{trans('message.m6')}}</span></a></li>
             <li class="dropdown"><a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false" class="tyti">{{trans('message.m7')}}<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a tabindex="0" href="Otros.php#Publicaciones"><span>{{trans('message.sbm71')}}</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Monografias"><span>{{trans('message.sbm72')}}</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Presentaciones"><span>{{trans('message.sbm73')}}</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Invitaciones"><span>{{trans('message.sbm74')}}</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Dedicatorias"><span>{{trans('message.sbm75')}}</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Posters"><span>{{trans('message.sbm76')}}</span></a></li>
-                    <li><a tabindex="0" href="Otros.php#Diplomas"><span>{{trans('message.sbm77')}}</span></a></li>
+                    <li><a tabindex="0" href="{{URL::to('Otros#Publicaciones')}}"><span>{{trans('message.sbm71')}}</span></a></li>
+                    <li><a tabindex="0" href="{{URL::to('Otros#Monografias')}}"><span>{{trans('message.sbm72')}}</span></a></li>
+                    <li><a tabindex="0" href="{{URL::to('Otros#Presentaciones')}}"><span>{{trans('message.sbm73')}}</span></a></li>
+                    <li><a tabindex="0" href="{{URL::to('Otros#Invitaciones')}}"><span>{{trans('message.sbm74')}}</span></a></li>
+                    <li><a tabindex="0" href="{{URL::to('Otros#Dedicatorias')}}"><span>{{trans('message.sbm75')}}</span></a></li>
+                    <li><a tabindex="0" href="{{URL::to('Otros#Posters')}}"><span>{{trans('message.sbm76')}}</span></a></li>
+                    <li><a tabindex="0" href="{{URL::to('Otros#Diplomas')}}"><span>{{trans('message.sbm77')}}</span></a></li>
                 </ul>
             </li>   
                 <li><a style="padding-right: 0px;" href="{{URL::to('/en')}}" class="tyti"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
@@ -36,11 +36,3 @@
         </ul>
     </div>
 </nav>
-
-
-
-
-
-
-
-

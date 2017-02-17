@@ -33,3 +33,5 @@ Route::get('api','DatesController@api');
 Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::post('registerDate','DatesController@registerDate');
+
+Route::get('Otros','HomeController@Others');
