@@ -32,6 +32,7 @@ Route::resource('Dates','DatesController');
 Route::get('api','DatesController@api');
 Auth::routes();
 Route::get('/home', 'HomeController@index');
-Route::post('registerDate','DatesController@registerDate');
+Route::get('registerDate','DatesController@registerDate');
+Route::get('updateDate','DatesController@updateDate');
 
 Route::get('Otros','HomeController@Others');

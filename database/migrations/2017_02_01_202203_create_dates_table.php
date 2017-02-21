@@ -15,15 +15,16 @@ class CreateDatesTable extends Migration
     {
         Schema::create('dates', function (Blueprint $table) {
             $table->increments('id');
-            $table->datetime('startdate')->null();
-            $table->datetime('enddate')->null();
-            $table->string('place')->null();
-            $table->mediumText('description')->null();
-            $table->string('state')->null();
-            $table->string('DNI')->null();
-            $table->string('mail')->null();
-            $table->string('asunt')->null();
-            $table->string('type')->null();
+            $table->datetime('startdate')->nullable();
+            $table->datetime('enddate')->nullable();
+            $table->string('place')->nullable();
+            $table->string('title')->nullable();
+            $table->mediumText('description')->nullable();
+            $table->string('state')->nullable();
+            $table->string('DNI')->nullable();
+            $table->string('mail')->nullable();
+            $table->string('asunt')->nullable();
+            $table->string('type')->nullable();
             $table->timestamps();
         });
     }
