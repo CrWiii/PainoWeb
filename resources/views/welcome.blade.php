@@ -8,12 +8,12 @@
         <link href="{{url('bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css"/>
         <script src="{{url('bootstrap/jquery.min.js')}}" type="text/javascript"></script>       
         <script src="{{url('bootstrap/js/bootstrap.js')}}" type="text/javascript"></script>
-        <link href="{{url('bootstrap/css/style-menu-play.css')}}" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap/css/style-menu-play.css" rel="stylesheet" type="text/css"/>
         <!--<link href="bootstrap/logoplay.css" rel="stylesheet" type="text/css"/>-->
         <!--<link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' type='text/css' media='all' />-->
         <link href="{{('fonts/style.css')}}" rel="stylesheet" type="text/css"/>
-        <link rel='stylesheet' id='rs-plugin-settings-css' href="{{url('css/slider/settings.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' id='rs-plugin-settings-inline-css' href="{{url('css/slider/rs-plugin-settings-inline.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' id='rs-plugin-settings-css' href="css/slider/settings.css" type='text/css' media='all' />
+        <link rel='stylesheet' id='rs-plugin-settings-inline-css' href="css/slider/rs-plugin-settings-inline.css" type='text/css' media='all' />
         <link rel='stylesheet' id='cms-plugin-stylesheet-css' href="{{url('css/cms-style.css')}}" type='text/css' media='all' />
         <link rel='stylesheet' id='zkraven-style-css' href="{{url('css/style.css')}}" type='text/css' media='all' />
         <!--[if lt IE 10]>
@@ -549,8 +549,7 @@
         <!--<img src="">-->
         <!--<video width="400" controls>-->
         <video width="320" controls preload="none">
-            <source src="video/Misión-Huascarán-en-Alta-Gala-2016.webmhd" type="video/mp4">
-            <source src="video/Misión-Huascarán-en-Alta-Gala-2016.webmhd" type="video/webm">
+            <source src="video/MH.mp4" type="video/mp4">
             {{trans('message.li78')}}
             <img alt="" src="images/previewForVideo.png" width="640" height="360"  title="" />
 </video>
