@@ -546,13 +546,11 @@
     </article>
     <article title="item12">
         <h2>{{trans('message.li77')}}Trabajo Social - Misión Huascarán</h2>
-        <!--<img src="">-->
-        <!--<video width="400" controls>-->
+
         <video width="320" controls preload="none">
             <source src="video/MH.mp4" type="video/mp4">
             {{trans('message.li78')}}
             <img alt="" src="images/previewForVideo.png" width="640" height="360"  title="" />
-</video>
         </video>
         <p class="contnoscr">{{trans('message.li79')}}
         </p>
