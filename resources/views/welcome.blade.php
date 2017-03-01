@@ -113,7 +113,7 @@
             padding: 10px;
         }
         .carrr article {
-            width: 420px;
+            width: 380px;
         }
         .carrr article > img {
             padding-bottom: 20px;

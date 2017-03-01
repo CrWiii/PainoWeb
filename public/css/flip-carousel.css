@@ -18,7 +18,7 @@
 
 .flip-carousel > ul > li{
 	width: 410px;
-	margin: 10px;
+	margin: 0px !important;
 	padding:0;
 	display: inline-block;
 	list-style-type:none;
@@ -258,8 +258,8 @@ article {
 	color:#FFF;
 }
 article img{
-	max-width: 380px;
-	max-height: 400px;
+	max-width: 340px;
+	max-height: 340px;
 	padding:0;
 }
 article img.err{ /* applied when image does not load */
