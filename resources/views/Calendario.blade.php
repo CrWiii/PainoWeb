@@ -54,7 +54,7 @@
       },
       buttonIcons: true,
       weekNumbers: true,
-      hiddenDays: [0,1,3,6],
+      //hiddenDays: [0,1,3,6],
       navLinks: true,
       editable: true,
       eventLimit: true,
