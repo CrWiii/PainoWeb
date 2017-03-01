@@ -126,11 +126,10 @@
                 width: 800px; height: 570px; margin: auto 0;margin-left: 10px;
             }
         .tt{
-            margin: 20px;
+            margin: 10px;
             }
         .gg{
             padding-top: 80px;
-            padding-left: 15%;
         }
         .imgt{
                 width: 400px;
@@ -197,8 +196,8 @@
             padding-top: 30px !important;
         }
         .fds{
-            height: 241px; 
-            width: 165px;
+            height: 201px;
+            width: 125px;
         }
         @media (max-width: 767px) {
             .fds{
@@ -578,7 +577,8 @@
                                                 <div id="counter_cms-counter_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="1347">
                                                 </div>
                                                 <h3 class="cms-counter-title">
-                                                    <span>{{trans('message.li80')}}</span>
+                                                    <span>{{trans('message.li80')}}</span><br>
+                                                    <span>1500+</span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -603,7 +603,8 @@
                                                 <div id="counter_cms-counter-2_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="153">
                                                 </div>
                                                 <h3 class="cms-counter-title">
-                                                    <span>{{trans('message.li81')}}</span>
+                                                    <span>{{trans('message.li81')}}</span><br>
+                                                    <span></span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -628,7 +629,8 @@
                                                 <div id="counter_cms-counter-3_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="3567">
                                                 </div>
                                                 <h3 class="cms-counter-title">
-                                                    <span>{{trans('message.li82')}}</span>
+                                                    <span>{{trans('message.li82')}}</span><br>
+                                                    <span>0</span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -653,7 +655,8 @@
                                                 <div id="counter_cms-counter-4_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="322">
                                                 </div>
                                                 <h3 class="cms-counter-title">
-                                                    <span>{{trans('message.li83')}}</span>
+                                                    <span>{{trans('message.li83')}}</span><br>
+                                                    <span style="margin: 10%;"></span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -676,28 +679,38 @@
             </div>
             <div class="panel-body gg" style="background-color: white;" >
                 <div class="col-md-12" >
-                    <div class="col-md-2 col-sm-4 col-xs-6 tt">
-                         <a href="AF_DolorDeCuello(NoImprimible).pdf" target="_blank">
+                    <div class="col-md-2 col-sm-3 col-xs-6 tt">
+                         <a href="{{url('pdf/AF_DolorDeCuello(NoImprimible).pdf')}}" target="_blank">
                          <img src="images/covers/DolordeCuello-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">{{trans('message.li85')}}</p>
+                        <p style="text-align: center;padding: 0px !important;font-size: 0.8em !important;">{{trans('message.li85')}}</p>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6 tt">
-                        <a href="LowBackPain.pdf" target="_blank">
+                    <div class="col-md-2 col-sm-3 col-xs-6 tt">
+                        <a href="{{url('pdf/LowBackPain.pdf')}}" target="_blank">
                         <img src="images/covers/Dolorlumbar-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
                         <p style="text-align: center;padding: 0px !important">{{trans('message.li86')}}</p>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6 tt">
-                        <a href="SpinalStenosis.pdf" target="_blank">
+                    <div class="col-md-2 col-sm-3 col-xs-6 tt">
+                        <a href="{{url('pdf/SpinalStenosis.pdf')}}" target="_blank">
                         <img src="images/covers/SpinalStenosis-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
                         <p style="text-align: center;padding: 0px !important">{{trans('message.li87')}}</p>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6 tt">
+                    <div class="col-md-2 col-sm-3 col-xs-6 tt">
                         <a href="http://www.youblisher.com/p/867089-Guia-Paciente-Proposit/" target="_blank">
                         <img src="images/covers/GuiadelPaciente-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
                         <p style="text-align: center;padding: 0px !important">{{trans('message.li88')}}</p></a>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6 tt">
+                        <a href="{{url('pdf/Cerebral-Aneurysms.pdf')}}" target="_blank">
+                        <img src="images/covers/c.png" style="display: block;margin: auto auto;" class="fds" /><br>
+                        <p style="text-align: center;padding: 0px !important">{{trans('message.lii88')}}</p></a>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6 tt">
+                        <a href="{{url('pdf/Stereotactic Surgery.pdf')}}" target="_blank">
+                        <img src="images/covers/s.png" style="display: block;margin: auto auto;" class="fds" /><br>
+                        <p style="text-align: center;padding: 0px !important">{{trans('message.liii88')}}</p></a>
                     </div>
                 </div>
             </div>
