@@ -29,10 +29,32 @@
                     <li><a tabindex="0" href="{{URL::to('Otros#Posters')}}"><span>{{trans('message.sbm76')}}</span></a></li>
                     <li><a tabindex="0" href="{{URL::to('Otros#Diplomas')}}"><span>{{trans('message.sbm77')}}</span></a></li>
                 </ul>
-            </li>   
-                <li><a style="padding-right: 0px;" href="{{URL::to('/en')}}" class="tyti"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-                <li><a style="padding-left:  0px;" href="{{URL::to('/es')}}" class="tyti"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
-                <li><a tabindex="0"  data-toggle="modal" href="#Login" class="tyti"><span class="menu-title">{{trans('message.m8')}}</span></a></li>
+            </li> 
+
+            <li><a style="padding-right: 0px;" href="{{URL::to('/en')}}" class="tyti">
+                <span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span>
+                </a>
+            </li>
+            <li><a style="padding-left:  0px;" href="{{URL::to('/es')}}" class="tyti">
+                <span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span>
+                </a>
+            </li>
+                <!--<form method="POST" action="changeLanguage">  
+                {{ csrf_field() }}
+                    <li>
+                        <input type="hidden" name="lan1" value="en">
+                        <a style="padding-right: 0px;" href="" class="tyti" type="submit">
+                            <span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <input type="hidden" name="lan2" value="es">
+                        <a style="padding-left:  0px;" href="" class="tyti" type="submit">
+                            <span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span>
+                        </a>
+                    </li>
+                </form>
+                <li><a tabindex="0"  data-toggle="modal" href="#Login" class="tyti"><span class="menu-title">{{trans('message.m8')}}</span></a></li>-->
         </ul>
     </div>
 </nav>

@@ -3,101 +3,82 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="{{url('images/fab.png')}}">
-        <title>Dr. Paino</title>
-        <link href="{{url('bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css"/>
-        <script src="{{url('bootstrap/jquery.min.js')}}" type="text/javascript"></script>       
-        <script src="{{url('bootstrap/js/bootstrap.js')}}" type="text/javascript"></script>
-        <link href="bootstrap/css/style-menu-play.css" rel="stylesheet" type="text/css"/>
-        <!--<link href="bootstrap/logoplay.css" rel="stylesheet" type="text/css"/>-->
-        <!--<link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' type='text/css' media='all' />-->
-        <link href="{{('fonts/style.css')}}" rel="stylesheet" type="text/css"/>
-        <link rel='stylesheet' id='rs-plugin-settings-css' href="css/slider/settings.css" type='text/css' media='all' />
-        <link rel='stylesheet' id='rs-plugin-settings-inline-css' href="css/slider/rs-plugin-settings-inline.css" type='text/css' media='all' />
-        <link rel='stylesheet' id='cms-plugin-stylesheet-css' href="{{url('css/cms-style.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' id='zkraven-style-css' href="{{url('css/style.css')}}" type='text/css' media='all' />
-        <!--[if lt IE 10]>
-          <link property="cms-stylesheet" rel='stylesheet' id='zkraven-ie-css'  href='http://raven.zooka.io/demo/wp-content/themes/wp_raven/assets/css/ie.css?ver=screen' type='text/css' media='all' />
-          <![endif]-->
-        <link rel='stylesheet' id='cms-widget-instagram-css' href="{{url('css/cms_instagram.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' id='widget_cart_search_scripts-css' href="{{url('css/cms_cart_search.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' id='js_composer_front-css' href="{{url('css/js_composer.min.css')}}" type='text/css' media='all' />
-        <script type='text/javascript' src="{{url('js/jquery.js')}}"></script>
-        <script type='text/javascript' src="{{url('js/jquery-migrate.min.js')}}"></script>
-        <!--<script type='text/javascript' src='js/slider/jquery.themepunch.tools.min.js'></script>
-        <script type='text/javascript' src='js/slider/jquery.themepunch.revolution.min.js'></script>
-        <script type="text/javascript" src='js/slider/revolution.extension.slideanims.min.js'></script>
-        <script type="text/javascript" src="js/slider/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="js/slider/revolution.extension.navigation.min.js"></script>-->
-        <!--[if lte IE 9]>
-          <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen">
-          <![endif]-->
-        <!--[if IE  8]>
-          <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen">
-          <![endif]-->
-        <link rel='stylesheet' id='common-css' href="{{url('css/common.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' id='index-custom-vc-css' href="{{url('css/index-custom-vc.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' id='custom-css'  href="{{url('css/custom.css')}}" type='text/css' media='all' />
-        <script type='text/javascript' src="{{url('js/modernizr.min.js')}}"></script> 
-        <link rel='stylesheet' id='custom-css' href="{{url('css/custom.css')}}" type='text/css' media='all' />
-        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-        <link href="{{url('http://fonts.googleapis.com/css?family=Lato:900')}}" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-        <script src="{{url('js/html5shiv.js')}}"></script>
-        <script src="{{url('js/flip-carousel.js')}}"></script>
-        <link rel="stylesheet" href="{{url('css/bootstrap-submenu.min.css')}}">
-        <script src="{{url('js/bootstrap-submenu.min.js')}}" defer></script>
-        <link href="{{url('css/flip-carousel.css')}}" rel="stylesheet" />
+        @include('headerforNew')
         <style>
         /*img {
             max-width: 100%;
             height: auto;
             width: auto\9;
         }*/
-        .modal-body {
-            padding: 0px !important;
+
+        article{
+            display: block;
+            margin: 10px;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            box-sizing: border-box;
         }
-        #top {
-            background: #eee;
-            border-bottom: 1px solid #ddd;
-            padding: 0 10px;
-            line-height: 40px;
-            font-size: 12px;
+        .widget{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            display: block;
         }
-        #calendar {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 10px;
+        .share-wrapper {
+            width: 130px;
+            /*overflow: hidden;*/
         }
-        .titlePai{
+        .blog-content ul, .page ul {
+            /*list-style: none;*/
+            margin-left: 20px;
+        }
+
+        .post-type-icon {
+            position: absolute;
+            right: 25px;
+            top: 50px;
+        }
+        .post-materials {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .post-materials span:first-child {
+            margin-left: 0 !important;
+            padding-left: 0 !important;
+        }
+        .post-materials span {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .pull-right {
+            float: right!important;
+        }
+
+        .post-title-container {
             text-align: center;
-            font-size: 2.5em;
-            text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 3px 0 #b9b9b9,
-               0 3px 0 #aaa,
-               0 3px 1px rgba(0,0,0,.1),
-               0 0 3px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 3px rgba(0,0,0,.2),
-               0 3px 3px rgba(0,0,0,.25),
-               0 3px 3px rgba(0,0,0,.2),
-               0 3px 3px rgba(0,0,0,.15);
+            padding-left: 25px;
+            padding-top: 30px;
+            padding-right: 40px;
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
         }
-        .subtit{
-            text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 3px 0 #b9b9b9,
-               0 3px 0 #aaa,
-               0 3px 1px rgba(0,0,0,.1),
-               0 0 3px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 3px rgba(0,0,0,.2),
-               0 3px 3px rgba(0,0,0,.25),
-               0 3px 3px rgba(0,0,0,.2),
-               0 3px 3px rgba(0,0,0,.15);
+
+        .blog-post{
+            position: relative;
+            background: #FFF;
+            border: solid 1px #f1f1f1;
+            margin-bottom: 60px;
+            box-sizing: border-box;
         }
+
         .contscr{
             text-align: justify;
             font-size: 16px;
@@ -106,30 +87,22 @@
             height: 280px;
             padding: 10px;
         }
-        .contnoscr{
-            text-align: justify;
-            font-size: 16px;
-            height: 280px;
-            padding: 10px;
-        }
         .carrr article {
-            width: 380px;
+            width: 420px;
         }
         .carrr article > img {
             padding-bottom: 20px;
         }
-        article > h1,h2{
-            font-size: 28px !important;
-            margin-top: 0px !important;
-        }
+
+
         .target{
                 width: 800px; height: 570px; margin: auto 0;margin-left: 10px;
             }
         .tt{
-            margin: 10px;
+            margin: 20px;
             }
         .gg{
-            padding-top: 80px;
+            padding-top: 80px;padding-left: 25%;
         }
         .imgt{
                 width: 400px;
@@ -140,9 +113,11 @@
             margin: auto auto;
             width:350px;
         }
+
         .im{
             padding-top: 35%;
         }
+
         .iim{
             padding-top: 38%;
         }
@@ -152,6 +127,7 @@
         .iiiim{
             padding-top: 15%
         }
+
         .heas{
             background: url(images/cuidado.png) no-repeat;
             max-width: 100%;
@@ -171,6 +147,7 @@
         .divf{
             height: 700px;
         }
+
         .btnLogin{
             text-align: center;
             padding: 10px 120px 10px 120px; 
@@ -182,7 +159,7 @@
         .btnRegister{
             text-align: center;
             padding: 10px 100px 10px 100px; 
-            margin: 40px 200px;
+            margin: 40px 230px;
             font-size:20px !important;
             border-radius: 25px;
             box-shadow: 5px 5px 5px #444242;
@@ -192,22 +169,53 @@
             line-height: 50px !important;
             text-shadow: 0 1px 0 #ccc, 0 2px 0 #4c4848, 0 3px 0 #4c4848, 0 4px 0 #4c4848, 0 5px 0 #4c4848, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
         }
-        .tyti{
-            padding-top: 30px !important;
-        }
-        .fds{
-            height: 201px;
-            width: 125px;
-        }
+        nav ul ul {
+                display: none;
+            }
+             
+            nav ul li:hover > ul {
+                display: block;
+            }
+
+        nav ul ul {
+    background: #88b6d2; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+}
+    nav ul ul li {
+        float: none; 
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        position: relative;
+    }
+        nav ul ul li a {
+            padding: 5px 10px;
+            /*color: #000;*/
+        }   
+            nav ul ul li a:hover {
+                background: #fff;
+            }
+            nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+}
+
+
         @media (max-width: 767px) {
-            .fds{
-                height: 180px;
+            .post-materials{
+                font-size: 12px;
+                margin: 20px;
             }
-            .subtit{
-                font-size: 0.8em !important;
+            .blog-post{
+                margin-top: 80px;
             }
-            .tyti{
-                padding-top: 0px !important;
+            article{
+                margin: 0px 0px 50px 0px;
+            }
+            .post-title-container {
+                padding-left: 0px;
+                padding-top: 0px;
+                padding-right: 0px;
+                -ms-word-wrap: break-word;
+                word-wrap: break-word;
             }
             .sazz{
                 margin-left: 12px;
@@ -247,15 +255,8 @@
             .flip-carousel > ul > li{
                 width: 300px;
             }
-            article {
-                width: 300px;
-            }
-            article img{
-                max-width: 260px;
-            }
-            article > h1, h2{
-                font-size: 22px !important;
-            }
+
+
             .geg{
                 font-size: 15px;
             }
@@ -277,9 +278,6 @@
             .fz{
                  padding: 1em
             }
-            /*.heas{
-                background-size: 400px 200px;
-            }*/
             .target{
                 padding-top: 20px;
                 width: 95%; height: 600px; margin: auto 0;margin-left: 10px;
@@ -302,18 +300,23 @@
                 /*margin: 0px !important;*/
             }
         }
+
         ::-webkit-input-placeholder {
            color: #fff;
         }
+
         :-moz-placeholder { /* Firefox 18- */
            color: #fff;  
         }
+
         ::-moz-placeholder {  /* Firefox 19+ */
            color: #fff;  
         }
+
         :-ms-input-placeholder {  
            color: #fff;  
         }
+
         ::-webkit-scrollbar {
                 width: 10px;
                 height: 10px;
@@ -322,19 +325,24 @@
             ::-webkit-scrollbar-button:end:increment  {
                 display: none;
             }
+            
             ::-webkit-scrollbar-track-piece  {
                 background-color: #fff;
                 -webkit-border-radius: 6px;
             }
+            
             ::-webkit-scrollbar-thumb:vertical {
                 -webkit-border-radius: 6px;
                 background: #5d6f94 url() no-repeat center;
             }
+
             .seccion{
                 padding-top: 5em;
                 padding-left: 0px;
                 padding-right: 0px;
+
             }
+
             .ir-arriba {
                 position: fixed;
                 display:inline;
@@ -352,8 +360,10 @@
                 color:#000;
             }
             .nosotros{
+
             }
-           .scrolll{
+
+            .scrolll{
                 width:800px;
                 height:500px;
                 /*background-color: #88b6d2;*/
@@ -362,30 +372,142 @@
                 overflow-y:scroll;
                 float:left;
             }
+
             .cont{
                 height:450px;
             }
-            .top-mantain{
-                position: fixed;
-                right: 0;
-                left: 0;
-                z-index: 1030;
-            }
-
-            .tyti{
-                padding-left: 7px !important;
-                padding-right: 7px !important; 
-            }
         </style>
         <script>
-        $('#test').click(function(){
-                alert('asd');
-            });
             $( "#target" ).scroll();
+
         </script>
     </head>
     <body>
     @include('Menu')
+
+<div class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
+                <div class="vc_tta-container" data-vc-action="collapse">
+                    <div>
+                        <div class="vc_tta-tabs-container">
+                            <div class="widget Blog" data-version="1" id="Blog1">
+                                <article>
+                                    <div class="blog-post clearfix">
+                                    <div class="post-title-container">
+                                        <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
+                                        <div class="post-materials clearfix">
+                                            <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
+                                            <span style="padding-right: 20px;padding-left: 20px;">
+                                                <i class="fa fa-calendar-o"></i>
+                                                    <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
+                                            </span>
+                                            <!--<span class="post-cat">
+                                                <i class="fa fa-tags"></i>
+                                                <a href="http://2016-themexpose.blogspot.pe/search/label/blog" rel="tag">blog</a>
+                                                <a href="http://2016-themexpose.blogspot.pe/search/label/featured" rel="tag">featured</a>
+                                            </span>-->
+                                        </div>
+                                    </div>
+
+                                    <!--<div class="post-type-icon"><i class="fa fa-file-text-o" title="Standart Post Format"></i></div>-->
+
+                                    <div class="media-materials" id="thumb4633291745960409272"></div>
+                                        <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
+                                        <div class="post-content clearfix">
+                                            <div class="post-content-blog">
+                                                <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
+                                                    Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
+                                                </div>
+                                            </div>
+                                    <div class="continue-reading pull-left"></div>
+                                    <div class="blog-classic-share pull-right clearfix">
+                                        <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
+                                            <div class="pull-left share-wrapper">
+                                                <span class="tag-title-post pull-left cshare-text">SHARE : </span>
+                                                    <div class="share-tools pull-left">
+                                                        <ul style="list-style:none;list-style-type: none;">
+                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-facebook"></i></a></li>
+                                                            <!--<li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-twitter"></i></a></li>
+                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-pinterest"></i></a></li>
+                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-google-plus"></i></a></li>-->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="widget Blog" data-version="1" id="Blog1">
+                                <article>
+                                    <div class="blog-post clearfix">
+                                    <div class="post-title-container">
+                                        <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
+                                        <div class="post-materials clearfix">
+                                            <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
+                                            <span style="padding-right: 20px;padding-left: 20px;">
+                                                <i class="fa fa-calendar-o"></i>
+                                                    <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
+                                            </span>
+                                            <!--<span class="post-cat">
+                                                <i class="fa fa-tags"></i>
+                                                <a href="http://2016-themexpose.blogspot.pe/search/label/blog" rel="tag">blog</a>
+                                                <a href="http://2016-themexpose.blogspot.pe/search/label/featured" rel="tag">featured</a>
+                                            </span>-->
+                                        </div>
+                                    </div>
+
+                                    <!--<div class="post-type-icon"><i class="fa fa-file-text-o" title="Standart Post Format"></i></div>-->
+
+                                    <div class="media-materials" id="thumb4633291745960409272"></div>
+                                        <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
+                                        <div class="post-content clearfix">
+                                            <div class="post-content-blog">
+                                                <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
+                                                    Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
+                                                </div>
+                                            </div>
+                                    <div class="continue-reading pull-left"></div>
+                                    <div class="blog-classic-share pull-right clearfix">
+                                        <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
+                                            <div class="pull-left share-wrapper">
+                                                <span class="tag-title-post pull-left cshare-text">SHARE : </span>
+                                                    <div class="share-tools pull-left">
+                                                        <ul style="list-style:none;list-style-type: none;">
+                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-facebook"></i></a></li>
+                                                            <!--<li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-twitter"></i></a></li>
+                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-pinterest"></i></a></li>
+                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-google-plus"></i></a></li>-->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <footer id="cms-footer" class="no-margin-top">
+        <div class="container">
+            <div id="cms-footer-bottom">
+                <div class="cms-footer-bottom-social">
+                </div>
+                &copy; Site by <strong>Play</strong>Media. All Right Reserved.
+            </div>
+        </div>
+    </footer>
+
 
     </body>
     </html>
