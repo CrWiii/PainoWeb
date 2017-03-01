@@ -10,7 +10,9 @@
             height: auto;
             width: auto\9;
         }*/
-
+.tyti {
+    padding-top: 30px !important;
+}
         article{
             display: block;
             margin: 10px;

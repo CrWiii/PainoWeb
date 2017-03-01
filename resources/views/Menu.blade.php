@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
         </button>
     <a class="navbar-brand" style="padding: 0px;">
-        <div id="logo-play" class="pull-left clearfix"><a class="cms-main-logo hidden-sm" href="#"><img alt="" src="images/Logo.png" title="Paino"> </a></div>
+        <div id="logo-play" class="pull-left clearfix"><a class="cms-main-logo hidden-sm" href="/"><img alt="" src="images/Logo.png" title="Paino"> </a></div>
     </a>
   </div>
 

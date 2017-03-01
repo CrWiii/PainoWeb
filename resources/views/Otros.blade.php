@@ -63,6 +63,9 @@
             height: auto;
             width: auto\9;
         }*/
+        .tyti {
+    padding-top: 30px !important;
+}
         .fuimg{
             width: 30%;
             display: block;
