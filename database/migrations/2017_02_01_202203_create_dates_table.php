@@ -25,6 +25,7 @@ class CreateDatesTable extends Migration
             $table->string('mail')->nullable();
             $table->string('asunt')->nullable();
             $table->string('type')->nullable();
+            $table->string('sff')->nullable();
             $table->timestamps();
         });
     }
