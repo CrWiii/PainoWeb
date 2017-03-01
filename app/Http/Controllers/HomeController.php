@@ -26,4 +26,10 @@ class HomeController extends Controller
     public function Others(){
         return view('Otros');
     }
+    public function Preguntas(){
+        return view('PreguntasFrecuentes');
+    }
+    public function Noticias(){
+        return view('Noticias');
+    }
 }

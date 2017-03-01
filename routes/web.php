@@ -36,3 +36,5 @@ Route::get('registerDate','DatesController@registerDate');
 Route::get('updateDate','DatesController@updateDate');
 
 Route::get('Otros','HomeController@Others');
+Route::get('PreguntasFrecuentes','HomeController@Preguntas');
+Route::get('Noticias','HomeController@Noticias');
