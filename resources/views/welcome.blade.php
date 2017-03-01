@@ -204,7 +204,7 @@
         }
         @media (max-width: 767px) {
             .qscw{
-                padding-left: 0% !important;
+                padding-left: 3% !important;
             }
             .fds{
                 height: 180px;
@@ -682,22 +682,22 @@
             </div>
             <div class="panel-body gg" style="background-color: white;" >
                 <div class="col-md-12 qscw">
-                    <div class="col-md-3 col-sm-4 col-xs-4 tt">
+                    <div class="col-md-3 col-sm-4 col-xs-6 tt">
                          <a href="{{url('pdf/AF_DolorDeCuello(NoImprimible).pdf')}}" target="_blank">
                          <img src="images/covers/DolordeCuello-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
                         <p style="text-align: center;padding: 0px !important;font-size: 0.8em !important;">{{trans('message.li85')}}</p>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-4 tt">
+                    <div class="col-md-3 col-sm-4 col-xs-6 tt">
                         <a href="{{url('pdf/LowBackPain.pdf')}}" target="_blank">
                         <img src="images/covers/Dolorlumbar-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">{{trans('message.li86')}}</p>
+                        <p style="text-align: center;padding: 0px !important;font-size: 0.8em !important;">{{trans('message.li86')}}</p>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-4 tt">
+                    <div class="col-md-3 col-sm-4 col-xs-6 tt">
                         <a href="{{url('pdf/SpinalStenosis.pdf')}}" target="_blank">
                         <img src="images/covers/SpinalStenosis-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">{{trans('message.li87')}}</p>
+                        <p style="text-align: center;padding: 0px !important;font-size: 0.8em !important;">{{trans('message.li87')}}</p>
                         </a>
                     </div>
                 </div>
@@ -705,17 +705,17 @@
                     <div class="col-md-3 col-sm-4 col-xs-6 tt">
                         <a href="http://www.youblisher.com/p/867089-Guia-Paciente-Proposit/" target="_blank">
                         <img src="images/covers/GuiadelPaciente-01.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">{{trans('message.li88')}}</p></a>
+                        <p style="text-align: center;padding: 0px !important;font-size: 0.8em !important;">{{trans('message.li88')}}</p></a>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6 tt">
                         <a href="{{url('pdf/Cerebral-Aneurysms.pdf')}}" target="_blank">
                         <img src="images/covers/c.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">{{trans('message.lii88')}}</p></a>
+                        <p style="text-align: center;padding: 0px !important;font-size: 0.8em !important;">{{trans('message.lii88')}}</p></a>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6 tt">
                         <a href="{{url('pdf/Stereotactic Surgery.pdf')}}" target="_blank">
                         <img src="images/covers/s.png" style="display: block;margin: auto auto;" class="fds" /><br>
-                        <p style="text-align: center;padding: 0px !important">{{trans('message.liii88')}}</p></a>
+                        <p style="text-align: center;padding: 0px !important;font-size: 0.8em !important;">{{trans('message.liii88')}}</p></a>
                     </div>
                 </div>
 
