@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta charset='utf-8' />
-<link href='fullcalendar/fullcalendar.css' rel='stylesheet' />
-<link href='fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href="{{url('fullcalendar/fullcalendar.css')}}" rel='stylesheet' />
+<link href="{{url('fullcalendar/fullcalendar.print.css')}}" rel='stylesheet' media='print' />
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src='fullcalendar/lib/moment.min.js'></script>
-<script src='fullcalendar/lib/jquery.min.js'></script>
-<script src='fullcalendar/fullcalendar.min.js'></script>
-<script src='fullcalendar/locale-all.js'></script>
+<script src="{{url('fullcalendar/lib/moment.min.js')}}"></script>
+<script src="{{url('fullcalendar/lib/jquery.min.js')}}"></script>
+<script src="{{url('fullcalendar/fullcalendar.min.js')}}"></script>
+<script src="{{url('fullcalendar/locale-all.js')}}"></script>
 
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.es.min.js"></script>
