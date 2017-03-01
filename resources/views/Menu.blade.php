@@ -14,11 +14,11 @@
     <div class="navbar-collapse collapse" aria-expanded="true" style="background-color: #ffffff !important;">
         <ul class="nav navbar-nav" style="padding-left: 5px;">
             <li><a tabindex="0" href="{{URL::to('/')}}" class="tyti">{{trans('message.m1')}}</a>
-            <li><a tabindex="0" href="index.php#DrPaino" class="tyti"><span class="menu-title">{{trans('message.m2')}}</span></a></li>
-            <li><a tabindex="0" href="index.php#Especializaciones" class="tyti"><span class="menu-title">{{trans('message.m3')}}</span></a></li>
-            <li><a tabindex="0" href="Noticias.php" class="tyti"><span class="menu-title">{{trans('message.m4')}}</span></a></li>
-            <li><a tabindex="0" href="PreguntasFrecuentes.php" class="tyti"><span class="menu-title">{{trans('message.m5')}}</span></a></li>
-            <li><a tabindex="0" href="index.php#Contacto" class="tyti"><span class="menu-title">{{trans('message.m6')}}</span></a></li>
+            <li><a tabindex="0" href="{{URL::to('/#DrPaino')}}" class="tyti"><span class="menu-title">{{trans('message.m2')}}</span></a></li>
+            <li><a tabindex="0" href="{{URL::to('/#Especializaciones')}}" class="tyti"><span class="menu-title">{{trans('message.m3')}}</span></a></li>
+            <li><a tabindex="0" href="" class="tyti"><span class="menu-title">{{trans('message.m4')}}</span></a></li>
+            <li><a tabindex="0" href="" class="tyti"><span class="menu-title">{{trans('message.m5')}}</span></a></li>
+            <li><a tabindex="0" href="{{URL::to('/#Contacto')}}" class="tyti"><span class="menu-title">{{trans('message.m6')}}</span></a></li>
             <li class="dropdown"><a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false" class="tyti">{{trans('message.m7')}}<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a tabindex="0" href="{{URL::to('Otros#Publicaciones')}}"><span>{{trans('message.sbm71')}}</span></a></li>
