@@ -35,7 +35,7 @@
                 <span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span>
                 </a>
             </li>
-            <li><a style="padding-left:  0px;" href="{{URL::to('/es')}}" class="tyti">
+            <li><a style="padding-left:  0px !important;" href="{{URL::to('/es')}}" class="tyti">
                 <span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span>
                 </a>
             </li>

@@ -380,7 +380,7 @@
 
             .tyti{
                 padding-left: 7px !important;
-                padding-right: 7px !important; 
+                /*padding-right: 7px !important; */
             }
         </style>
         <script>
