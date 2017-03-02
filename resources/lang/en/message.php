@@ -102,7 +102,7 @@ Please contact our research office at 2190258 if you wish to participate in some
 'li79'=>'Every year Dr. Paino visits patients in need in remote communities at different altitudes of the Peruvian Andes. He actively participates in humanitarian organizations such as the Huascaran Mission in Ancash, Peru.',
 'li80'=>'Patients treated',
 'li81'=>'Research carried out',
-'li82'=>'Rehabilitations',
+'li82'=>'Patiends with paralysis as a result of surgeries',
 'li83'=>'Published articles',
 'li84'=>'Downloadable Guides',
 'li85'=>'Guide 1 - Neck pain',

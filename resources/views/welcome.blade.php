@@ -202,6 +202,12 @@
         .qscw{
             padding-left: 16% !important;
         }
+
+        @media (min-width: 1280px){
+            .mvc{
+                height: 300px !important;
+            }
+        }
         @media (max-width: 767px) {
             .qscw{
                 padding-left: 3% !important;
@@ -567,7 +573,7 @@
             <div class="panel-body hidd">
                 <div class="vc_col-sm-6 vc_col-lg-3 vc_col-md-3  wpb_column vc_column_container      vc_custom_1446426772176  vc_custom_1446426772176">
                     <div class="wpb_wrapper">
-                        <div class="cms-counter-wraper cms-counter text-center template-cms_counter content-align-center " id="cms-counter">
+                        <div class="cms-counter-wraper cms-counter text-center template-cms_counter content-align-center  mvc" id="cms-counter">
                             <div class="cms-counter-inner">
                                 <div class=" cms-counter-body">
                                     <div class="cms-fancy-box-item">
@@ -593,7 +599,7 @@
                 </div>
                 <div class="vc_col-sm-6 vc_col-lg-3 vc_col-md-3  wpb_column vc_column_container      vc_custom_1446426772176  vc_custom_1446426772176">
                     <div class="wpb_wrapper">
-                        <div class="cms-counter-wraper cms-counter text-center template-cms_counter content-align-center " id="cms-counter-2">
+                        <div class="cms-counter-wraper cms-counter text-center template-cms_counter content-align-center  mvc" id="cms-counter-2">
                             <div class="cms-counter-inner">
                                 <div class=" cms-counter-body">
                                     <div class="cms-fancy-box-item">
@@ -619,7 +625,7 @@
                 </div>
                 <div class="vc_col-sm-6 vc_col-lg-3 vc_col-md-3  wpb_column vc_column_container      vc_custom_1446426772176  vc_custom_1446426772176">
                     <div class="wpb_wrapper">
-                        <div class="cms-counter-wraper cms-counter text-center template-cms_counter content-align-center " id="cms-counter-3">
+                        <div class="cms-counter-wraper cms-counter text-center template-cms_counter content-align-center mvc" id="cms-counter-3">
                             <div class="cms-counter-inner">
                                 <div class=" cms-counter-body">
                                     <div class="cms-fancy-box-item">
@@ -645,7 +651,7 @@
                 </div>
                 <div class="vc_col-sm-6 vc_col-lg-3 vc_col-md-3  wpb_column vc_column_container      vc_custom_1446426772176  vc_custom_1446426772176">
                     <div class="wpb_wrapper">
-                        <div class="cms-counter-wraper cms-counter text-center template-cms_counter content-align-center " id="cms-counter-4">
+                        <div class="cms-counter-wraper cms-counter text-center template-cms_counter content-align-center mvc" id="cms-counter-4">
                             <div class="cms-counter-inner">
                                 <div class=" cms-counter-body">
                                     <div class="cms-fancy-box-item">

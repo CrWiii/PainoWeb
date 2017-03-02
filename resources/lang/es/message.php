@@ -105,7 +105,7 @@ Estamos interesados en avanzar el conocimiento mediante investigación en Cienci
 'li79'=>'El Dr. Paino anualmente visita pacientes necesitados de comunidades alejadas en diferentes altitudes de los Andes.  Participa activamente de obras humanitarias como la Misión Huascaran en Ancash, Perú.',
 'li80'=>'Pacientes Operados',
 'li81'=>'Investigaciones Realizadas',
-'li82'=>'Pacientes con Parálisis',
+'li82'=>'Pacientes con Parálisis a consecuencia de cirugía',
 'li83'=>'Articulos Publicados',
 'li84'=>'Guías Descargables',
 'li85'=>'Dolor de Cuello',
