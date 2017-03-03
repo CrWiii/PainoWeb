@@ -382,6 +382,315 @@
                 padding-left: 7px !important;
                 /*padding-right: 7px !important; */
             }
+            .tyti {
+            padding-top: 30px !important;
+        }
+        .fuimg{
+            width: 30%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .fuimg2{
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contscr{
+            text-align: justify;
+            font-size: 16px;
+            overflow: scroll;
+            overflow-x:hidden;
+            height: 280px;
+            padding: 10px;
+        }
+        .carrr article {
+            width: 420px;
+        }
+        .carrr article > img {
+            padding-bottom: 20px;
+        }
+        article > h1,h2{
+            font-size: 28px !important;
+            margin-top: 0px !important;
+        }
+
+        .target{
+                width: 800px; height: 570px; margin: auto 0;margin-left: 10px;
+            }
+        .tt{
+            margin: 20px;
+            }
+        .gg{
+            padding-top: 80px;padding-left: 25%;
+        }
+        .imgt{
+                width: 400px;
+                height: 400px;
+            }
+        .imga{
+            display: block;
+            margin: auto auto;
+            width:350px;
+        }
+
+        .im{
+            padding-top: 35%;
+        }
+
+        .iim{
+            padding-top: 38%;
+        }
+        .iiim{
+            padding-top: 45%
+        }
+        .iiiim{
+            padding-top: 15%
+        }
+
+        .heas{
+            background: url(images/cuidado.png) no-repeat;
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 0.7;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .fz{
+             padding: 5em;
+        }
+        .divf{
+            height: 700px;
+        }
+
+        .btnLogin{
+            text-align: center;
+            padding: 10px 120px 10px 120px; 
+            margin: 40px 230px;
+            font-size:20px !important;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #444242;
+        }
+        .btnRegister{
+            text-align: center;
+            padding: 10px 100px 10px 100px; 
+            margin: 40px 230px;
+            font-size:20px !important;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #444242;
+        }
+        .ewq{
+            color: white !important;
+            line-height: 50px !important;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #4c4848, 0 3px 0 #4c4848, 0 4px 0 #4c4848, 0 5px 0 #4c4848, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+        }
+        nav ul ul {
+                display: none;
+            }
+             
+            nav ul li:hover > ul {
+                display: block;
+            }
+
+        nav ul ul {
+    background: #88b6d2; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+}
+    nav ul ul li {
+        float: none; 
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        position: relative;
+    }
+        nav ul ul li a {
+            padding: 5px 10px;
+            /*color: #000;*/
+        }   
+            nav ul ul li a:hover {
+                background: #fff;
+            }
+            nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+}
+
+
+        @media (max-width: 767px) {
+            .sazz{
+                margin-left: 12px;
+            }
+            .ewq{
+            line-height: 20px !important;
+            }
+
+            .fz{
+                font-size: 1.5em !important;
+            }
+            .saff{
+                height: 110px !important;
+            }
+            .safa{
+                padding-top: 15px;
+            }
+            .safb{
+                padding-top: 30px;
+            }
+            .iim{
+                padding-top: 30% !important;
+                padding-bottom: 40% !important;
+            }
+            .iiiim{
+                padding-bottom: 20% !important;
+            }
+            .qwdc{
+                height: 100%;
+            }
+            .tett{
+                padding-top: 70px;
+            }
+            .carrr article {
+                width: 300px;
+            }
+            .flip-carousel > ul > li{
+                width: 300px;
+            }
+            article {
+                width: 300px;
+            }
+            article img{
+                max-width: 260px;
+            }
+            article > h1, h2{
+                font-size: 22px !important;
+            }
+
+
+            .geg{
+                font-size: 15px;
+            }
+            .btnLogin{
+                text-align: center;
+                padding: 10px 80px 10px 80px; 
+                margin: 10px 50px;
+                font-size:20px !important;
+            }
+            .btnRegister{
+                text-align: center;
+                padding: 10px 60px 10px 60px; 
+                margin: 10px 50px;
+                font-size:20px !important;
+            }
+            .divf{
+                height: auto;
+            }
+            .fz{
+                 padding: 1em
+            }
+            .target{
+                padding-top: 20px;
+                width: 95%; height: 600px; margin: auto 0;margin-left: 10px;
+            }
+            .tt{
+                margin: 0px;
+            }
+            .gg{
+                padding-top: 10px;padding-left: 0px;
+            }
+            .imgt{
+                width: 100%;
+                height: 100%;
+            }
+            .imga{
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+            .tre{
+                /*margin: 0px !important;*/
+            }
+        }
+
+        ::-webkit-input-placeholder {
+           color: #fff;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+           color: #fff;  
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+           color: #fff;  
+        }
+
+        :-ms-input-placeholder {  
+           color: #fff;  
+        }
+
+        ::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+            ::-webkit-scrollbar-button:start:decrement,
+            ::-webkit-scrollbar-button:end:increment  {
+                display: none;
+            }
+            
+            ::-webkit-scrollbar-track-piece  {
+                background-color: #fff;
+                -webkit-border-radius: 6px;
+            }
+            
+            ::-webkit-scrollbar-thumb:vertical {
+                -webkit-border-radius: 6px;
+                background: #5d6f94 url() no-repeat center;
+            }
+
+            .seccion{
+                padding-top: 5em;
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+
+            .ir-arriba {
+                position: fixed;
+                display:inline;
+                padding:0.5em 0.65em 0.5em 0.65em;
+                border-radius: 5em;
+                background:rgba(0,0,0, 0.5);
+                color:#fff;
+                font-size:20px;
+                cursor:pointer;                
+                bottom: 1.5em;
+                right:1.5em;
+            }
+            .ir-arriba:hover,.ir-arriba:active {                
+                background:rgba(255,255,255, 0.5);
+                color:#000;
+            }
+            .nosotros{
+
+            }
+
+            .scrolll{
+                width:800px;
+                height:500px;
+                /*background-color: #88b6d2;*/
+                margin-top:40px;
+                margin-left:40px;
+                overflow-y:scroll;
+                float:left;
+            }
+
+            .cont{
+                height:450px;
+            }
         </style>
         <script>
         $('#test').click(function(){
@@ -392,6 +701,260 @@
     </head>
     <body>
     @include('Menu')
+
+     <div id="Publicaciones" class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
+                <div class="vc_tta-container" data-vc-action="collapse">
+                    <div>
+                        <div class="vc_tta-tabs-container">
+
+                        <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Publicaciones</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+            <div class="panel-body" style="padding-top: 0px !important;">
+
+<ul style="text-align: left;margin-top: 80px">
+    <li>
+        JE Paino, MD, PhD;. H Gultikin, MD; Winn HR, MD. "Unusual Cryptococcal infection of the Central Nervous System: Case Report and Literature Review". Youmans Neurological Surgery E-Edition (4 Volume), 5th Edition 4 Volume ISBN 072163933X Saunders • Published February 2004.
+    </li>
+    <li>
+        Shapiro, RS; Paino, JE Hepatic Artery Thrombosis: Power Doppler Sonographic Demonstration of Intra-arterial Thrombus. Ultrasound J. Med.1999 Aug; 18 (8): 569-71
+        Levy, E.I .; Paino, J. E., M.D. .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .;
+        Wright, D.C., M.D. .; Sekhar, L.N., M.D.
+        "Enzyme-linked immunosorbent assay Quantification of Cytokine Concentration in Human Meningiomas." Neurosurgery, 39 (4) October 1996.
+    </li>
+<li>Paino, J. E., M.D. .; Levy, E.I .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .;
+Wright, D.C., M.D. .; Sekhar, L.N., M.D.
+"A Study of autocrine Growth Regulation in Human Meningiomas: The effects of blocking IL-6 and IL-6 receptor monoclonal antibodies With" (On review)
+</li>
+<li>
+Paino, J. E .; Sen, C. Proliferating Cell Nuclear Antigen (PCNA): An Immunohistochemical Tool for Tumor Progression Studies, Review of the literature ". (On review)
+</li>
+<li>
+    Paino, J.E., Hague, K., Paciucci, P.A., Ryder, J., Sen, C. Long-Term Cultures Explants Derived From Human Meningioma: Establishment and Characterization ". (Submitted)
+</li>
+</ul>
+</div>
+
+
+
+<div id="Monografias" class="seccion" style="padding-top: 0px !important;">
+<div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Monografías</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+
+        <ul style="text-align: left;margin-top: 10px">
+            <li>
+                Paino, J. E., M.D. "Flowcytometry: Scanning and Sorting for Beginners"
+            </li>
+            <li>
+                Internal publication, Biochemistry, The George Washington University, 1995.
+            </li>
+            <li>
+                Paino, J. E., M.D. .; Sternau, L. L., M.D. "Quick Reference for Neurosurgical Research" 1994.
+            </li>
+            <li>
+                Paino, J. E., M.D. .; Wallings, J. "Clinical Immunology: A Laboratory Manual" 1992.
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="Presentaciones" class="seccion" style="padding-top: 0px !important;">
+    <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Abstractos y Presentaciones</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+
+        <ul style="text-align: left;margin-top: 10px">
+            <li>
+                Paino, J.E., Goldstein, AL, Ryder, .J, Paciucci, A., Post, KD, Sen, C. Prolifereation analysis of Meningioma Cells in Culture Latin American Congres of Neurosurgery, 30th Annual Meeting, Lima, PERU.. October, 2002.
+            </li>
+            <li>
+                Paino, J.E., Goldstein, AL, Ryder, .J., Paciucci, A., Post, KD, Sen, CProlifereation analysis of Meningioma Cells in Culture North American Skull Base Society, 12th Annual Meeting, San Diego, CA. March, 2001.
+            </li>
+            <li>
+                Paino, J.E., Hague, K., Ryder, .J., Paciucci, A. Sen, C.The Effects of High Dose Radiation on Meningioma Cells in Culture North American Skull Base Society, 11th Annual Meeting, Scttsdale, AZ. March, 2000.
+            </li>
+            <li>
+                Badamchian, M., Mora, C.A., Paino, J.E., Bauman, C.A. Goldstein A. L.
+                "The Pharmacokinetics of Thymosin α1 administration in Mice. Distribution of Tα1 in Brain, Serum, Urine and Major Organs of Mice. "Molecular Biology of the Cell, Vol. 6, Apoptosis II Abstr. 2073, pg 356a, Nov. 1995.
+            </li>
+            <li>
+                Badamchian, M., Mora, C.A., Paino, J.E., Bauman, C.A. A. Goldstein L. "Evaluation of Thymosin β4 (Tβ4) Levels in Brain, Serum, Urine, and Major Organs of Mice Following Administration of Synthetic Tβ4 IP."
+Molecular Biol. Of the Cell Vol. 6, Actin Associated Proteins II Abstr. 810. Pg 140a, Nov. 1995.
+</li>
+            <li>
+                Badamchian, M., Mora, C.A., Paino, J.E., Bauman, C.A. A. Goldstein L. "Evaluation of Thymosin β4 (Tβ4) Levels in Brain, Serum, Urine, and Major Organs of Mice Following Administration of Synthetic Tβ4 IP."
+Molecular Biol. Of the Cell Vol. 6, Actin Associated Proteins II Abstr. 810. pg140a, Nov. 1995.
+            </li>
+            <li>
+                Klimas, N. G., M.D. .; Fletcher, M.A.., Ph.D .; Wallings, J .; Paino, J. E., M.D. .; Patarca, R .; Garcia-Morales, R., M.D. .; Moody, D., Ph.D .; and O'Karma, T.
+                "Phase1 Trial of Adoptive Therapy with Purified CD8 Cells in HIV-1 Infection”
+                8th International Conference on AIDS. Amsterdam, Holland
+                Neuroscience of HIV Infection: Vol 2 pg B161, July1992.
+            </li>
+            <li>
+                Garcia-Morales, R., M.D. .; Klimas, N. G., M.D. .; Wallings, J., Paino, J. E., M.D. .; Patarca, R., Ph.D .; Moody, D .; Ph.D .; and Fletcher, M.A., Ph.D.
+"Phenotype of CD8 Lymphocytes from HIV-1 Infected Persons after Isolation and Ex-Vivo Expansion". Intrnl 7th Conference on AIDS, Florence, Italy, 1991.
+            </li>
+            <li>
+                B. Feinerman, J Paino 
+“Stem Cell and Gene Therapy for Tay Sachs”. 40 th  Annual Scientific Meeting of the ISEH – Society for Hematology and Stem Cells. Supplement to Experimental Hematoly. Journal for Hematology and Stem Cell Biology and Transplantation: Vol 39, Number 8, Supplement 1, August 2011.
+            </li>
+        </ul>
+    </div>
+    </div>
+<div id="Invitaciones" class="seccion" style="padding-top: 0px !important;">
+    <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Invitaciones</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+
+        <ul style="text-align: left;margin-top: 10px">
+            <li>
+                Paino, J.E., Hague, K., Ryder.J, Paciucci, A. Sen, C.. "Long-term cultures derived from human meningioma explants: Establishment and characterization". Hospital das Nacoes, Curitiba, Parana, BRAZIL 1997.
+            </li>
+            <li>
+                Paino, J.E., Hague, K., Ryder.J, Paciucci, P.A., Sen, C. "Long-term cultures derived from human meningioma explants: Establishment and characterization". US & Canadian Academy of Pathology Annual Meeting, March, 1999.
+            </li>
+            <li>
+                Paino, J.E., Hague, K., Ryder, .J, Paciucci, A. Sen, C. "Long-term cultures derived from human meningioma explants: Establishment and characterization". Neurosurgery Research Day, Mount Sinai Medical Center, New York, NY. 1999.
+            </li>
+            <li>
+                Paino, J.E., Levy, E.I. "Immunology of The Central Nervous System". Mount Sinai Hospital. New York NY 1996.
+            </li>
+            <li>
+                Paino, J. E, "Immunology of The Central Nervous System". Neurological Sciences, Institute OscarTrelles Lima, Peru, Jan 1996.
+            </li>
+            <li>
+                Paino, J.E. "Brain Temperature With Brain Injury to Correlation" Neurosurgery Conferences Sylvester Comprehensive Cancer Center, U of Miami, FL. 1994.
+            </li>
+            <li>
+                Paino, J.E. "Descriptive presentation on Immunology Research Studies". Immunology, AIDS Interdisciplinary Conference "VA Hospital, Miami, FL, April, 1992.
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="Dedicatorias" class="seccion" style="padding-top: 0px !important;">
+     <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Dedicatorias</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+    <img src="images/dedica.jpg" class="fuimg">
+
+    </div>
+</div>
+
+<div id="Posters" class="seccion" style="padding-top: 0px !important;">
+<div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Posters</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+
+        <ul style="text-align: left;margin-top: 10px">
+            <li>
+                1998 AANS / CNS Philadelphia, PA, Joint section on Brain Tumors Biannual meeting. "Meningioma Cell Lines Derived from Human Explants: Establishment, Characterization and Analysis Proliferation".
+            </li>
+            <li>
+                Paino, J.E., Hague, K., Ryder.J, Paciucci, P.A., Sen, C. "Long-term cultures derived from human meningioma explants: Establishment and characterization". US & Canadian Academy of Pathology Annual Meeting, March, 1999.
+            </li>
+            <li>1997 National Medical Research Day. Galveston, Texas annualmeeting.</li>
+            <li>"Correlation of IL-1β and IL-6. The effects of blocking IL-6 and IL-6 receptor monoclonal antibodies With".</li>
+            <li>Levy, E.I .; Paino, J. E., M.D. .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .;
+Wright, D.C., M.D. .; Sekhar, L.N., M.D.
+1996 International College of Surgeons. Washington, DC, May, Annual meeting. "A Study of autocrine Growth Regulation in Human Meningiomas: The effects of blocking IL-6 and IL-6 receptor monoclonal antibodies With".</li>
+<li>1995 AANS / CNS. Orlando, Florida, April, Annual Meeting.</li>
+<li>"Differential Cytokine Expression in Brain Neoplasms. Correlation of IL-1β and IL-6 The effects of blocking IL-6 and IL-6R receptor monoclonal antibodies With".</li>
+<li>Levy, E.I .; Paino, J. E., M.D. .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .; Wright, D.C., M.D. .; Sekhar, L.N., M.D.
+1995, 1996. The William Beaumont Honor Society Research. 60th Annual Beaumont Day, "Differential Cytokine Expression in Brain Neoplasms: Correlation of IL-1β and IL-6". "The effects of blocking IL-6 and IL-6 receptor monoclonal antibodies With" (Two consecutive years award winner) Levy, EI, Paino, JE, MD; Sarin, PS, Ph.D .; Goldstein, AL, Ph. D .;
+Wright, D.C., M.D. .; Sekhar, L.N., M.D.</li>
+<li>1994, 1995 Science Research Day George Washington University Washington, D.C.October "Differential Cytokine Expression ..." & "A Study of autocrine Growth Regulation." Levy, E.I .; Paino, J. E., M.D. .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .; Wright, D.C .; Sekhar.</li>
+        </ul>
+    </div>
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+<div id="Diplomas" class="seccion" style="padding-top: 0px !important;">
+<div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Diplomas</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+        <img src="images/dip.jpg" class="fuimg2 ">
+       
+    </div>
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+        
+    </body>
+    <footer id="cms-footer" class="no-margin-top">
+        <div class="container">
+            <div id="cms-footer-bottom">
+                <div class="cms-footer-bottom-social">
+                </div>
+                &copy; Site by <strong>Play</strong>Media. All Right Reserved.
+            </div>
+        </div>
+    </footer>
+<script>
 
 
 
