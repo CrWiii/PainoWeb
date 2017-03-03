@@ -12,7 +12,7 @@
   </div>
 
     <div class="navbar-collapse collapse" aria-expanded="true" style="background-color: #ffffff !important;">
-        <ul class="nav navbar-nav" style="padding-left: 5px;">
+        <ul class="nav navbar-nav">
             <li><a tabindex="0" href="{{URL::to('/')}}" class="tyti">{{trans('message.m1')}}</a>
             <li><a tabindex="0" href="{{URL::to('/#DrPaino')}}" class="tyti"><span class="menu-title">{{trans('message.m2')}}</span></a></li>
             <li><a tabindex="0" href="{{URL::to('/#Especializaciones')}}" class="tyti"><span class="menu-title">{{trans('message.m3')}}</span></a></li>

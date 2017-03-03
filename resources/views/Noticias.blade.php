@@ -13,6 +13,10 @@
 .tyti {
     padding-top: 30px !important;
 }
+        .navbar{
+            border: 0px solid transparent !important;
+            /*padding-left: 0px !important;*/
+        }   
         article{
             display: block;
             margin: 10px;
