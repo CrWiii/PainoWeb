@@ -18,7 +18,7 @@
             <li><a tabindex="0" href="{{URL::to('/#Especializaciones')}}" class="tyti"><span class="menu-title">{{trans('message.m3')}}</span></a></li>
             <li><a tabindex="0" href="{{URL::to('Noticias')}}" class="tyti"><span class="menu-title">{{trans('message.m4')}}</span></a></li>
             <li><a tabindex="0" href="{{URL::to('PreguntasFrecuentes')}}" class="tyti"><span class="menu-title">{{trans('message.m5')}}</span></a></li>
-            <li><a tabindex="0" href="{{URL::to('/#Contacto')}}" class="tyti"><span class="menu-title">{{trans('message.m6')}}</span></a></li>
+            <li><a tabindex="0" href="{{URL::to('/#Citas')}}" class="tyti"><span class="menu-title">{{trans('message.m6')}}</span></a></li>
             <li class="dropdown"><a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false" class="tyti">{{trans('message.m7')}}<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a tabindex="0" href="{{URL::to('Otros#Publicaciones')}}"><span>{{trans('message.sbm71')}}</span></a></li>
