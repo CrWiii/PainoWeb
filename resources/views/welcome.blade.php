@@ -205,12 +205,18 @@
         .btncal{
             padding-left: 220px;
         }
+        .footFix{
+            padding-top: 30px !important;padding-bottom: 0px !important;
+        }
         @media (min-width: 1280px){
             .mvc{
                 height: 300px !important;
             }
         }
         @media (max-width: 767px) {
+            .footFix{
+                padding-top: 0px !important;padding-bottom: 0px !important;
+            }
             .btncal{
                 padding-left: 50px;
             }
@@ -858,11 +864,11 @@
             </div>
         </div>
 
-
-
-        <div id="footer" class="seccion">
+        
+            <div id="footer" class="seccion">
+            <div id="cms-row-15679b50e7de29" class="clearfix vc_custom_1446427805341 full-width cms-custom-css">
             <div class="col-md-12">
-                <div class="panel-body" style="padding-top: 30px !important;padding-bottom: 0px !important">
+                <div class="panel-body  footFix">
                     <div class="row">
                         <div class="vc_col-sm-3 wpb_column vc_column_container vc_custom_1446427812331  vc_custom_1446427812331" style="color:#ffffff;    margin-bottom: 0px !important;">
                             <div class="wpb_wrapper">
@@ -956,11 +962,8 @@
 
             </div>
         </div>
-
-
-            <div id="cms-row-15679b50e7de29" class="clearfix vc_custom_1446427805341 full-width cms-custom-css">
                 
-            </div>
+        </div>
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -988,7 +991,6 @@
          </div>
          <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">{{trans('message.li109')}}</button>
-            <!--<button type="button" class="btn btn-primary">Save changes</button>-->
          </div>
         </div>
      </div>
