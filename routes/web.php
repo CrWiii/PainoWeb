@@ -18,8 +18,8 @@ Route::get('/{lang}', function ($lang){
 			Lang::setLocale('es');
 		}
     return view('welcome');
-});*/
-
+});
+*/
 Route::get('/', function () {
     return view('welcome');
 });

@@ -202,13 +202,18 @@
         .qscw{
             padding-left: 16% !important;
         }
-
+        .btncal{
+            padding-left: 220px;
+        }
         @media (min-width: 1280px){
             .mvc{
                 height: 300px !important;
             }
         }
         @media (max-width: 767px) {
+            .btncal{
+                padding-left: 50px;
+            }
             .qscw{
                 padding-left: 3% !important;
             }
@@ -772,86 +777,89 @@
                 </div>
             </div>
         </div>
-        <div id="Contacto" class=".seccion">
-            <div id="cms-row-15679b50e7b8a3" class="seccion vc_custom_1440984246360" style="padding-bottom: 0px !important"><!--for edit-->
-                <div class="panel-body">
-                    <div class="vc_col-lg-offset-1 vc_col-lg-5 vc_col-md-offset-1 vc_col-md-6  wpb_column vc_column_container cf7-zk-raven4 vc_custom_1442199020596  vc_custom_1442199020596">
-                        <div id="cms-custom-headding-15679b50e7c409" class="vc_custom_heading cms-title-bottom-line clearfix">
-                            <h2 class="cms-custom-headding-title text-left" style="color: #ffffff;padding-bottom: 0px;margin-bottom: 40px;">{{trans('message.li90')}}</h2>
-                        </div>
-                        <div id="cms-custom-headding-15679b50e7c6d9" class="vc_custom_heading vc_custom_1446626527589  clearfix" style="margin-bottom: 0px !important;">
-                            <h4 style="color: #ffffff;margin-bottom: 40px;">{{trans('message.li91')}}</h4>
-                        </div>
-                        <div class="wpb_text_column wpb_content_element  vc_custom_1446626694783" style="margin-bottom: 40px !important;">
-                            <div class="wpb_wrapper" style="color: #ffffff; border-radius: 0.3em; padding-top: 0.5em;">
-                                <p style="text-align: justify;"> <strong>{{trans('message.li92')}}</strong>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="wpcf7" id="wpcf7-f1613-p1186-o1" lang="en-US" dir="ltr">
-                            <div class="screen-reader-response"></div>
-                            <form id="enviarCorreo" action="enviarCorreo.php" method="POST" class="wpcf7-form">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <input type="text" name="nombre" value="" size="40" 
-                                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" 
-                                               aria-required="true" aria-invalid="false" title="Ingresar Nombre" placeholder="NOMBRE Y APELLIDO:" required/>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+       
 
-                                        <input type="text" name="telefono" value=""  pattern="[0-9]{7,9}" 
-                                               class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" 
-                                               aria-invalid="false" title="Ingresar un Número Teléfonico Valido" placeholder="TELÉFONO:" />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <input type="email" name="correo" value="" size="40" 
-                                               class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                               aria-required="true" aria-invalid="false" title="Ingresar E-mail Valido" placeholder="CORREO ELECTRÓNICO:" required/>
-                                    </div>
-                                    <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <input id="dateField" min="2014-01-01" disabled type="text" onfocus="(this.type='date')" name="asunto" value="" size="40" class="wpcf7-form-control wpcf7-text"
-                                               aria-invalid="false" placeholder="DÍA DE PREFERENCIA:" />
-                                    </div>-->
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <span class="wpcf7-form-control-wrap your-message">
-                                            <textarea name="mensaje" cols="40" rows="10"                                                           
-                                                      class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" 
-                                                      aria-required="true" aria-invalid="false" placeholder="ASUNTO:" 
-                                                      title="Ingresar Mensaje" required></textarea></span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <button id="btnReserva" name="btnReserva" type="submit" value="Send Message"  style="background: rgba(114,156,177,0.5) !important; border-color: #6f6767 !important;">{{trans('message.li93')}}</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+        <div id="test" class="seccion">
+            <div class="col-md-12" style="padding-top: 115px !important;padding-bottom: 115px !important;background-image: url(../images/azul03.jpg) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;">
+                <div class="col-md-6">
+                    <div class="panel-body">
 
-                        <div class="wpb_wrapper" style="color:#ffffff; border-radius: 0.3em; padding-top: 0.5em;">
-                                <p style="text-align: justify;"> <strong>{{trans('message.li94')}}</strong>
-                                </p>
+                        <div id="" style="padding-bottom: 0px !important; padding-left: 50px; ">
+                            <div class="panel-header">
+                                <h2 style="color: #ffffff;padding-bottom: 0px;margin-bottom: 40px;">{{trans('message.li90')}}</h2>
+                        <h4 style="color: #ffffff;margin-bottom: 40px;">{{trans('message.li91')}}</h4>
+                        <p style="color: #ffffff;text-align: justify;"> <strong>{{trans('message.li92')}}</strong>
                             </div>
-                    </div>
-                    <div>
-                        <h2 class="tett" style="color:#ffffff;text-align: center;">{{trans('message.li95')}}</h2>
-                        <div class="wpb_wrapper" style="margin-top: 30px;padding-right: 30px !important;padding-left: 30px !important;">
-                            <!--<button class="btnLogin" id="btnLogin">Cita</button>-->
-                            <p style="text-align: justify;float: right;padding-right: 16%;color:#ffffff;font-size: 18px;line-height: 20px;    letter-spacing: -0.4px;font-weight: 900;"> <strong>{{trans('message.li96')}}</strong>
-                        </div>
-                        <div>
-                            <!--<button class="btnRegister" id="btncalendar" data-toggle="modal" data-target=".bs-example-modal-lg">Calendario</button>-->
-                            <a style="text-align: center;padding: 10px 60px 10px 60px; margin: 50px 100px;margin-right:20%;float:right; font-size:20px !important;    border-top: 3px solid #88b6d2;border-bottom: 3px solid #88b6d2;border-left: 3px solid #88b6d2;border-right: 3px solid #88b6d2;background-color: #a0a0a0;color: #ffffff;overflow: visible;" class="modalButton" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</a>
+                            <div class="panel-body">
+                                <div class=" wpb_column vc_column_container cf7-zk-raven4 vc_custom_1442199020596  vc_custom_1442199020596" style="padding-left: 0px !important; padding-right: 0px !important">
+                                    <div class="wpcf7" id="wpcf7-f1613-p1186-o1" lang="en-US" dir="ltr" style="padding-left: 0px !important;padding-right: 0px !important">
+                                        <div class="screen-reader-response"></div>
+                                        <form id="enviarCorreo" action="enviarCorreo.php" method="POST" class="wpcf7-form">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <input type="text" name="nombre" value="" size="40" 
+                                                           class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" 
+                                                           aria-required="true" aria-invalid="false" title="Ingresar Nombre" placeholder="NOMBRE Y APELLIDO:" required/>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                                                    <input type="text" name="telefono" value=""  pattern="[0-9]{7,9}" 
+                                                           class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" 
+                                                           aria-invalid="false" title="Ingresar un Número Teléfonico Valido" placeholder="TELÉFONO:" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <input type="email" name="correo" value="" size="40" 
+                                                           class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                           aria-required="true" aria-invalid="false" title="Ingresar E-mail Valido" placeholder="CORREO ELECTRÓNICO:" required/>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <span class="wpcf7-form-control-wrap your-message">
+                                                        <textarea name="mensaje" cols="40" rows="10"                                                           
+                                                                  class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" 
+                                                                  aria-required="true" aria-invalid="false" placeholder="ASUNTO:" 
+                                                                  title="Ingresar Mensaje" required></textarea></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <button id="btnReserva" name="btnReserva" type="submit" value="Send Message"  style="background: rgba(114,156,177,0.5) !important; border-color: #6f6767 !important;">{{trans('message.li93')}}</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="wpb_wrapper" style="color:#ffffff; border-radius: 0.3em; padding-top: 0.5em;">
+                                            <p style="text-align: justify;padding-left: 0px !important"> <strong>{{trans('message.li94')}}</strong>
+                                            </p>
+                                        </div>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-md-6">
+                    <div class="panel-header">
+                        <h2 class="tett" style="color:#ffffff;text-align: center;">{{trans('message.li95')}}</h2>
+                    </div>
+                    <div class="panel-body">
+                        <p style="text-align: center;color:#ffffff;font-size: 18px;letter-spacing: -0.4px;font-weight: 900;"> <strong>{{trans('message.li96')}}</strong>
+                    </div>
+                    <div class="panel-body btncal" style="margin: 0 auto !important;">
+                        <a style="text-align: center;padding: 10px 60px 10px 60px;font-size:20px !important;    border-top: 3px solid #88b6d2;border-bottom: 3px solid #88b6d2;border-left: 3px solid #88b6d2;border-right: 3px solid #88b6d2;background-color: #a0a0a0;color: #ffffff;overflow: visible;" class="modalButton" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+
             <div id="cms-row-15679b50e7de29" class="clearfix vc_custom_1446427805341 full-width cms-custom-css">
                 <div class="panel-body">
                     <div class="row">
@@ -897,7 +905,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="vc_col-sm-3  wpb_column vc_column_container      vc_custom_1446429007563  vc_custom_1446429007563" style="color:#ffffff;">
+                        <div class="vc_col-sm-3  wpb_column vc_column_container vc_custom_1446429007563  vc_custom_1446429007563" style="color:#ffffff;">
                             <div class="wpb_wrapper">
                                 <div class="cms-fancyboxes-wraper template-cms_fancybox_single--contact content-align-default " id="cms-fancy-box-single-3">
                                     <div class="cms-fancyboxes-body clearfix">
