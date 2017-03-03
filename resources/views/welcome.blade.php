@@ -414,7 +414,7 @@
         </div>
     <div id="DrPaino"  style="background-color: #88b6d2;height: : 720px;" >
         <div id="cms-row-15679b50e7b8a3" class="seccion vc_custom_1440984246360 ">
-        <div class="col-md-4 hidden-xs hidden-sm" style="float: left;padding-top: 0px;padding-left: 120px;">
+        <div class="col-md-4 hidden-xs hidden-sm" style="float: left;padding-top: 0px;padding-left: 90px;">
                     <img src="images/doc.png" width="245px">
                 </div>
            <div class="divf">
