@@ -202,23 +202,58 @@
         .qscw{
             padding-left: 16% !important;
         }
-        .btncal{
-            padding-left: 220px;
-        }
         .footFix{
             padding-top: 30px !important;padding-bottom: 0px !important;
+            
+        }
+        .citasFix{
+            padding-top: 50px !important;
+            padding-top: 0px !important;
+        }
+        .citasFix2{
+            padding-top: 0px !important;
+        }
+
+        .newBtn{
+            text-align: center;
+            padding: 10px 60px 10px 60px;
+            font-size:20px !important;
+            border-top: 3px solid #88b6d2;
+            border-bottom: 3px solid #88b6d2;
+            border-left: 3px solid #88b6d2;
+            border-right: 3px solid #88b6d2;
+            background-color: #a0a0a0;
+            color: #ffffff;
+            overflow: visible;
         }
         @media (min-width: 1280px){
             .mvc{
                 height: 300px !important;
             }
         }
+        @media (max-width: 320px) {
+            .newBtn{
+                padding: 8px 20px 8px 20px;
+            }
+            .btnnFix{
+                padding: 0px !important;
+                margin: 0px !important;
+            }
+        }
         @media (max-width: 767px) {
+            .btnFix{
+                padding: 0px !important;
+                margin: 0px !important;
+            }
+            .citasFix2{
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+            .citasFix{
+                padding-top: 0px !important;
+            }
             .footFix{
                 padding-top: 0px !important;padding-bottom: 0px !important;
-            }
-            .btncal{
-                padding-left: 50px;
             }
             .qscw{
                 padding-left: 3% !important;
@@ -514,7 +549,7 @@
                 </div>
             </div>
         </div>
-    <div id="Especializaciones" class="seccion" style="padding-top: 50px !important;">
+    <div id="Especializaciones" class="seccion citasFix">
     <div id="cms-row-15679b50e7b8a3">
             <div class="panel-body" style="background-color: #88b6d2;">
                 <div style="text-align: center;" class=" clearfix" >
@@ -785,18 +820,18 @@
         </div>
        
 
-        <div id="test" class="seccion">
+        <div id="Citas" class="seccion">
             <div class="col-md-12" style="padding-top: 115px !important;padding-bottom: 65px !important;background-image: url(../images/azul03.jpg) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;">
-                <div class="col-md-6">
-                    <div class="panel-body">
+                <div class="col-md-6 citasFix2">
+                    <div class="panel-body citasFix2">
 
-                        <div id="" style="padding-bottom: 0px !important; padding-left: 50px; ">
+                        <div id="" class="citasFix" style="padding-bottom: 0px !important;">
                             <div class="panel-header">
                                 <h2 style="color: #ffffff;padding-bottom: 0px;margin-bottom: 40px;">{{trans('message.li90')}}</h2>
                         <h4 style="color: #ffffff;margin-bottom: 40px;">{{trans('message.li91')}}</h4>
                         <p style="color: #ffffff;text-align: justify;"> <strong>{{trans('message.li92')}}</strong>
                             </div>
-                            <div class="panel-body">
+                            <div class="panel-body citasFix2">
                                 <div class=" wpb_column vc_column_container cf7-zk-raven4 vc_custom_1442199020596  vc_custom_1442199020596" style="padding-left: 0px !important; padding-right: 0px !important">
                                     <div class="wpcf7" id="wpcf7-f1613-p1186-o1" lang="en-US" dir="ltr" style="padding-left: 0px !important;padding-right: 0px !important">
                                         <div class="screen-reader-response"></div>
@@ -857,15 +892,24 @@
                     <div class="panel-body">
                         <p style="text-align: center;color:#ffffff;font-size: 18px;letter-spacing: -0.4px;font-weight: 900;"> <strong>{{trans('message.li96')}}</strong>
                     </div>
-                    <div class="panel-body btncal" style="margin: 0 auto !important;">
-                        <button style="text-align: center;padding: 10px 60px 10px 60px;font-size:20px !important;    border-top: 3px solid #88b6d2;border-bottom: 3px solid #88b6d2;border-left: 3px solid #88b6d2;border-right: 3px solid #88b6d2;background-color: #a0a0a0;color: #ffffff;overflow: visible;" class="modalButton" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</button>
+                    <div class="panel-body" style="margin: 0 auto !important;">
+                        <div class="col-md-12 btnnFix">
+                            <div class="col-md-2 btnFix"></div>
+                            <div class="col-md-8 btnFix" style="text-align: center !important;">
+                                <button class="newBtn" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</button>
+
+                            </div>
+                            <div class="col-md-2"></div>
+
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         
-            <div id="footer" class="seccion">
+            <div id="footer" class="seccion" style="padding-top: 0px !important">
             <div id="cms-row-15679b50e7de29" class="clearfix vc_custom_1446427805341 full-width cms-custom-css">
             <div class="col-md-12">
                 <div class="panel-body  footFix">
