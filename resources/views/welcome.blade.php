@@ -780,7 +780,7 @@
        
 
         <div id="test" class="seccion">
-            <div class="col-md-12" style="padding-top: 115px !important;padding-bottom: 115px !important;background-image: url(../images/azul03.jpg) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;">
+            <div class="col-md-12" style="padding-top: 115px !important;padding-bottom: 65px !important;background-image: url(../images/azul03.jpg) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;">
                 <div class="col-md-6">
                     <div class="panel-body">
 
@@ -852,7 +852,7 @@
                         <p style="text-align: center;color:#ffffff;font-size: 18px;letter-spacing: -0.4px;font-weight: 900;"> <strong>{{trans('message.li96')}}</strong>
                     </div>
                     <div class="panel-body btncal" style="margin: 0 auto !important;">
-                        <a style="text-align: center;padding: 10px 60px 10px 60px;font-size:20px !important;    border-top: 3px solid #88b6d2;border-bottom: 3px solid #88b6d2;border-left: 3px solid #88b6d2;border-right: 3px solid #88b6d2;background-color: #a0a0a0;color: #ffffff;overflow: visible;" class="modalButton" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</a>
+                        <button style="text-align: center;padding: 10px 60px 10px 60px;font-size:20px !important;    border-top: 3px solid #88b6d2;border-bottom: 3px solid #88b6d2;border-left: 3px solid #88b6d2;border-right: 3px solid #88b6d2;background-color: #a0a0a0;color: #ffffff;overflow: visible;" class="modalButton" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</button>
                     </div>
                 </div>
             </div>
@@ -860,10 +860,11 @@
 
 
 
-            <div id="cms-row-15679b50e7de29" class="clearfix vc_custom_1446427805341 full-width cms-custom-css">
-                <div class="panel-body">
+        <div id="footer" class="seccion">
+            <div class="col-md-12">
+                <div class="panel-body" style="padding-top: 30px !important;padding-bottom: 0px !important">
                     <div class="row">
-                        <div class="vc_col-sm-3 wpb_column vc_column_container      vc_custom_1446427812331  vc_custom_1446427812331" style="color:#ffffff;">
+                        <div class="vc_col-sm-3 wpb_column vc_column_container vc_custom_1446427812331  vc_custom_1446427812331" style="color:#ffffff;    margin-bottom: 0px !important;">
                             <div class="wpb_wrapper">
                                 <div class="cms-fancyboxes-wraper template-cms_fancybox_single--contact content-align-default " id="cms-fancy-box-single">
                                     <div class="cms-fancyboxes-body clearfix">
@@ -905,7 +906,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="vc_col-sm-3  wpb_column vc_column_container vc_custom_1446429007563  vc_custom_1446429007563" style="color:#ffffff;">
+                        <div class="vc_col-sm-3  wpb_column vc_column_container vc_custom_1446429007563  vc_custom_1446429007563" style="color:#ffffff;margin-bottom: 0px !important">
                             <div class="wpb_wrapper">
                                 <div class="cms-fancyboxes-wraper template-cms_fancybox_single--contact content-align-default " id="cms-fancy-box-single-3">
                                     <div class="cms-fancyboxes-body clearfix">
@@ -951,6 +952,14 @@
                         </div>
                     </div>
                 </div>
+                
+
+            </div>
+        </div>
+
+
+            <div id="cms-row-15679b50e7de29" class="clearfix vc_custom_1446427805341 full-width cms-custom-css">
+                
             </div>
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg" role="document">
@@ -1008,8 +1017,12 @@
             </div>
         </div>
     </footer>
+
+
+
+
 <script>
-$('a.modalButton').on('click', function(e) {
+$('button.modalButton').on('click', function(e) {
     var src = $(this).attr('data-src');
     var height = $(this).attr('data-height') || 300;
     var width = $(this).attr('data-width') || 400;
@@ -1041,70 +1054,7 @@ $(document).ready(function(){
             });
         }
     }
-    var input = document.getElementById("dateField");
-            var today = new Date();
-            var day = today.getDate();
-            var mon = new String(today.getMonth()+1);
-            var yr = today.getFullYear();
-              if(mon.length < 2) { mon = "0" + mon; }
-              var date = new String( yr + '-' + mon + '-' + day );          
-        $(document).ready(function () {
-            $("#btnReserva").click(function () {
-                document.getElementById("btnReserva").value = "Enviando...";
-                $("#enviarCorreo").submit(function (e) {
-                    //$("#tabla1").html();
-                    var postData = $(this).serializeArray();
-                    var formURL = $(this).attr("action");
-                    document.getElementById("btnReserva").disabled = true;
-                    $.ajax({
-                        url: formURL,
-                        type: "POST",
-                        data: postData,
-                        success: function (response)
-                        {
-                            $("#modalCofirmacion").modal({backdrop: "static", keyboard: false});
-                            $("#contenidoCofirmacion").html(response);
-                        }
-                    });
-                    e.preventDefault();
-                    e.unbind();
-                });
-            });
-        });
-        $(document).ready(function () {
-            $('.creativo').tooltip({title: "<span class='pop'>Buscamos siempre huir de lo obvio y lo \n\
-                predecible para encontrar lo novedoso en los pequeños detalles \n\
-                que marcan la diferencia.</span>", html: true, placement: "bottom"});
-        });
-        $(document).ready(function () {
-            $('.proactivo').tooltip({title: "<span class='pop'>El mundo avanza constantemente, \n\
-                por esto no permitimos estancarnos ante \n\
-                ningún desafío y siempre estamos buscando la manera de avanzar.</span>", html: true, placement: "bottom"});
-        });
-        $(document).ready(function () {
-            $('.comprometido').tooltip({title: "<span class='pop'>Compartimos tu pasión por ser mejores \n\
-                y queremos ser parte de tus logros.</span>", html: true, placement: "bottom"});
-        });
-        $(document).ready(function () {
-            $('.divertido').tooltip({title: "<span class='pop'>Sabemos que la seriedad es muy importante en \n\
-                nuestro trabajo pero disfrutar del camino y \n\
-                hacerlo divertido es lo que nos hace lograr un trabajo de primera calidad.</span>", html: true, placement: "bottom"});
-        });
-        $('.ir-arriba').click(function () {
-            $('body, html').animate({
-                scrollTop: '0px'
-            }, 300);
-        });
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 0) {
-                $('.ir-arriba').slideDown(300);
-            } else {
-                $('.ir-arriba').slideUp(300);
-            }
-        });
-        $(document).ready(function () {
-            $('body').scrollspy({target: ".navbar", offset: 50});
-        });
+
 </script>
     <script type='text/javascript' src='js/jquery.form.min.js'></script>
     <script type='text/javascript' src='js/modernizr.min.js'></script>
@@ -1115,9 +1065,6 @@ $(document).ready(function(){
     <script type='text/javascript' src='js/imagesloaded.js'></script>
     <script type='text/javascript' src='js/jquery.matchHeight.js'></script>
     <script type='text/javascript' src='js/js_composer_front.js'></script>
-    <script type='text/javascript'>
-        var cms_custom_css_object = {};
-    </script>
     <script type='text/javascript' src='js/cms_custom_css.js'></script>
     <script type='text/javascript' src='js/vc-accordion.js'></script>
     <script type='text/javascript' src='js/vc-tta-autoplay.js'></script>
