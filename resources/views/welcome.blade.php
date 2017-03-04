@@ -226,9 +226,20 @@
             color: #ffffff;
             overflow: visible;
         }
-        @media (min-width: 1280px){
+        .restto{
+            padding-top: 0px !important;
+        }
+        @media (max-width: 1280px){
             .mvc{
                 height: 300px !important;
+            }
+            .imga{
+                width: 280px;
+            }
+        }
+        @media (max-width: 1280px){
+            .alianzaimg{
+                max-width: 80% !important;
             }
         }
         @media (max-width: 320px) {
@@ -773,7 +784,7 @@
 
             </div>
         </div>
-        <div id="Alianzas" class="seccion" style="padding-top: 0px !important">
+        <!--<div id="Alianzas" class="seccion" style="padding-top: 0px !important">
             <div class="panel-body" style="background-color: #88b6d2;">
                 <div style="text-align: center;" class=" clearfix" id="cms-custom-headding-15679b50e50b82">
                     <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">{{trans('message.li89')}}</strong></p>                                   
@@ -817,10 +828,44 @@
 
                 </div>
             </div>
+        </div>-->
+
+
+        <div id="Alianzas" class="seccion" style="padding-top: 0px !important">
+            <div class="panel-body" style="background-color: #88b6d2;">
+                <div style="text-align: center;" class=" clearfix">
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">{{trans('message.li89')}}</strong></p>
+                </div>                                
+            </div>
+            <div class="panel-body" style="background-color: white;text-align: center">
+                <div class="col-md-12" >
+                    <div class="col-md-4 col-sm-6 col-xs-6" style="background-color: #e6e6e6;" >
+                        <a href="https://www.gwu.edu/" target="_blank"><img class="alianzaimg" src="images/Alianzas/17105913_10158405960640232_495444227_o.png" width="180" height="80" style="margin: 8% 8%" /></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6" >
+                        <a href="https://www.gwu.edu/" target="_blank"><img class="alianzaimg" src="images/Alianzas/17101364_10158405960630232_2085448199_o.png" width="180" height="80" style="margin: 8% 8%" /></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6" style="background-color: #e6e6e6;">
+                        <a href="https://www.gwu.edu/" target="_blank"><img class="alianzaimg" src="images/Alianzas/17121860_10158405960635232_1499560311_o.png" width="180" height="80" style="margin: 8% 8%" /></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6" >
+                        <a href="https://www.gwu.edu/" target="_blank"><img class="alianzaimg" src="images/Alianzas/17122333_10158405960620232_2020956849_o.png" width="180" height="80" style="margin: 8% 8%" /></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6" style="background-color: #e6e6e6"> 
+                        <a href="https://www.gwu.edu/" target="_blank"><img class="alianzaimg" src="images/Alianzas/17121743_10158405960625232_471517569_o.png" width="180" height="80" style="margin: 8% 8%" /></a>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6" > 
+                        <a href="https://www.gwu.edu/" target="_blank"><img class="alianzaimg" src="images/Alianzas/17093218_10158405960660232_1619091191_o.png" width="180" height="80" style="margin: 8% 8%" /></a>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
        
 
-        <div id="Citas" class="seccion">
+        <div id="Citas" class="seccion restto">
             <div class="col-md-12" style="padding-top: 115px !important;padding-bottom: 65px !important;background-image: url(../images/azul03.jpg) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;">
                 <div class="col-md-6 citasFix2">
                     <div class="panel-body citasFix2">
@@ -983,13 +1028,14 @@
                                     <div class="cms-fancyboxes-body clearfix">
                                         <div class="cms-fancybox-item clearfix">
                                             <div class="fancy-box-icon pull-left icon-60">
-                                                <i class="fa fa-facebook facebook"></i>
+                                                <a href="http://www.facebook.com/javierpainoneurocirugia" target="_blank"><i class="fa fa-facebook facebook"></i></a>
                                             </div>
+
                                             <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
                                                 <div class="fancy-box-content">
                                                     <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li105')}}</strong> 
                                                         <br />
-                                                    <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important"><strong>/{{trans('message.li106')}}</strong> 
+                                                    <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important">/{{trans('message.li106')}}
                                                         <br />
                                                         <br>
                                                     </p>
@@ -1064,9 +1110,6 @@
         </div>
     </footer>
 
-
-
-
 <script>
 $('button.modalButton').on('click', function(e) {
     var src = $(this).attr('data-src');
@@ -1101,6 +1144,7 @@ $(document).ready(function(){
         }
     }
 
+
 </script>
     <script type='text/javascript' src='js/jquery.form.min.js'></script>
     <script type='text/javascript' src='js/modernizr.min.js'></script>
@@ -1111,6 +1155,9 @@ $(document).ready(function(){
     <script type='text/javascript' src='js/imagesloaded.js'></script>
     <script type='text/javascript' src='js/jquery.matchHeight.js'></script>
     <script type='text/javascript' src='js/js_composer_front.js'></script>
+     <script type='text/javascript'>
+        var cms_custom_css_object = {};
+    </script>
     <script type='text/javascript' src='js/cms_custom_css.js'></script>
     <script type='text/javascript' src='js/vc-accordion.js'></script>
     <script type='text/javascript' src='js/vc-tta-autoplay.js'></script>
