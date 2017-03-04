@@ -124,6 +124,7 @@
         }
         .target{
                 width: 800px; height: 570px; margin: auto 0;margin-left: 10px;
+                overflow: scroll;overflow-x:hidden;background-color:white;color:black;padding-left: 20px;padding-top: 20px;padding-bottom: 30px;
             }
         .tt{
             margin: 10px;
@@ -165,9 +166,7 @@
             margin-left: 0px;
             margin-right: 0px;
         }
-        .fz{
-             padding: 5em;
-        }
+        
         .divf{
             height: 700px;
         }
@@ -285,9 +284,6 @@
             line-height: 20px !important;
             }
 
-            .fz{
-                font-size: 1.5em !important;
-            }
             .saff{
                 height: 110px !important;
             }
@@ -342,9 +338,6 @@
             }
             .divf{
                 height: auto;
-            }
-            .fz{
-                 padding: 1em
             }
             /*.heas{
                 background-size: 400px 200px;
@@ -445,6 +438,20 @@
                 padding-left: 7px !important;
                 /*padding-right: 7px !important; */
             }
+
+            .fz{
+                padding: 5em 1em;
+            }
+            @media (min-width: 1380px) {
+                .fz{
+                padding: 7em 5em;
+                }
+            }
+            @media (max-width: 767px) {
+                .fz{
+                font-size: 1.5em !important;
+                }
+            }
         </style>
         <script>
         $('#test').click(function(){
@@ -455,111 +462,209 @@
     </head>
     <body>
     @include('Menu')
-        <div id="Inicio" class="seccion" style="padding-top: 80px !important;">
-            <div class="panel-body  heas">
-                    <div class="col-md-12 fz"  style="opacity: 100;color:#000000; font-size: 3em; text-align: center;vertical-align: middle;">
-                        <span><strong class="ewq">{{trans('message.tit')}} </strong></span>
-                        <span><strong class="ewq">{{trans('message.tit2')}}</strong></span>
-                    </div>
-                </div>
+    <div id="Inicio" class="seccion" style="padding-top: 80px !important;">
+        <div class="panel-body  heas">
+            <div class="col-md-12 fz"  style="opacity: 100;color:#000000; font-size: 3em; text-align: center;vertical-align: middle;">
+                <span><strong class="ewq">{{trans('message.tit')}} </strong></span>
+                <span><strong class="ewq">{{trans('message.tit2')}}</strong></span>
             </div>
         </div>
-    <div id="DrPaino"  style="background-color: #88b6d2;height: : 720px;" >
-        <div id="cms-row-15679b50e7b8a3" class="seccion vc_custom_1440984246360 ">
-        <div class="col-md-4 hidden-xs hidden-sm" style="float: left;padding-top: 0px;padding-left: 90px;">
-                    <img src="images/doc.png" width="245px">
-                </div>
-           <div class="divf">
+    </div>
+<!--
+    <div id="DrPaino" class="seccion" style="background-color: #88b6d2;">
+        <div class="panel-body">
+            <div class="col-md-4">
+                <img src="{{url('images/doc.png')}}" width="70%" style="padding-left: 30%">
+            </div>
+            <div class="col-md-8" style="padding-top: 3%;">
+                <div id="target" class="target">
+                            <h1 class="titlePai"><strong>Dr. Paino</strong></h1>
+                                <p style="text-align: justify;font-size: 0.8em;padding-right: 80px;">
+                                    <ul style="list-style-type: none;">
+                                        <li><strong>{{trans('message.subtit1')}}</strong></li>
+                                        <li>{{trans('message.li1')}}</li>
+                                        <li>{{trans('message.li2')}}</li>
+                                        <li>{{trans('message.li3')}}</li>
+                                        <li>{{trans('message.li4')}}</li>
+                                        <li>{{trans('message.li5')}}</li>
+                                        <li>{{trans('message.li6')}}</li>
+                                        <li>{{trans('message.li7')}}</li>
+                                        <li>{{trans('message.li8')}}</li>
+
+
+                                        <li><strong>{{trans('message.li9')}}</strong></li>
+                                        <li>{{trans('message.li10')}}</li>
+                                        <li>{{trans('message.li11')}}</li>
+                                        <li>{{trans('message.li12')}}</li>
+                                        <li>{{trans('message.li13')}}</li>
+
+                                        <li><strong>{{trans('message.li14')}}</strong></li>
+                                        <li>{{trans('message.li15')}}</li>
+                                        <li>{{trans('message.li16')}}</li>
+                                        <li>{{trans('message.li17')}}</li>
+                                        <li>{{trans('message.li18')}}</li>
+
+                                        <li><strong>{{trans('message.li19')}}</strong></li>
+                                        <li>{{trans('message.li20')}}</li>
+                                        <li>{{trans('message.li21')}}</li>
+                                        <li>{{trans('message.li22')}}</li>
+                                        <li>{{trans('message.li23')}}</li>
+                                        <li>{{trans('message.li24')}}</li>
+                                        <li>{{trans('message.li25')}}</li>
+
+                                        <li><strong>{{trans('message.li26')}}</strong></li>
+                                        <li>{{trans('message.li27')}}</li>
+                                        <li>{{trans('message.li28')}}</li>
+                                        <li>{{trans('message.li29')}}</li>
+                                        <li>{{trans('message.li30')}}</li>
+                                        <li>{{trans('message.li31')}}</li>
+                                        <li>{{trans('message.li32')}}</li>
+                                        <li>{{trans('message.li33')}}</li>
+
+                                        <li><strong>{{trans('message.li34')}}</strong></li>
+                                        <li>{{trans('message.li35')}}</li>
+                                        <li><strong>{{trans('message.li36')}}</strong></li>
+                                        <li>{{trans('message.li37')}}</li>
+                                        <li>{{trans('message.li38')}}</li>
+                                        <li>{{trans('message.li39')}}</li>
+
+                                        <li><strong>{{trans('message.li40')}}</strong></li>
+                                        <li>{{trans('message.li41')}}</li>
+                                        <li>{{trans('message.li42')}}</li>
+                                        <li>{{trans('message.li43')}}</li>
+                                        <li>{{trans('message.li44')}}</li>
+                                        <li>{{trans('message.li45')}}</li>
+                                        <li>{{trans('message.li46')}}</li>
+                                        <li>{{trans('message.li47')}}</li>
+                                        <li>{{trans('message.li48')}}</li>
+                                        <li>{{trans('message.li49')}}</li>
+
+                                        <li><strong>{{trans('message.li50')}}</strong></li>
+                                        <li>{{trans('message.li51')}}</li>
+                                        <li>{{trans('message.li52')}}</li>
+                                        <li>{{trans('message.li53')}}</li>
+                                        <li>{{trans('message.li54')}}</li>
+                                        <li>{{trans('message.li55')}}</li>
+
+                                        <li><strong>{{trans('message.li56')}}</strong></li>
+                                        <li>{{trans('message.li57')}}</li>
+                                        <li>{{trans('message.li58')}}</li>
+                                        <li>{{trans('message.li59')}}</li>
+                                        <li>{{trans('message.li60')}}</li>
+                                        <li>{{trans('message.li61')}}</li>
+                                        <li>{{trans('message.li62')}}</li>
+                                        <li>{{trans('message.li63')}}</li>
+                                    </ul>
+                                </p>
+                        </div>
+
                 
+            </div>
+
+        </div>
+    </div>
+
+
+
+-->
+
+<div id="DrPaino"  style="background-color: #88b6d2;height: : 720px;" >
+        <div class="seccion">
+            <div class="col-md-4 hidden-xs hidden-sm" style="float: left;padding-top: 0px;padding-left: 90px;">
+                <img src="images/doc.png" width="245px">
+            </div>
+
+           <div class="divf">
                 <div>
-                    <div class="col-md-8 hidden-xs hidden-sm"  style="color:#1F1F1F; font-size: 3em; text-align: center; padding-top: 50px;margin-bottom: 20px;">
-                    </div>
-                                <div id="target" class="target" style="overflow: scroll;overflow-x:hidden;background-color:white;color:black;padding-left: 20px;padding-top: 20px;padding-bottom: 30px;">
-                                    <h1 class="titlePai"><strong>Dr. Paino</strong></h1>
-                                    <p style="text-align: justify;font-size: 0.8em;padding-right: 80px;">
-<ul style="list-style-type: none;">
-<li><strong>{{trans('message.subtit1')}}</strong></li>
-<li>{{trans('message.li1')}}</li>
-<li>{{trans('message.li2')}}</li>
-<li>{{trans('message.li3')}}</li>
-<li>{{trans('message.li4')}}</li>
-<li>{{trans('message.li5')}}</li>
-<li>{{trans('message.li6')}}</li>
-<li>{{trans('message.li7')}}</li>
-<li>{{trans('message.li8')}}</li>
+                    <div class="col-md-8 hidden-xs hidden-sm"  style="color:#1F1F1F; font-size: 3em; text-align: center; padding-top: 50px;margin-bottom: 20px;"></div>
+                        <div id="target" class="target" style="overflow: scroll;overflow-x:hidden;background-color:white;color:black;padding-left: 20px;padding-top: 20px;padding-bottom: 30px;">
+                            <h1 class="titlePai"><strong>Dr. Paino</strong></h1>
+                                <p style="text-align: justify;font-size: 0.8em;padding-right: 80px;">
+                                    <ul style="list-style-type: none;">
+                                        <li><strong>{{trans('message.subtit1')}}</strong></li>
+                                        <li>{{trans('message.li1')}}</li>
+                                        <li>{{trans('message.li2')}}</li>
+                                        <li>{{trans('message.li3')}}</li>
+                                        <li>{{trans('message.li4')}}</li>
+                                        <li>{{trans('message.li5')}}</li>
+                                        <li>{{trans('message.li6')}}</li>
+                                        <li>{{trans('message.li7')}}</li>
+                                        <li>{{trans('message.li8')}}</li>
 
 
-<li><strong>{{trans('message.li9')}}</strong></li>
-<li>{{trans('message.li10')}}</li>
-<li>{{trans('message.li11')}}</li>
-<li>{{trans('message.li12')}}</li>
-<li>{{trans('message.li13')}}</li>
+                                        <li><strong>{{trans('message.li9')}}</strong></li>
+                                        <li>{{trans('message.li10')}}</li>
+                                        <li>{{trans('message.li11')}}</li>
+                                        <li>{{trans('message.li12')}}</li>
+                                        <li>{{trans('message.li13')}}</li>
 
-<li><strong>{{trans('message.li14')}}</strong></li>
-<li>{{trans('message.li15')}}</li>
-<li>{{trans('message.li16')}}</li>
-<li>{{trans('message.li17')}}</li>
-<li>{{trans('message.li18')}}</li>
+                                        <li><strong>{{trans('message.li14')}}</strong></li>
+                                        <li>{{trans('message.li15')}}</li>
+                                        <li>{{trans('message.li16')}}</li>
+                                        <li>{{trans('message.li17')}}</li>
+                                        <li>{{trans('message.li18')}}</li>
 
-<li><strong>{{trans('message.li19')}}</strong></li>
-<li>{{trans('message.li20')}}</li>
-<li>{{trans('message.li21')}}</li>
-<li>{{trans('message.li22')}}</li>
-<li>{{trans('message.li23')}}</li>
-<li>{{trans('message.li24')}}</li>
-<li>{{trans('message.li25')}}</li>
+                                        <li><strong>{{trans('message.li19')}}</strong></li>
+                                        <li>{{trans('message.li20')}}</li>
+                                        <li>{{trans('message.li21')}}</li>
+                                        <li>{{trans('message.li22')}}</li>
+                                        <li>{{trans('message.li23')}}</li>
+                                        <li>{{trans('message.li24')}}</li>
+                                        <li>{{trans('message.li25')}}</li>
 
-<li><strong>{{trans('message.li26')}}</strong></li>
-<li>{{trans('message.li27')}}</li>
-<li>{{trans('message.li28')}}</li>
-<li>{{trans('message.li29')}}</li>
-<li>{{trans('message.li30')}}</li>
-<li>{{trans('message.li31')}}</li>
-<li>{{trans('message.li32')}}</li>
-<li>{{trans('message.li33')}}</li>
+                                        <li><strong>{{trans('message.li26')}}</strong></li>
+                                        <li>{{trans('message.li27')}}</li>
+                                        <li>{{trans('message.li28')}}</li>
+                                        <li>{{trans('message.li29')}}</li>
+                                        <li>{{trans('message.li30')}}</li>
+                                        <li>{{trans('message.li31')}}</li>
+                                        <li>{{trans('message.li32')}}</li>
+                                        <li>{{trans('message.li33')}}</li>
 
-<li><strong>{{trans('message.li34')}}</strong></li>
-<li>{{trans('message.li35')}}</li>
-<li><strong>{{trans('message.li36')}}</strong></li>
-<li>{{trans('message.li37')}}</li>
-<li>{{trans('message.li38')}}</li>
-<li>{{trans('message.li39')}}</li>
+                                        <li><strong>{{trans('message.li34')}}</strong></li>
+                                        <li>{{trans('message.li35')}}</li>
+                                        <li><strong>{{trans('message.li36')}}</strong></li>
+                                        <li>{{trans('message.li37')}}</li>
+                                        <li>{{trans('message.li38')}}</li>
+                                        <li>{{trans('message.li39')}}</li>
 
-<li><strong>{{trans('message.li40')}}</strong></li>
-<li>{{trans('message.li41')}}</li>
-<li>{{trans('message.li42')}}</li>
-<li>{{trans('message.li43')}}</li>
-<li>{{trans('message.li44')}}</li>
-<li>{{trans('message.li45')}}</li>
-<li>{{trans('message.li46')}}</li>
-<li>{{trans('message.li47')}}</li>
-<li>{{trans('message.li48')}}</li>
-<li>{{trans('message.li49')}}</li>
+                                        <li><strong>{{trans('message.li40')}}</strong></li>
+                                        <li>{{trans('message.li41')}}</li>
+                                        <li>{{trans('message.li42')}}</li>
+                                        <li>{{trans('message.li43')}}</li>
+                                        <li>{{trans('message.li44')}}</li>
+                                        <li>{{trans('message.li45')}}</li>
+                                        <li>{{trans('message.li46')}}</li>
+                                        <li>{{trans('message.li47')}}</li>
+                                        <li>{{trans('message.li48')}}</li>
+                                        <li>{{trans('message.li49')}}</li>
 
-<li><strong>{{trans('message.li50')}}</strong></li>
-<li>{{trans('message.li51')}}</li>
-<li>{{trans('message.li52')}}</li>
-<li>{{trans('message.li53')}}</li>
-<li>{{trans('message.li54')}}</li>
-<li>{{trans('message.li55')}}</li>
+                                        <li><strong>{{trans('message.li50')}}</strong></li>
+                                        <li>{{trans('message.li51')}}</li>
+                                        <li>{{trans('message.li52')}}</li>
+                                        <li>{{trans('message.li53')}}</li>
+                                        <li>{{trans('message.li54')}}</li>
+                                        <li>{{trans('message.li55')}}</li>
 
-<li><strong>{{trans('message.li56')}}</strong></li>
-<li>{{trans('message.li57')}}</li>
-<li>{{trans('message.li58')}}</li>
-<li>{{trans('message.li59')}}</li>
-<li>{{trans('message.li60')}}</li>
-<li>{{trans('message.li61')}}</li>
-<li>{{trans('message.li62')}}</li>
-<li>{{trans('message.li63')}}</li>
-                                        </p>
-                                    </div>
-                            </div>
-                        </div>
+                                        <li><strong>{{trans('message.li56')}}</strong></li>
+                                        <li>{{trans('message.li57')}}</li>
+                                        <li>{{trans('message.li58')}}</li>
+                                        <li>{{trans('message.li59')}}</li>
+                                        <li>{{trans('message.li60')}}</li>
+                                        <li>{{trans('message.li61')}}</li>
+                                        <li>{{trans('message.li62')}}</li>
+                                        <li>{{trans('message.li63')}}</li>
+                                    </ul>
+                                </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+
+
     <div id="Especializaciones" class="seccion citasFix">
     <div id="cms-row-15679b50e7b8a3">
             <div class="panel-body" style="background-color: #88b6d2;">
@@ -919,7 +1024,6 @@
                                             </div>
                                         </form>
                                     </div>
-
                                     <div class="wpb_wrapper" style="color:#ffffff; border-radius: 0.3em; padding-top: 0.5em;">
                                             <p style="text-align: justify;padding-left: 0px !important"> <strong>{{trans('message.li94')}}</strong>
                                             </p>
@@ -929,7 +1033,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="panel-header">
                         <h2 class="tett" style="color:#ffffff;text-align: center;">{{trans('message.li95')}}</h2>
@@ -942,18 +1045,13 @@
                             <div class="col-md-2 btnFix"></div>
                             <div class="col-md-8 btnFix" style="text-align: center !important;">
                                 <button class="newBtn" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</button>
-
                             </div>
                             <div class="col-md-2"></div>
-
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        
             <div id="footer" class="seccion" style="padding-top: 0px !important">
             <div id="cms-row-15679b50e7de29" class="clearfix vc_custom_1446427805341 full-width cms-custom-css">
             <div class="col-md-12">
@@ -1030,7 +1128,6 @@
                                             <div class="fancy-box-icon pull-left icon-60">
                                                 <a href="http://www.facebook.com/javierpainoneurocirugia" target="_blank"><i class="fa fa-facebook facebook"></i></a>
                                             </div>
-
                                             <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
                                                 <div class="fancy-box-content">
                                                     <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li105')}}</strong> 
@@ -1048,12 +1145,9 @@
                         </div>
                     </div>
                 </div>
-                
-
             </div>
-        </div>
-                
-        </div>
+        </div>            
+    </div>
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -1063,12 +1157,7 @@
                 </div>
             </div>
         </div>
-
-
-
 <div class="container">
-   
-
    <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
          <div class="modal-content">
@@ -1143,6 +1232,7 @@ $(document).ready(function(){
             });
         }
     }
+
 
 
 </script>

@@ -19,7 +19,7 @@ return [
 'm8'			=> 'Login',
 
 'tit'           => 'Aquí es donde comienza tu cuidado con ',
-'tit2'          => 'la tecnología mas avanzada',
+'tit2'          => 'la tecnología más avanzada',
 'subtit1'  		=> 'Cargos actuales:',
 'li1'			=>'Neurocirujano Titular; Clínica San Felipe; Lima, PERÚ',
 'li2'			=>'Neurocurujano Titular: Stem Cell Regenerative Medicine; West Palm Beach, USA',
