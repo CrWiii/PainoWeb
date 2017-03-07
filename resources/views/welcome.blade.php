@@ -123,9 +123,28 @@
             margin-top: 0px !important;
         }
         .target{
-                width: 800px; height: 570px; margin: auto 0;margin-left: 10px;
-                overflow: scroll;overflow-x:hidden;background-color:white;color:black;padding-left: 20px;padding-top: 20px;padding-bottom: 30px;
+                width: 800px; 
+                height: 570px; 
+                margin: auto 0;
+                margin-left: 10px;
+                overflow: scroll;
+                overflow-x:hidden;
+                background-color:white;
+                color:black;
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 30px;
             }
+        @media (max-width: 1210px){
+            .target{
+                /*margin:auto auto !important;*/
+                padding-top: 20px;
+                width: 95%; 
+                height: 600px; 
+                margin: auto auto;
+            }   
+        }
+
         .tt{
             margin: 10px;
             }
@@ -344,7 +363,9 @@
             }*/
             .target{
                 padding-top: 20px;
-                width: 95%; height: 600px; margin: auto 0;margin-left: 10px;
+                width: 95%; 
+                height: 600px; 
+                margin: auto auto;
             }
             .tt{
                 margin: 0px;
@@ -452,6 +473,41 @@
                 font-size: 1.5em !important;
                 }
             }
+            .subtitle{
+                color:#ffffff;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                line-height: normal; 
+                padding-top: 20px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .pfoot{font-size: 15px;}
+            .ifoot{
+                float: left;width: 76px;
+                height: 76px;
+                line-height: 72px !important;
+                border: 2px solid #fff;
+                font-size: 50px;
+                color: #fff;
+                text-align: center;
+                display: inline-block;
+                font-family: 'Pe-icon-7-stroke';
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+            }
+            @media(max-width: 1365px){.pfoot{font-size: 0.95em;}}
+        @media (min-width: 1208px) {
+            .container{
+            max-width: 970px;
+            }
+        }
         </style>
         <script>
         $('#test').click(function(){
@@ -470,114 +526,15 @@
             </div>
         </div>
     </div>
-<!--
-    <div id="DrPaino" class="seccion" style="background-color: #88b6d2;">
-        <div class="panel-body">
-            <div class="col-md-4">
-                <img src="{{url('images/doc.png')}}" width="70%" style="padding-left: 30%">
-            </div>
-            <div class="col-md-8" style="padding-top: 3%;">
-                <div id="target" class="target">
-                            <h1 class="titlePai"><strong>Dr. Paino</strong></h1>
-                                <p style="text-align: justify;font-size: 0.8em;padding-right: 80px;">
-                                    <ul style="list-style-type: none;">
-                                        <li><strong>{{trans('message.subtit1')}}</strong></li>
-                                        <li>{{trans('message.li1')}}</li>
-                                        <li>{{trans('message.li2')}}</li>
-                                        <li>{{trans('message.li3')}}</li>
-                                        <li>{{trans('message.li4')}}</li>
-                                        <li>{{trans('message.li5')}}</li>
-                                        <li>{{trans('message.li6')}}</li>
-                                        <li>{{trans('message.li7')}}</li>
-                                        <li>{{trans('message.li8')}}</li>
 
-
-                                        <li><strong>{{trans('message.li9')}}</strong></li>
-                                        <li>{{trans('message.li10')}}</li>
-                                        <li>{{trans('message.li11')}}</li>
-                                        <li>{{trans('message.li12')}}</li>
-                                        <li>{{trans('message.li13')}}</li>
-
-                                        <li><strong>{{trans('message.li14')}}</strong></li>
-                                        <li>{{trans('message.li15')}}</li>
-                                        <li>{{trans('message.li16')}}</li>
-                                        <li>{{trans('message.li17')}}</li>
-                                        <li>{{trans('message.li18')}}</li>
-
-                                        <li><strong>{{trans('message.li19')}}</strong></li>
-                                        <li>{{trans('message.li20')}}</li>
-                                        <li>{{trans('message.li21')}}</li>
-                                        <li>{{trans('message.li22')}}</li>
-                                        <li>{{trans('message.li23')}}</li>
-                                        <li>{{trans('message.li24')}}</li>
-                                        <li>{{trans('message.li25')}}</li>
-
-                                        <li><strong>{{trans('message.li26')}}</strong></li>
-                                        <li>{{trans('message.li27')}}</li>
-                                        <li>{{trans('message.li28')}}</li>
-                                        <li>{{trans('message.li29')}}</li>
-                                        <li>{{trans('message.li30')}}</li>
-                                        <li>{{trans('message.li31')}}</li>
-                                        <li>{{trans('message.li32')}}</li>
-                                        <li>{{trans('message.li33')}}</li>
-
-                                        <li><strong>{{trans('message.li34')}}</strong></li>
-                                        <li>{{trans('message.li35')}}</li>
-                                        <li><strong>{{trans('message.li36')}}</strong></li>
-                                        <li>{{trans('message.li37')}}</li>
-                                        <li>{{trans('message.li38')}}</li>
-                                        <li>{{trans('message.li39')}}</li>
-
-                                        <li><strong>{{trans('message.li40')}}</strong></li>
-                                        <li>{{trans('message.li41')}}</li>
-                                        <li>{{trans('message.li42')}}</li>
-                                        <li>{{trans('message.li43')}}</li>
-                                        <li>{{trans('message.li44')}}</li>
-                                        <li>{{trans('message.li45')}}</li>
-                                        <li>{{trans('message.li46')}}</li>
-                                        <li>{{trans('message.li47')}}</li>
-                                        <li>{{trans('message.li48')}}</li>
-                                        <li>{{trans('message.li49')}}</li>
-
-                                        <li><strong>{{trans('message.li50')}}</strong></li>
-                                        <li>{{trans('message.li51')}}</li>
-                                        <li>{{trans('message.li52')}}</li>
-                                        <li>{{trans('message.li53')}}</li>
-                                        <li>{{trans('message.li54')}}</li>
-                                        <li>{{trans('message.li55')}}</li>
-
-                                        <li><strong>{{trans('message.li56')}}</strong></li>
-                                        <li>{{trans('message.li57')}}</li>
-                                        <li>{{trans('message.li58')}}</li>
-                                        <li>{{trans('message.li59')}}</li>
-                                        <li>{{trans('message.li60')}}</li>
-                                        <li>{{trans('message.li61')}}</li>
-                                        <li>{{trans('message.li62')}}</li>
-                                        <li>{{trans('message.li63')}}</li>
-                                    </ul>
-                                </p>
-                        </div>
-
-                
-            </div>
-
+<div id="DrPaino" class="seccion"  style="background-color: #88b6d2;height: : 720px;padding-top: 2.5em !important;" >
+        <div class="col-md-4" style="float: left;padding-top: 0px;padding-left: 5%;">
+            <img id="imgDoc" src="images/doc.png" style="max-width: 55%;height: auto;">
         </div>
-    </div>
-
-
-
--->
-
-<div id="DrPaino"  style="background-color: #88b6d2;height: : 720px;" >
-        <div class="seccion">
-            <div class="col-md-4 hidden-xs hidden-sm" style="float: left;padding-top: 0px;padding-left: 90px;">
-                <img src="images/doc.png" width="245px">
-            </div>
-
-           <div class="divf">
+ <div class="divf">
                 <div>
-                    <div class="col-md-8 hidden-xs hidden-sm"  style="color:#1F1F1F; font-size: 3em; text-align: center; padding-top: 50px;margin-bottom: 20px;"></div>
-                        <div id="target" class="target" style="overflow: scroll;overflow-x:hidden;background-color:white;color:black;padding-left: 20px;padding-top: 20px;padding-bottom: 30px;">
+                    
+                        <div id="target" class="target">
                             <h1 class="titlePai"><strong>Dr. Paino</strong></h1>
                                 <p style="text-align: justify;font-size: 0.8em;padding-right: 80px;">
                                     <ul style="list-style-type: none;">
@@ -659,17 +616,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+</div>
 
 
 
-    <div id="Especializaciones" class="seccion citasFix">
+
+    <div id="Especializaciones" class="seccion">
     <div id="cms-row-15679b50e7b8a3">
             <div class="panel-body" style="background-color: #88b6d2;">
-                <div style="text-align: center;" class=" clearfix" >
-                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">{{trans('message.li64')}}</strong></p>
+                <div style="text-align: center;">
+                    <p class="subtitle"><strong class="subtit">{{trans('message.li64')}}</strong></p>
                 </div>                                
                 <div class="wpb_text_column wpb_content_element ">
                 </div>
@@ -889,52 +845,6 @@
 
             </div>
         </div>
-        <!--<div id="Alianzas" class="seccion" style="padding-top: 0px !important">
-            <div class="panel-body" style="background-color: #88b6d2;">
-                <div style="text-align: center;" class=" clearfix" id="cms-custom-headding-15679b50e50b82">
-                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">{{trans('message.li89')}}</strong></p>                                   
-                </div>                                
-                <div class="wpb_text_column wpb_content_element ">
-                </div>
-            </div>
-            <div class="panel-body" style="background-color: white" >
-                <div class="col-md-12" >
-                    <div class="col-md-4 col-sm-6 col-xs-6 qwdc saff safa" style="background-color: #e6e6e6" >
-                        <div class="imgt">
-                            <a href="https://www.gwu.edu/" target="_blank"><img class="imga im" src="images/Alianzas/GWPortrait.png" alt=""/></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6 qwdc" >
-                        <div class="imgt">
-                            <a href="http://www.mountsinai.org/" target="_blank"><img class="imga iim" src="images/Alianzas/Mount_Sinai.png" alt=""/></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6 qwdc saff safb" style="background-color: #e6e6e6;">
-                        <div class="imgt">  
-                            <a href="https://www.msmc.com/" target="_blank"><img class="imga iiim" src="images/Alianzas/Mount.png" alt=""/></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6 qwdc" >
-                        <div class="imgt">  
-                            <a href="http://welcome.miami.edu/" target="_blank"><img class="imga iiiim" src="images/Alianzas/umiami-logo.png"  alt=""/></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6 qwdc saff" style="background-color: #e6e6e6">
-                        <div class="imgt">  
-                            <a href="https://glg.it/" target="_blank"><img class="imga iiiim" src="images/Alianzas/GLG_logo.png" alt=""/></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6 qwdc" >
-                        <div class="imgt">  
-                            <a href="http://www.cedars-sinai.edu/index.aspx?gclid=Cj0KEQiAtK3DBRCBxt-Yxduq5p4BEiQAbFiaPUSVV-dP3Sr3QACMlCivOLuV3CuV8v6t2xXtWAKMMAkaArwL8P8HAQ
-" target="_blank"><img class="imga iiiim" src="images/Alianzas/Cedars.jpg"  alt=""/></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>-->
-
 
         <div id="Alianzas" class="seccion" style="padding-top: 0px !important">
             <div class="panel-body" style="background-color: #88b6d2;">
@@ -962,9 +872,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6" > 
                         <a href="https://www.gwu.edu/" target="_blank"><img class="alianzaimg" src="images/Alianzas/17093218_10158405960660232_1619091191_o.png" width="180" height="80" style="margin: 8% 8%" /></a>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1057,88 +965,63 @@
             <div class="col-md-12">
                 <div class="panel-body  footFix">
                     <div class="row">
-                        <div class="vc_col-sm-3 wpb_column vc_column_container vc_custom_1446427812331  vc_custom_1446427812331" style="color:#ffffff;    margin-bottom: 0px !important;">
-                            <div class="wpb_wrapper">
-                                <div class="cms-fancyboxes-wraper template-cms_fancybox_single--contact content-align-default " id="cms-fancy-box-single">
-                                    <div class="cms-fancyboxes-body clearfix">
-                                        <div class="cms-fancybox-item clearfix">
-                                            <div class="fancy-box-icon pull-left icon-60">
-                                                <i class="pe-7s-call"></i>
-                                            </div>
-                                            <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
-                                                <div class="fancy-box-content geg">
-                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li98')}}</strong> 
-                                                    <p style="padding: 0px !important;margin: 0px !important">{{trans('message.li99')}}</p>
-                                                    <p style="padding: 0px !important;margin: 0px !important">{{trans('message.li100')}}</p>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                        <div class="col-md-3 col-md-6 col-md-6" style="color:#ffffff; margin-bottom: 0px !important;">
+                            <div class="cms-fancybox-item clearfix">
+                                <div class="fancy-box-icon pull-left icon-60">
+                                    <i class="pe-7s-call ifoot"></i>
+                                </div>
+                                <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
+                                    <div class="fancy-box-content geg" style="padding-left: 100px;">
+                                        <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li98')}}</strong> 
+                                        <p class="pfoot" style="padding: 0px !important;margin: 0px !important">{{trans('message.li99')}}</p>
+                                        <p class="pfoot" style="padding: 0px !important;margin: 0px !important">{{trans('message.li100')}}</p>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="vc_col-sm-3 wpb_column vc_column_container      vc_custom_1446429146793  vc_custom_1446429146793">
-                            <div class="wpb_wrapper">
-                                <div class="cms-fancyboxes-wraper template-cms_fancybox_single--contact content-align-default " id="cms-fancy-box-single-2">
-                                    <div class="cms-fancyboxes-body clearfix">
-                                        <div class="cms-fancybox-item clearfix">
-                                            <div class="fancy-box-icon pull-left icon-60">
-                                                <i class="pe-7s-mail-open-file"></i>
-                                            </div>
-                                            <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
-                                                <div class="fancy-box-content geg" style="color:white">
-                                                    <p style="padding: 0px !important"><strong>{{trans('message.li101')}}</strong> 
-                                                        <br />
-                                                        {{trans('message.li102')}}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                        <div class="col-md-3 col-md-6 col-md-6" style="color:#ffffff; margin-bottom: 0px !important; margin-top: 0px !important">
+                            <div class="cms-fancybox-item clearfix" style="margin-bottom: 30px;">
+                                <div class="fancy-box-icon pull-left icon-60">
+                                    <i class="pe-7s-mail-open-file ifoot"></i>
+                                </div>
+                                <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
+                                    <div class="fancy-box-content geg" style="padding-left: 100px;">
+                                        <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li101')}}</strong> 
+                                        <p class="pfoot" style="padding: 0px !important;margin: 0px !important">{{trans('message.li102')}}</p>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="vc_col-sm-3  wpb_column vc_column_container vc_custom_1446429007563  vc_custom_1446429007563" style="color:#ffffff;margin-bottom: 0px !important">
-                            <div class="wpb_wrapper">
-                                <div class="cms-fancyboxes-wraper template-cms_fancybox_single--contact content-align-default " id="cms-fancy-box-single-3">
-                                    <div class="cms-fancyboxes-body clearfix">
-                                        <div class="cms-fancybox-item clearfix">
-                                            <div class="fancy-box-icon pull-left icon-60">
-                                                <i class="pe-7s-map-2"></i>
-                                            </div>
-                                            <div class="cms-single-fancybox-content" style="padding-top: 0px !important" >
-                                                <div class="fancy-box-content geg">
-                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li103')}}</strong> 
-                                                        <br />
-                                                    <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important">{{trans('message.li104')}}</p>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                        <div class="col-md-3 col-md-6 col-md-6" style="color:#ffffff; margin-bottom: 0px !important;">
+                            <div class="cms-fancybox-item clearfix" style="margin-bottom: 30px;">
+                                <div class="fancy-box-icon pull-left icon-60">
+                                    <i class="pe-7s-map-2 ifoot"></i>
+                                </div>
+                                <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
+                                    <div class="fancy-box-content geg" style="padding-left: 100px;">
+                                        <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li103')}}</strong> 
+                                        <p class="pfoot" style="padding: 0px !important;margin: 0px !important">{{trans('message.li104')}}</p>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="vc_col-sm-3  wpb_column vc_column_container      vc_custom_1446429007563  vc_custom_1446429007563" style="color:#ffffff;">
-                            <div class="wpb_wrapper">
-                                <div class="cms-fancyboxes-wraper template-cms_fancybox_single--contact content-align-default " id="cms-fancy-box-single-3">
-                                    <div class="cms-fancyboxes-body clearfix">
-                                        <div class="cms-fancybox-item clearfix">
-                                            <div class="fancy-box-icon pull-left icon-60">
-                                                <a href="http://www.facebook.com/javierpainoneurocirugia" target="_blank"><i class="fa fa-facebook facebook"></i></a>
-                                            </div>
-                                            <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
-                                                <div class="fancy-box-content">
-                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li105')}}</strong> 
-                                                        <br />
-                                                    <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important">/{{trans('message.li106')}}
-                                                        <br />
-                                                        <br>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                        <div class="col-md-3 col-md-6 col-md-6" style="color:#ffffff; margin-bottom: 0px !important;">
+                            <div class="cms-fancybox-item clearfix" style="margin-bottom: 30px;">
+                                <div class="fancy-box-icon pull-left icon-60">
+                                    <a href="http://www.facebook.com/javierpainoneurocirugia" target="_blank"><i class=" ifoot"><i class="fa fa-facebook"></i></i></a>
+                                </div>
+                                <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
+                                    <div class="fancy-box-content geg" style="padding-left: 100px;">
+                                        <p style="padding: 0px !important;margin: 0px !important"><strong>{{trans('message.li105')}}</strong> 
+                                        <p class="pfoot" style="padding: 0px !important;margin: 0px !important">/{{trans('message.li106')}}</p>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1212,6 +1095,7 @@ $('button.modalButton').on('click', function(e) {
 
 $(document).ready(function(){
     resize();
+    resizingImg();
 });
     function resize(){
         if($(window).innerWidth() <= 751) {
@@ -1230,6 +1114,14 @@ $(document).ready(function(){
                 itemsperpage: 3,
                 randomizer: 0.7
             });
+        }
+    }
+
+    function resizingImg(){
+        if($(window).innerWidth() <= 1210){
+            $('#imgDoc').hide();
+        } else{
+            $('#imgDoc').show();
         }
     }
 
