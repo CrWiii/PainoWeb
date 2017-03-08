@@ -68,7 +68,10 @@ class DatesController extends Controller{
         }
     }
 
-    public function deteleDate(){
-
+    public function removeDate(Request $request){
+        if($request->ajax()){
+            $id = $request->eventid;
+            $da = Dates::destroy($id);
+        }
     }
 }

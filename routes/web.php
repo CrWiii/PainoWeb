@@ -42,7 +42,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('registerDate','DatesController@registerDate');
 Route::get('updateDate','DatesController@updateDate');
-
+Route::get('removeDate','DatesController@removeDate');
 Route::get('Otros','HomeController@Others');
 Route::get('PreguntasFrecuentes','HomeController@Preguntas');
 Route::get('Noticias','HomeController@Noticias');

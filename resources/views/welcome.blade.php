@@ -952,7 +952,7 @@
                         <div class="col-md-12 btnnFix">
                             <div class="col-md-2 btnFix"></div>
                             <div class="col-md-8 btnFix" style="text-align: center !important;">
-                                <button class="newBtn" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</button>
+                               <a class="newBtn" id="btncalendar" data-toggle="modal" data-src="{{URL::to('/Calendario')}}" data-height=650 data-width=450 data-target="#myModal">{{trans('message.li97')}}</a>
                             </div>
                             <div class="col-md-2"></div>
                         </div>
@@ -1031,15 +1031,10 @@
             </div>
         </div>            
     </div>
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div style="margin:15px;">
-                        {{trans('message.li107')}}
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
+
+
 <div class="container">
    <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
@@ -1058,7 +1053,6 @@
      </div>
   </div>
 </div>
-
 <div id="Login" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -1083,7 +1077,7 @@
     </footer>
 
 <script>
-$('button.modalButton').on('click', function(e) {
+$('a.newBtn').on('click', function(e) {
     var src = $(this).attr('data-src');
     var height = $(this).attr('data-height') || 300;
     var width = $(this).attr('data-width') || 400;
@@ -1131,7 +1125,7 @@ $(document).ready(function(){
     <script type='text/javascript' src='js/jquery.form.min.js'></script>
     <script type='text/javascript' src='js/modernizr.min.js'></script>
     <script type='text/javascript' src='js/jquery.parallax-1.1.3.js'></script>
-    <script type='text/javascript' src='js/main.js'></script>
+    <!--<script type='text/javascript' src='js/main.js'></script>-->
     <script type='text/javascript' src='js/menu.js'></script>
     <script type='text/javascript' src='js/jquery.fullscreen-popup.js'></script>
     <script type='text/javascript' src='js/imagesloaded.js'></script>
