@@ -52,6 +52,7 @@
         center: 'title',
         right: 'month,agendaWeek,agendaDay,listMonth'
       },
+      defaultView: 'agendaWeek',
       buttonIcons: true,
       weekNumbers: true,
       //hiddenDays: [0,1,5,6],
