@@ -1,9 +1,9 @@
-/ Funcionamiento en Inglés
+Cambiar Pacientes con parálisis a causa de cirugía a 0
 Activar la seccin de news para agregar y quitar noticias del blog
 Activar el Login
 / Todo Calendario
 / Condicionar Menú Hamburguesa desde 1208px
-
+/ Funcionamiento en Inglés
 
 Vista General
     Funcionamiento en Inglés
