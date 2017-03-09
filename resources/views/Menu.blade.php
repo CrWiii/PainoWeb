@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
         </button>
     <a class="navbar-brand" style="padding: 0px;">
-        <div id="logo-play" class="pull-left clearfix"><a class="cms-main-logo hidden-sm" href="/"><img alt="" src="images/Logo.png" title="Paino"> </a></div>
+        <div id="logo-play" class="pull-left clearfix"><a class="cms-main-logo" href="/"><img alt="" src="images/Logo.png" title="Paino"> </a></div>
     </a>
   </div>
 
@@ -30,7 +30,6 @@
                     <li><a tabindex="0" href="{{URL::to('Otros#Diplomas')}}"><span>{{trans('message.sbm77')}}</span></a></li>
                 </ul>
             </li> 
-
             <li><a style="padding-right: 0px;" href="{{URL::to('/en')}}" class="tyti">
                 <span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span>
                 </a>

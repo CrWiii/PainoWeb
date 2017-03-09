@@ -269,6 +269,11 @@
                 margin: 0px !important;
             }
         }
+        @media (max-width: 1208px){
+            .tyti{
+                padding-top: 0px !important;
+            }
+        }
         @media (max-width: 767px) {
             .btnFix{
                 padding: 0px !important;
@@ -292,9 +297,6 @@
             }
             .subtit{
                 font-size: 0.8em !important;
-            }
-            .tyti{
-                padding-top: 0px !important;
             }
             .sazz{
                 margin-left: 12px;
