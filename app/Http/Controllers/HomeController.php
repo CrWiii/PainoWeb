@@ -32,4 +32,10 @@ class HomeController extends Controller
     public function Noticias(){
         return view('Noticias');
     }
+    public function language($lang, ChangeLocale $changeLocale){
+        $lang = in_array($lang, config('app.languages')) ? $lang : config('app.fallback_locale');
+        $changeLocale->lang = $lang;
+        $this->dispatch($changeLocale);
+        return redirect()->back();
+    }
 }
