@@ -52,8 +52,8 @@
                             <span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span>
                         </a>
                     </li>
-                </form>
-                <li><a tabindex="0"  data-toggle="modal" href="#Login" class="tyti"><span class="menu-title">{{trans('message.m8')}}</span></a></li>-->
+                </form>-->
+                <li><a tabindex="0"  data-toggle="modal" href="#Login" class="tyti"><span class="menu-title">{{trans('message.m8')}}</span></a></li>
         </ul>
     </div>
 </nav>

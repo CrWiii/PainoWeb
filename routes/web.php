@@ -10,16 +10,20 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
+
 Route::get('/{lang}', function ($lang){
 	if($lang=='en'){
 			Lang::setLocale('en');
+			return view('welcome');
 		}elseif($lang=='es'){
 			Lang::setLocale('es');
+			return view('welcome');
 		}
-    return view('welcome');
+
+		return view('Calendario');
 });
-*/
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -35,7 +39,7 @@ Route::post('changeLanguage', function(){
 });*/
 
 Route::get('/Calendario', 'DatesController@Calendar');
-
+Route::get('language/{$lang}','HomeController@language');
 Route::resource('Dates','DatesController');
 Route::get('api','DatesController@api');
 Auth::routes();
