@@ -11,42 +11,25 @@
 |
 */
 
-Route::get('/{lang}', function ($lang){
-	if($lang=='en'){
-			Lang::setLocale('en');
-			return view('welcome');
-		}elseif($lang=='es'){
-			Lang::setLocale('es');
-			return view('welcome');
-		}
 
-		return view('Calendario');
+
+
+	Route::get('/', function() {return view('welcome');});
+	Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
+	Route::get('Otros','HomeController@Others');
+	Route::get('PreguntasFrecuentes','HomeController@Preguntas');
+	Route::get('Noticias','HomeController@Noticias');
+	Route::get('api2','DatesGuest@api');
+
+
+Route::group(['middleware' => 'web'], function () {
+	Route::auth();
+	Route::get('registerDate','DatesController@registerDate');
+	Route::get('updateDate','DatesController@updateDate');
+	Route::get('approveDate','DatesController@approveDate');
+	Route::get('removeDate','DatesController@removeDate');
+	Route::get('api','DatesController@api');
+	Route::get('/Calendario', 'DatesController@Calendar');
+	Route::resource('Dates','DatesController');
+	Route::get('/home', 'HomeController@index');
 });
-
-
-Route::get('/', function () {
-    return view('welcome');
-});
-/*
-Route::post('changeLanguage', function(){
-	if($request['lan1']=='en'){
-		Lang::setLocale('en');
-	}
-	elseif($request['lan2']=='es'){
-		Lang::setLocale('es');
-	}
-	return view('welcome');
-});*/
-
-Route::get('/Calendario', 'DatesController@Calendar');
-Route::get('language/{$lang}','HomeController@language');
-Route::resource('Dates','DatesController');
-Route::get('api','DatesController@api');
-Auth::routes();
-Route::get('/home', 'HomeController@index');
-Route::get('registerDate','DatesController@registerDate');
-Route::get('updateDate','DatesController@updateDate');
-Route::get('removeDate','DatesController@removeDate');
-Route::get('Otros','HomeController@Others');
-Route::get('PreguntasFrecuentes','HomeController@Preguntas');
-Route::get('Noticias','HomeController@Noticias');

@@ -113,6 +113,8 @@
                     $('#modalBody #eh').html(es);
                     $('#eventUrl').attr('href',event.url);
                     $('#eventid').attr('value',event.id);
+                    //$('#statusDate').attr('value',event.state);
+                    if(event.state=='PROGRAMADO'){$('#Aprobar').hide();}else{$('#Aprobar').show();}
                     $('#viewDateDetails').modal();
                     return false;
       },
@@ -195,11 +197,34 @@ $(document).on('click', '#saveDate', function(){
     data: '&fullname='+fullname+'&dni='+dni+'&email='+email+'&phone='+phone+'&astrt='+astrt+'&aendt='+aendt+'&description='+description,
     type: 'get',
     success: function(response){
+      $('#AgenDate').modal();
       $('#calendar').fullCalendar('refetchEvents');
     },
     error: function(e){}
   });
  });
+
+
+$(document).on('click', '#Aprobar', function(){
+  $('#modalApprove').modal();
+});
+
+$(document).on('click','#AprobarBtn',function(){
+  var eventid = $('#eventid').val();
+  $.ajax({
+    url: 'approveDate',
+    data: '&eventid='+eventid,
+    type: 'get',
+    success: function(response){
+      $('#modalApprove').modal('hide');
+      $('#viewDateDetails').modal('hide');
+      $('#calendar').fullCalendar('refetchEvents');
+    }
+  });
+});
+
+
+
 $eventid = '';
 $(document).on('click', '#removeEvent', function(){
   
@@ -238,9 +263,11 @@ $(document).on('click', '#removeBtn', function(){
                   <label>Fecha y Hora Inicio:</label> <p id="sh"></p>
                   <label>Fecha y Hora Fin:</label> <p id="eh"></p>
                   <input type="hidden" value="" id="eventid">
+                  <input type="hidden" value="" id="statusDate">
 
                 </div>
                 <div class="modal-footer">
+                    <button class="btn btn-primary" id="Aprobar" type="button">Aprobar</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal" io="Close">Close</button>
                     <button type="button" class="btn btn-default" id="removeEvent">Eliminar</button>
                 </div>
@@ -321,6 +348,39 @@ $(document).on('click', '#removeBtn', function(){
       <div class="modal-footer">
         <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-danger" id="removeBtn">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalApprove" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+       <h4>¿Está seguro que desea Aprobar la cita?</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" id="AprobarBtn">Aprobar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="AgenDate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+       <h4>Estamos verificando tu cita. En breves momentos nos comunicaremos con usted para confirmar la disponibilidad.</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

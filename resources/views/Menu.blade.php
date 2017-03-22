@@ -30,30 +30,46 @@
                     <li><a tabindex="0" href="{{URL::to('Otros#Diplomas')}}"><span>{{trans('message.sbm77')}}</span></a></li>
                 </ul>
             </li> 
-            <li><a style="padding-right: 0px;" href="{{URL::to('/en')}}" class="tyti">
-                <span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span>
-                </a>
-            </li>
-            <li><a style="padding-left:  0px !important;" href="{{URL::to('/es')}}" class="tyti">
-                <span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span>
-                </a>
-            </li>
-                <!--<form method="POST" action="changeLanguage">  
-                {{ csrf_field() }}
+
+            @foreach (Config::get('languages') as $lang => $language)
+                @if ($lang != App::getLocale())
                     <li>
-                        <input type="hidden" name="lan1" value="en">
-                        <a style="padding-right: 0px;" href="" class="tyti" type="submit">
-                            <span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span>
+                        <a style="padding-right: 0px;" href="{{ route('lang.switch', $lang) }}" class="tyti">
+                            <span class="menu-title">
+                                @if($lang == 'en') <img src="images/Alianzas/english.png" width="20px">
+                                @elseif($lang == 'es') <img src="images/Alianzas/spanish.png" width="30px">
+                                @endif
+                            </span>
                         </a>
                     </li>
-                    <li>
-                        <input type="hidden" name="lan2" value="es">
-                        <a style="padding-left:  0px;" href="" class="tyti" type="submit">
-                            <span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span>
-                        </a>
-                    </li>
-                </form>-->
+                @endif
+            @endforeach
+             
+            @if (Auth::guest())
                 <li><a tabindex="0"  data-toggle="modal" href="#Login" class="tyti"><span class="menu-title">{{trans('message.m8')}}</span></a></li>
+                @else
+                    <li class="dropdown">
+                        <a href="#" class="tyti dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="{{ url('/logout') }}"
+                                    onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+            @endif
+               
+
         </ul>
     </div>
 </nav>

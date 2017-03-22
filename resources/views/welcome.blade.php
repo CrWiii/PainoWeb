@@ -529,7 +529,7 @@
         </div>
     </div>
 
-<div id="DrPaino" class="seccion"  style="background-color: #88b6d2;height: : 720px;padding-top: 2.5em !important;" >
+<div id="DrPaino" class="seccion"  style="background-color: #88b6d2;height: : 720px;" >
         <div class="col-md-4" style="float: left;padding-top: 0px;padding-left: 5%;">
             <img id="imgDoc" src="images/doc.png" style="max-width: 55%;height: auto;">
         </div>
@@ -703,11 +703,11 @@
                                                     <i class="paciente">
                                                     </i>
                                                 </span>
-                                                <div id="counter_cms-counter_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="1347">
+                                                <div id="counter_cms-counter_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="1500">
                                                 </div>
                                                 <h3 class="cms-counter-title">
                                                     <span>{{trans('message.li80')}}</span><br>
-                                                    <span>1500+</span>
+                                                    <span style="margin: 10%;"></span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -729,11 +729,11 @@
                                                     <i class="investigacion">
                                                     </i>
                                                 </span>
-                                                <div id="counter_cms-counter-2_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="153">
+                                                <div id="counter_cms-counter-2_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="155">
                                                 </div>
                                                 <h3 class="cms-counter-title">
                                                     <span>{{trans('message.li81')}}</span><br>
-                                                    <span></span>
+                                                    <span style="margin: 10%;"></span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -755,11 +755,10 @@
                                                     <i class="rehabilitacion">
                                                     </i>
                                                 </span>
-                                                <div id="counter_cms-counter-3_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="+" data-type="zero" data-digit="3567">
+                                                <div id="counter_cms-counter-3_item_1" class="h3 cms-counter cms-counter-digit zero" data-suffix="" data-prefix="" data-type="zero" data-digit="">
                                                 </div>
                                                 <h3 class="cms-counter-title">
                                                     <span>{{trans('message.li82')}}</span><br>
-                                                    <span>0</span>
                                                 </h3>
                                             </div>
                                         </div>
@@ -1055,19 +1054,8 @@
      </div>
   </div>
 </div>
-<div id="Login" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <form method="post" action='' name="login_form" style="margin:20px;">
-              <p>{{trans('message.li110')}}<input type="text"  name="eid" id="email" placeholder="Email"></p>
-              <p>{{trans('message.li111')}} <input type="password"  name="passwd" placeholder="Password"></p>
-              <p><button type="submit" >{{trans('message.li112')}}</button>
-                <a href="">{{trans('message.li113')}}</a>
-              </p>
-            </form>
-    </div>
-  </div>
-</div>
+
+@include('login')
     <footer id="cms-footer" class="no-margin-top">
         <div class="container">
             <div id="cms-footer-bottom">

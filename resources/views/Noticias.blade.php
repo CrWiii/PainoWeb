@@ -3,16 +3,55 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        @include('headerforNew')
+        
+        
+        <!--<link href="bootstrap/logoplay.css" rel="stylesheet" type="text/css"/>-->
+
+        
+        <script type='text/javascript' src='js/jquery.js'></script>
+        <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+        <!--<script type='text/javascript' src='js/slider/jquery.themepunch.tools.min.js'></script>
+        <script type='text/javascript' src='js/slider/jquery.themepunch.revolution.min.js'></script>
+        <script type="text/javascript" src='js/slider/revolution.extension.slideanims.min.js'></script>
+        <script type="text/javascript" src="js/slider/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="js/slider/revolution.extension.navigation.min.js"></script>-->
+        
+
+
+
+        <link href="{{('fonts/style.css')}}" rel="stylesheet" type="text/css"/>
+
+        <link href="{{url('bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css"/>
+        <!--<script src="{{url('bootstrap/jquery.min.js')}}" type="text/javascript"></script>-->
+        <script src="{{url('bootstrap/js/bootstrap.js')}}" type="text/javascript"></script>
+        <link href="bootstrap/css/style-menu-play.css" rel="stylesheet" type="text/css"/>
+
+        <script src="bootstrap/jquery.min.js" type="text/javascript"></script>       
+        <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+        
+        
+        <script src="{{url('js/html5shiv.js')}}"></script>
+
+        <link rel="stylesheet" href="{{url('css/bootstrap-submenu.min.css')}}">
+        <script src="{{url('js/bootstrap-submenu.min.js')}}" defer></script>
+
         <style>
-        /*img {
-            max-width: 100%;
-            height: auto;
-            width: auto\9;
-        }*/
-.tyti {
-    padding-top: 30px !important;
-}
+        @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+        @font-face {
+            font-family: 'codropsicons';
+        }
+        body{
+            font-family: 'Lato' !important;
+            line-height: 27.2px !important;
+            letter-spacing: 0.4 !important;
+            font-weight: 300 !important;
+            font-style: normal !important;
+            color: #777777 !important;
+            font-size: 17px !important;
+        }
+        .tyti {
+            padding-top: 30px !important;
+        }
         .navbar{
             border: 0px solid transparent !important;
             /*padding-left: 0px !important;*/
@@ -504,6 +543,7 @@
         </div>
 
     </body>
+    
     <footer id="cms-footer" class="no-margin-top">
         <div class="container">
             <div id="cms-footer-bottom">
@@ -514,6 +554,6 @@
         </div>
     </footer>
 
-
+@include('login')
     </body>
     </html>
