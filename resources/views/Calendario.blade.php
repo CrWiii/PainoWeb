@@ -98,6 +98,8 @@
           }
        },
       events: {url:'{{URL::to('/api')}}'},
+      @if (Auth::guest())
+      @else
       eventClick:  function(event, jsEvent, view){
         ss = moment(event.start, 'DD-MM-YYYY HH:mm:ss').format('DD-MM-YYYY HH:mm:ss');
         es = moment(event.end, 'DD-MM-YYYY HH:mm:ss').format('DD-MM-YYYY HH:mm:ss');
@@ -156,6 +158,7 @@
             }
             });
       },
+      @endif
       eventReceive: function(event){
         var title = event.title;
         var start = event.start.format("YYYY-MM-DD[T]HH:MM:SS");
