@@ -24,6 +24,7 @@
         <script type='text/javascript' src='js/jquery.js'></script>
         <script src="{{url('bootstrap/js/bootstrap.js')}}" type="text/javascript"></script>
         <script src="{{url('js/html5shiv.js')}}"></script>
+        <link rel="stylesheet" href="{{url('css/bootstrap-submenu.min.css')}}">
         <script src="{{url('js/bootstrap-submenu.min.js')}}" defer></script>
         <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
         <script src="bootstrap/jquery.min.js" type="text/javascript"></script>       
@@ -153,15 +154,103 @@
             padding-bottom: 20px;
         }
 
-
+        .modal-body {
+            padding: 0px !important;
+        }
+        #top {
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            padding: 0 10px;
+            line-height: 40px;
+            font-size: 12px;
+        }
+        #calendar {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 10px;
+        }
+        .titlePai{
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 3px 0 #b9b9b9,
+               0 3px 0 #aaa,
+               0 3px 1px rgba(0,0,0,.1),
+               0 0 3px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 3px rgba(0,0,0,.2),
+               0 3px 3px rgba(0,0,0,.25),
+               0 3px 3px rgba(0,0,0,.2),
+               0 3px 3px rgba(0,0,0,.15);
+        }
+        .subtit{
+            text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 3px 0 #b9b9b9,
+               0 3px 0 #aaa,
+               0 3px 1px rgba(0,0,0,.1),
+               0 0 3px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 3px rgba(0,0,0,.2),
+               0 3px 3px rgba(0,0,0,.25),
+               0 3px 3px rgba(0,0,0,.2),
+               0 3px 3px rgba(0,0,0,.15);
+        }
+        .contscr{
+            text-align: justify;
+            font-size: 16px;
+            overflow: scroll;
+            overflow-x:hidden;
+            height: 280px;
+            padding: 10px;
+        }
+        .contnoscr{
+            text-align: justify;
+            font-size: 16px;
+            height: 280px;
+            padding: 10px;
+        }
+        .carrr article {
+            width: 380px;
+        }
+        .carrr article > img {
+            padding-bottom: 20px;
+        }
+        article > h1,h2{
+            font-size: 28px !important;
+            margin-top: 0px !important;
+        }
         .target{
-                width: 800px; height: 570px; margin: auto 0;margin-left: 10px;
+                width: 800px; 
+                height: 570px; 
+                margin: auto 0;
+                margin-left: 10px;
+                overflow: scroll;
+                overflow-x:hidden;
+                background-color:white;
+                color:black;
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 30px;
             }
+        @media (max-width: 1210px){
+            .target{
+                /*margin:auto auto !important;*/
+                padding-top: 20px;
+                width: 95%; 
+                height: 600px; 
+                margin: auto auto;
+            }   
+        }
+
         .tt{
-            margin: 20px;
+            margin: 10px;
             }
         .gg{
-            padding-top: 80px;padding-left: 25%;
+            padding-top: 80px;
         }
         .imgt{
                 width: 400px;
@@ -172,11 +261,9 @@
             margin: auto auto;
             width:350px;
         }
-
         .im{
             padding-top: 35%;
         }
-
         .iim{
             padding-top: 38%;
         }
@@ -186,7 +273,6 @@
         .iiiim{
             padding-top: 15%
         }
-
         .heas{
             background: url(images/cuidado.png) no-repeat;
             max-width: 100%;
@@ -200,13 +286,10 @@
             margin-left: 0px;
             margin-right: 0px;
         }
-        .fz{
-             padding: 5em;
-        }
+        
         .divf{
             height: 700px;
         }
-
         .btnLogin{
             text-align: center;
             padding: 10px 120px 10px 120px; 
@@ -218,7 +301,7 @@
         .btnRegister{
             text-align: center;
             padding: 10px 100px 10px 100px; 
-            margin: 40px 230px;
+            margin: 40px 200px;
             font-size:20px !important;
             border-radius: 25px;
             box-shadow: 5px 5px 5px #444242;
@@ -228,53 +311,93 @@
             line-height: 50px !important;
             text-shadow: 0 1px 0 #ccc, 0 2px 0 #4c4848, 0 3px 0 #4c4848, 0 4px 0 #4c4848, 0 5px 0 #4c4848, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
         }
-        nav ul ul {
-                display: none;
-            }
-             
-            nav ul li:hover > ul {
-                display: block;
-            }
+        .tyti{
+            padding-top: 30px !important;
+        }
+        .fds{
+            height: 201px;
+            width: 125px;
+        }
+        .qscw{
+            padding-left: 16% !important;
+        }
+        .footFix{
+            padding-top: 30px !important;padding-bottom: 0px !important;
+            
+        }
+        .citasFix{
+            padding-top: 50px !important;
+            padding-top: 0px !important;
+        }
+        .citasFix2{
+            padding-top: 0px !important;
+        }
 
-        nav ul ul {
-    background: #88b6d2; border-radius: 0px; padding: 0;
-    position: absolute; top: 100%;
-}
-    nav ul ul li {
-        float: none; 
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        position: relative;
-    }
-        nav ul ul li a {
-            padding: 5px 10px;
-            /*color: #000;*/
-        }   
-            nav ul ul li a:hover {
-                background: #fff;
+        .newBtn{
+            text-align: center;
+            padding: 10px 60px 10px 60px;
+            font-size:20px !important;
+            border-top: 3px solid #88b6d2;
+            border-bottom: 3px solid #88b6d2;
+            border-left: 3px solid #88b6d2;
+            border-right: 3px solid #88b6d2;
+            background-color: #a0a0a0;
+            color: #ffffff;
+            overflow: visible;
+        }
+        .restto{
+            padding-top: 0px !important;
+        }
+        @media (max-width: 1280px){
+            .mvc{
+                height: 300px !important;
             }
-            nav ul ul ul {
-    position: absolute; left: 100%; top:0;
-}
-
-
+            .imga{
+                width: 280px;
+            }
+        }
+        @media (max-width: 1280px){
+            .alianzaimg{
+                max-width: 80% !important;
+            }
+        }
+        @media (max-width: 320px) {
+            .newBtn{
+                padding: 8px 20px 8px 20px;
+            }
+            .btnnFix{
+                padding: 0px !important;
+                margin: 0px !important;
+            }
+        }
+        @media (max-width: 1208px){
+            .tyti{
+                padding-top: 0px !important;
+            }
+        }
         @media (max-width: 767px) {
-            .post-materials{
-                font-size: 12px;
-                margin: 20px;
+            .btnFix{
+                padding: 0px !important;
+                margin: 0px !important;
             }
-            .blog-post{
-                margin-top: 80px;
+            .citasFix2{
+                padding-left: 0px !important;
+                padding-right: 0px !important;
             }
-            article{
-                margin: 0px 0px 50px 0px;
+            .citasFix{
+                padding-top: 0px !important;
             }
-            .post-title-container {
-                padding-left: 0px;
-                padding-top: 0px;
-                padding-right: 0px;
-                -ms-word-wrap: break-word;
-                word-wrap: break-word;
+            .footFix{
+                padding-top: 0px !important;padding-bottom: 0px !important;
+            }
+            .qscw{
+                padding-left: 3% !important;
+            }
+            .fds{
+                height: 180px;
+            }
+            .subtit{
+                font-size: 0.8em !important;
             }
             .sazz{
                 margin-left: 12px;
@@ -283,9 +406,6 @@
             line-height: 20px !important;
             }
 
-            .fz{
-                font-size: 1.5em !important;
-            }
             .saff{
                 height: 110px !important;
             }
@@ -314,8 +434,15 @@
             .flip-carousel > ul > li{
                 width: 300px;
             }
-
-
+            article {
+                width: 300px;
+            }
+            article img{
+                max-width: 260px;
+            }
+            article > h1, h2{
+                font-size: 22px !important;
+            }
             .geg{
                 font-size: 15px;
             }
@@ -334,12 +461,14 @@
             .divf{
                 height: auto;
             }
-            .fz{
-                 padding: 1em
-            }
+            /*.heas{
+                background-size: 400px 200px;
+            }*/
             .target{
                 padding-top: 20px;
-                width: 95%; height: 600px; margin: auto 0;margin-left: 10px;
+                width: 95%; 
+                height: 600px; 
+                margin: auto auto;
             }
             .tt{
                 margin: 0px;
@@ -359,23 +488,18 @@
                 /*margin: 0px !important;*/
             }
         }
-
         ::-webkit-input-placeholder {
            color: #fff;
         }
-
         :-moz-placeholder { /* Firefox 18- */
            color: #fff;  
         }
-
         ::-moz-placeholder {  /* Firefox 19+ */
            color: #fff;  
         }
-
         :-ms-input-placeholder {  
            color: #fff;  
         }
-
         ::-webkit-scrollbar {
                 width: 10px;
                 height: 10px;
@@ -384,24 +508,19 @@
             ::-webkit-scrollbar-button:end:increment  {
                 display: none;
             }
-            
             ::-webkit-scrollbar-track-piece  {
                 background-color: #fff;
                 -webkit-border-radius: 6px;
             }
-            
             ::-webkit-scrollbar-thumb:vertical {
                 -webkit-border-radius: 6px;
                 background: #5d6f94 url() no-repeat center;
             }
-
             .seccion{
                 padding-top: 5em;
                 padding-left: 0px;
                 padding-right: 0px;
-
             }
-
             .ir-arriba {
                 position: fixed;
                 display:inline;
@@ -419,10 +538,8 @@
                 color:#000;
             }
             .nosotros{
-
             }
-
-            .scrolll{
+           .scrolll{
                 width:800px;
                 height:500px;
                 /*background-color: #88b6d2;*/
@@ -431,10 +548,69 @@
                 overflow-y:scroll;
                 float:left;
             }
-
             .cont{
                 height:450px;
             }
+            .top-mantain{
+                position: fixed;
+                right: 0;
+                left: 0;
+                z-index: 1030;
+            }
+
+            .tyti{
+                padding-left: 7px !important;
+                /*padding-right: 7px !important; */
+            }
+
+            .fz{
+                padding: 5em 1em;
+            }
+            @media (min-width: 1380px) {
+                .fz{
+                padding: 7em 5em;
+                }
+            }
+            @media (max-width: 767px) {
+                .fz{
+                font-size: 1.5em !important;
+                }
+            }
+            .subtitle{
+                color:#ffffff;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                line-height: normal; 
+                padding-top: 20px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .pfoot{font-size: 15px;}
+            .ifoot{
+                float: left;width: 76px;
+                height: 76px;
+                line-height: 72px !important;
+                border: 2px solid #fff;
+                font-size: 50px;
+                color: #fff;
+                text-align: center;
+                display: inline-block;
+                font-family: 'Pe-icon-7-stroke';
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+            }
+            @media(max-width: 1365px){.pfoot{font-size: 0.95em;}}
+        @media (min-width: 1208px) {
+            .container{
+            max-width: 970px;
+            }
+        }
         </style>
         <script>
             $( "#target" ).scroll();
@@ -445,7 +621,7 @@
     @include('Menu')
 @if (Auth::guest())
 @else
-<div class="seccion" style="padding-top: 0px !important;">
+<div class="seccion" >
     <div class="panel-body" style="padding-top: 20px !important;">
         <button id="createNewbtn" class="btn btn-primary">Crear</button>
         <button id="ListsNewsbtn" class="btn btn-primary">Lista de Noticias</button>
@@ -617,14 +793,10 @@
       </div>
       <div class="modal-body">
        <div class="panel-body">
-            <form class="form-horizontal" role="form" method="POST" action="{{ url('/registerNew') }}">
-                {{ csrf_field() }}
-
                 <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                     <div class="col-md-12">
                         <label>Título:</label>
                         <input id="titleReg" type="text" class="form-control" name="title" value="{{ old('title') }}" required autofocus>
-
                         @if ($errors->has('title'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('title') }}</strong>
@@ -632,7 +804,6 @@
                         @endif
                     </div>
                 </div>
-
                 <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
                    <div class="col-md-12">
                     <label>Contenido:</label>
@@ -645,7 +816,6 @@
                         @endif
                     </div>
                 </div>
-
                 <div class="form-group{{ $errors->has('img') ? ' has-error' : '' }}">
                    <div class="col-md-12">
                     <label>Imagen:</label>
@@ -666,9 +836,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" id="Register">Register</button>
+        <button type="submit" class="btn btn-primary" id="RegisterNew">Register</button>
       </div>
-      </form>
     </div>
   </div>
 </div>
@@ -766,10 +935,7 @@
       </div>
       <div class="modal-body">
        <div class="panel-body">
-            <form class="form-horizontal" role="form" method="POST" action="{{ url('/registerNew') }}">
-                {{ csrf_field() }}
-
-                <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
+            <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                     <div class="col-md-12">
                         <label>Título:</label>
                         <input id="titleEdt" type="text" class="form-control" name="title" value="{{ old('title') }}" required autofocus>
@@ -817,13 +983,16 @@
         <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary" id="Guardar">Guardar</button>
       </div>
-      </form>
     </div>
   </div>
 </div> 
 
 <script>
     $(document).on('click','#createNewbtn',function(){
+        $('#titleReg').val('');
+        $('textarea#descriptionReg').val('');
+        $('input#my-file-selector').val('');
+        $('#upload-file-info').text('');
         $('#registerNew').modal();
     });
     
@@ -833,14 +1002,15 @@
 
     $(document).on('click','#EditNewBtn',function(){
         var id = $(this).attr('data-id');
+        $('#titleEdt').val('');
+        $('textarea#descriptionEdt').val('');
         $.ajax({
             url: 'editNew',
             data: '&id='+id,
             type: 'GET',
             success: function(data){
-                $('#descriptionEdit').val(data.description);
-                $('#titleEdt').attr('value',data.title);
-                
+                $('#titleEdt').val(data.title);
+                $('textarea#descriptionEdt').val(data.description);
             },
             error: function(e){
             }
@@ -852,6 +1022,23 @@
     });
     $(document).on('click','#ConfirmDeleteNewBtn',function(){
         $('#DeleteNewConfirm').modal('hide');
+    });
+
+    $(document).on('click','#RegisterNew',function(){
+        var title = $('#titleReg').val();
+        var description = $('textarea#descriptionReg').val();
+        var img = $('input#my-file-selector').val();
+        $.ajax({
+
+            url: '/registerNew',
+            data: '&title='+title+'&description='+description+'&img='+img,
+            type: 'GET',
+            success: function(data){
+                $('#registerNew').modal('hide');
+            }
+        });
+                  
+
     });
 
     
