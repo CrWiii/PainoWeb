@@ -22,7 +22,7 @@
 	Route::get('api2','DatesGuest@api');
 
 
-Route::group(['middleware' => 'web'], function () {
+Route::group(['middleware' => 'web'], function(){
 	Route::auth();
 	Route::get('registerDate','DatesController@registerDate');
 	Route::get('updateDate','DatesController@updateDate');
@@ -32,4 +32,10 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('/Calendario', 'DatesController@Calendar');
 	Route::resource('Dates','DatesController');
 	Route::get('/home', 'HomeController@index');
+
+	Route::get('newsList','NoticeController@index');
+	Route::post('registerNew','NoticeController@create');
+	Route::get('editNew','NoticeController@edit');
+	Route::get('updateNew','NoticeController@update');
+
 });

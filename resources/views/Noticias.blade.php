@@ -8,33 +8,27 @@
         <!--<link href="bootstrap/logoplay.css" rel="stylesheet" type="text/css"/>-->
 
         
-        <script type='text/javascript' src='js/jquery.js'></script>
-        <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+        
+       
         <!--<script type='text/javascript' src='js/slider/jquery.themepunch.tools.min.js'></script>
         <script type='text/javascript' src='js/slider/jquery.themepunch.revolution.min.js'></script>
         <script type="text/javascript" src='js/slider/revolution.extension.slideanims.min.js'></script>
         <script type="text/javascript" src="js/slider/revolution.extension.layeranimation.min.js"></script>
         <script type="text/javascript" src="js/slider/revolution.extension.navigation.min.js"></script>-->
-        
-
-
-
         <link href="{{('fonts/style.css')}}" rel="stylesheet" type="text/css"/>
-
         <link href="{{url('bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css"/>
         <!--<script src="{{url('bootstrap/jquery.min.js')}}" type="text/javascript"></script>-->
-        <script src="{{url('bootstrap/js/bootstrap.js')}}" type="text/javascript"></script>
         <link href="bootstrap/css/style-menu-play.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="{{url('css/bootstrap-submenu.min.css')}}">
 
+        <script type='text/javascript' src='js/jquery.js'></script>
+        <script src="{{url('bootstrap/js/bootstrap.js')}}" type="text/javascript"></script>
+        <script src="{{url('js/html5shiv.js')}}"></script>
+        <script src="{{url('js/bootstrap-submenu.min.js')}}" defer></script>
+        <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
         <script src="bootstrap/jquery.min.js" type="text/javascript"></script>       
         <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
         
-        
-        <script src="{{url('js/html5shiv.js')}}"></script>
-
-        <link rel="stylesheet" href="{{url('css/bootstrap-submenu.min.css')}}">
-        <script src="{{url('js/bootstrap-submenu.min.js')}}" defer></script>
-
         <style>
         @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
         @font-face {
@@ -48,6 +42,26 @@
             font-style: normal !important;
             color: #777777 !important;
             font-size: 17px !important;
+        }
+        input{
+            background-color: #fff;
+            color: #000;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 0 15px;
+            height: 43px;
+            line-height: 37px;
+            border: 3px solid #eee;
+            width: 100%;
+            outline: none;
+            -webkit-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+            letter-spacing: 1px;
         }
         .tyti {
             padding-top: 30px !important;
@@ -429,130 +443,419 @@
     </head>
     <body>
     @include('Menu')
-
+@if (Auth::guest())
+@else
 <div class="seccion" style="padding-top: 0px !important;">
-            <div class="panel-body" style="padding-top: 0px !important;">
-                <div class="vc_tta-container" data-vc-action="collapse">
-                    <div>
-                        <div class="vc_tta-tabs-container">
-                            <div class="widget Blog" data-version="1" id="Blog1">
-                                <article>
-                                    <div class="blog-post clearfix">
-                                    <div class="post-title-container">
-                                        <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
-                                        <div class="post-materials clearfix">
-                                            <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
-                                            <span style="padding-right: 20px;padding-left: 20px;">
-                                                <i class="fa fa-calendar-o"></i>
-                                                    <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
-                                            </span>
-                                            <!--<span class="post-cat">
-                                                <i class="fa fa-tags"></i>
-                                                <a href="http://2016-themexpose.blogspot.pe/search/label/blog" rel="tag">blog</a>
-                                                <a href="http://2016-themexpose.blogspot.pe/search/label/featured" rel="tag">featured</a>
-                                            </span>-->
-                                        </div>
-                                    </div>
-
-                                    <!--<div class="post-type-icon"><i class="fa fa-file-text-o" title="Standart Post Format"></i></div>-->
-
-                                    <div class="media-materials" id="thumb4633291745960409272"></div>
-                                        <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
-                                        <div class="post-content clearfix">
-                                            <div class="post-content-blog">
-                                                <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
-                                                    Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
-                                                </div>
-                                            </div>
-                                    <div class="continue-reading pull-left"></div>
-                                    <div class="blog-classic-share pull-right clearfix">
-                                        <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
-                                            <div class="pull-left share-wrapper">
-                                                <span class="tag-title-post pull-left cshare-text">SHARE : </span>
-                                                    <div class="share-tools pull-left">
-                                                        <ul style="list-style:none;list-style-type: none;">
-                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-facebook"></i></a></li>
-                                                            <!--<li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-twitter"></i></a></li>
-                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-pinterest"></i></a></li>
-                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-google-plus"></i></a></li>-->
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
+    <div class="panel-body" style="padding-top: 20px !important;">
+        <button id="createNewbtn" class="btn btn-primary">Crear</button>
+        <button id="ListsNewsbtn" class="btn btn-primary">Lista de Noticias</button>
+    </div>
+</div>
+@endif
+<div class="seccion" style="padding-top: 0px !important;">
+    <div class="panel-body" style="padding-top: 0px !important;">
+        <div class="vc_tta-container" data-vc-action="collapse">
+            <div>
+                <div class="vc_tta-tabs-container">
+                    <div class="widget Blog" data-version="1" id="Blog1">
+                        <article>
+                            <div class="blog-post clearfix">
+                                <div class="post-title-container">
+                                <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
+                                <div class="post-materials clearfix">
+                                    <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
+                                    <span style="padding-right: 20px;padding-left: 20px;">
+                                        <i class="fa fa-calendar-o"></i>
+                                            <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
+                                    </span>
+                                </div>
                             </div>
-                            <div class="widget Blog" data-version="1" id="Blog1">
-                                <article>
-                                    <div class="blog-post clearfix">
-                                    <div class="post-title-container">
-                                        <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
-                                        <div class="post-materials clearfix">
-                                            <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
-                                            <span style="padding-right: 20px;padding-left: 20px;">
-                                                <i class="fa fa-calendar-o"></i>
-                                                    <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
-                                            </span>
-                                            <!--<span class="post-cat">
-                                                <i class="fa fa-tags"></i>
-                                                <a href="http://2016-themexpose.blogspot.pe/search/label/blog" rel="tag">blog</a>
-                                                <a href="http://2016-themexpose.blogspot.pe/search/label/featured" rel="tag">featured</a>
-                                            </span>-->
+                            <div class="media-materials" id="thumb4633291745960409272"></div>
+                                <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
+                                <div class="post-content clearfix">
+                                    <div class="post-content-blog">
+                                        <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
+                                            Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
                                         </div>
                                     </div>
+                                <div class="continue-reading pull-left"></div>
+                                <div class="blog-classic-share pull-right clearfix">
+                                    <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
+                                    @if (Auth::guest())
+                                    @else
+                                    <div class="pull-left share-wrapper">
+                                        <ul class="pull-left" style="list-style:none;list-style-type: none;">
+                                            <li>
+                                                <button class="btn btn-primary">Editar</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn btn-primary">Elimiar</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    @endif
+                                </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
 
-                                    <!--<div class="post-type-icon"><i class="fa fa-file-text-o" title="Standart Post Format"></i></div>-->
-
-                                    <div class="media-materials" id="thumb4633291745960409272"></div>
-                                        <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
-                                        <div class="post-content clearfix">
-                                            <div class="post-content-blog">
-                                                <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
-                                                    Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
-                                                </div>
-                                            </div>
-                                    <div class="continue-reading pull-left"></div>
-                                    <div class="blog-classic-share pull-right clearfix">
-                                        <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
-                                            <div class="pull-left share-wrapper">
-                                                <span class="tag-title-post pull-left cshare-text">SHARE : </span>
-                                                    <div class="share-tools pull-left">
-                                                        <ul style="list-style:none;list-style-type: none;">
-                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-facebook"></i></a></li>
-                                                            <!--<li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-twitter"></i></a></li>
-                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-pinterest"></i></a></li>
-                                                            <li style="float: left;padding-right: 20px;padding-left: 20px;"><i class="fa fa-google-plus"></i></a></li>-->
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+                    <div class="widget Blog" data-version="1" id="Blog1">
+                        <article>
+                            <div class="blog-post clearfix">
+                                <div class="post-title-container">
+                                <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
+                                <div class="post-materials clearfix">
+                                    <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
+                                    <span style="padding-right: 20px;padding-left: 20px;">
+                                        <i class="fa fa-calendar-o"></i>
+                                            <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="media-materials" id="thumb4633291745960409272"></div>
+                                <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
+                                <div class="post-content clearfix">
+                                    <div class="post-content-blog">
+                                        <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
+                                            Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
                                         </div>
                                     </div>
-                                </article>
+                                <div class="continue-reading pull-left"></div>
+                                <div class="blog-classic-share pull-right clearfix">
+                                    <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
+                                    @if (Auth::guest())
+                                    @else
+                                    <div class="pull-left share-wrapper">
+                                        <ul class="pull-left" style="list-style:none;list-style-type: none;">
+                                            <li>
+                                                <button class="btn btn-primary">Editar</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn btn-primary">Elimiar</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    @endif
+                                </div>
+                                </div>
                             </div>
-                        </div>
+                        </article>
+                    </div>
 
-                        <div class="vc_tta-panels-container">
-                            <div class="vc_tta-panels">
+                    <div class="widget Blog" data-version="1" id="Blog1">
+                        <article>
+                            <div class="blog-post clearfix">
+                                <div class="post-title-container">
+                                <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
+                                <div class="post-materials clearfix">
+                                    <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
+                                    <span style="padding-right: 20px;padding-left: 20px;">
+                                        <i class="fa fa-calendar-o"></i>
+                                            <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                            <div class="media-materials" id="thumb4633291745960409272"></div>
+                                <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
+                                <div class="post-content clearfix">
+                                    <div class="post-content-blog">
+                                        <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
+                                            Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
+                                        </div>
+                                    </div>
+                                <div class="continue-reading pull-left"></div>
+                                <div class="blog-classic-share pull-right clearfix">
+                                    <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
+                                    @if (Auth::guest())
+                                    @else
+                                    <div class="pull-left share-wrapper">
+                                        <ul class="pull-left" style="list-style:none;list-style-type: none;">
+                                            <li>
+                                                <button class="btn btn-primary">Editar</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn btn-primary">Elimiar</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    @endif
+                                </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                            
+                </div>
+
+                <div class="vc_tta-panels-container">
+                    <div class="vc_tta-panels"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+    
+<footer id="cms-footer" class="no-margin-top">
+    <div class="container">
+        <div id="cms-footer-bottom">
+            <div class="cms-footer-bottom-social">
+            </div>
+            &copy; Site by <strong>Play</strong>Media. All Right Reserved.
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="registerNew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Crear Noticia
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></h4>
+      </div>
+      <div class="modal-body">
+       <div class="panel-body">
+            <form class="form-horizontal" role="form" method="POST" action="{{ url('/registerNew') }}">
+                {{ csrf_field() }}
+
+                <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
+                    <div class="col-md-12">
+                        <label>Título:</label>
+                        <input id="titleReg" type="text" class="form-control" name="title" value="{{ old('title') }}" required autofocus>
+
+                        @if ($errors->has('title'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('title') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
+                   <div class="col-md-12">
+                    <label>Contenido:</label>
+                        <textarea class="form-control" rows="10" id="descriptionReg" name="description" value="{{ old('description') }}" required></textarea>
+
+                        @if ($errors->has('description'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('description') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="form-group{{ $errors->has('img') ? ' has-error' : '' }}">
+                   <div class="col-md-12">
+                    <label>Imagen:</label>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;" onchange="$('#upload-file-info').html($(this).val());">
+                            Button Text Here
+                        </label>
+                        <span class='label label-info' id="upload-file-info"></span>
+
+                        @if ($errors->has('img'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('img') }}</strong>
+                            </span>
+                        @endif
                     </div>
                 </div>
             </div>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id="Register">Register</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-    </body>
-    
-    <footer id="cms-footer" class="no-margin-top">
-        <div class="container">
-            <div id="cms-footer-bottom">
-                <div class="cms-footer-bottom-social">
-                </div>
-                &copy; Site by <strong>Play</strong>Media. All Right Reserved.
-            </div>
+
+<div class="modal fade" id="ListNews" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="panel-body">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Título</th>
+                          <th>Contenido</th>
+                          <th>Fecha Creación</th>
+                          <th>Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Lorem </td>
+                          <td>ipsum asdasda gassdasd ...</td>
+                          <td>22/03/2017</td>
+                          <td><button type="button" class="btn btn-default-sm" id="EditNewBtn" data-id="1">Editar</button>
+                          <button type="button" class="btn btn-default-sm" id="DeteleNewBtn" data-id="1">Elimiar</button></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>amet</td>
+                          <td>consectetur asdasda gassdasd ...</td>
+                          <td>22/03/2017</td>
+                          <td><button type="button" class="btn btn-default-sm" id="EditNewBtn" data-id="2">Editar</button>
+                          <button type="button" class="btn btn-default-sm" id="DeteleNewBtn" data-id="2">Elimiar</button></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Integer</td>
+                          <td>nec asdasda gassdasd ...</td>
+                          <td>22/03/2017</td>
+                          <td><button type="button" class="btn btn-default-sm" id="EditNewBtn" data-id="3">Editar</button>
+                          <button type="button" class="btn btn-default-sm" id="DeteleNewBtn" data-id="3">Elimiar</button></td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>libero</td>
+                          <td>Sed asdasda gassdasd ...</td>
+                          <td>22/03/2017</td>
+                          <td><button type="button" class="btn btn-default-sm" id="EditNewBtn" data-id="4">Editar</button>
+                          <button type="button" class="btn btn-default-sm" id="DeteleNewBtn" data-id="4">Elimiar</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>              
         </div>
-    </footer>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="DeleteNewConfirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+       <h4>¿Está seguro que desea Eliminar esta noticia?</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" id="ConfirmDeleteNewBtn">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="editNew" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Editar Noticia
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></h4>
+      </div>
+      <div class="modal-body">
+       <div class="panel-body">
+            <form class="form-horizontal" role="form" method="POST" action="{{ url('/registerNew') }}">
+                {{ csrf_field() }}
+
+                <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
+                    <div class="col-md-12">
+                        <label>Título:</label>
+                        <input id="titleEdt" type="text" class="form-control" name="title" value="{{ old('title') }}" required autofocus>
+
+                        @if($errors->has('title'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('title') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
+                   <div class="col-md-12">
+                    <label>Contenido:</label>
+                        <textarea class="form-control" rows="10" id="descriptionEdt" name="description" required></textarea>
+
+                        @if ($errors->has('description'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('description') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="form-group{{ $errors->has('img') ? ' has-error' : '' }}">
+                   <div class="col-md-12">
+                    <label>Imagen:</label>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;" onchange="$('#upload-file-info').html($(this).val());">
+                            Button Text Here
+                        </label>
+                        <span class='label label-info' id="upload-file-info"></span>
+
+                        @if ($errors->has('img'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('img') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id="Guardar">Guardar</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div> 
+
+<script>
+    $(document).on('click','#createNewbtn',function(){
+        $('#registerNew').modal();
+    });
+    
+    $(document).on('click','#ListsNewsbtn',function(){
+        $('#ListNews').modal();
+    });
+
+    $(document).on('click','#EditNewBtn',function(){
+        var id = $(this).attr('data-id');
+        $.ajax({
+            url: 'editNew',
+            data: '&id='+id,
+            type: 'GET',
+            success: function(data){
+                $('#descriptionEdit').val(data.description);
+                $('#titleEdt').attr('value',data.title);
+                
+            },
+            error: function(e){
+            }
+            });
+        $('#editNew').modal();
+    });
+    $(document).on('click','#DeteleNewBtn',function(){
+        $('#DeleteNewConfirm').modal();
+    });
+    $(document).on('click','#ConfirmDeleteNewBtn',function(){
+        $('#DeleteNewConfirm').modal('hide');
+    });
+
+    
+</script>
 
 @include('login')
     </body>

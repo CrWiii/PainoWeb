@@ -16,13 +16,12 @@
 <!--<script src="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
 <style>
-  body {margin:0;padding:0;font-family:"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;font-size:14px;} 
-  #top {background:#eee;border-bottom:1px solid#ddd;padding:0 10px;line-height:40px;font-size:12px;} 
-  #calendar {max-width:900px;margin:10px auto;padding:0 10px;} 
+  body {margin:0;padding:0;font-family:"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;font-size:14px;}
+  #top {background:#eee;border-bottom:1px solid#ddd;padding:0 10px;line-height:40px;font-size:12px;}
+  #calendar {max-width:900px;margin:10px auto;padding:0 10px;}
 </style>
-
 <script>
-  $(document).ready(function() {
+  $(document).ready(function(){
     var sh;
     var eh;
     $('#submitButton').on('click', function(e){
@@ -93,15 +92,16 @@
               $('#createEventModal #whenee').val(mywhene);
               $('#fullname, #dni, #email, #phone, #description').val('');
               $('#createEventModal').modal();
-            }      
+            }
           }else{
             alert("Lo sentimos, solo agendamos citas los dias Martes, Miércoles y Jueves");
           }
        },
       events: {url:'{{URL::to('/api')}}'},
-      eventClick:  function(event, jsEvent, view) {
+      eventClick:  function(event, jsEvent, view){
         ss = moment(event.start, 'DD-MM-YYYY HH:mm:ss').format('DD-MM-YYYY HH:mm:ss');
         es = moment(event.end, 'DD-MM-YYYY HH:mm:ss').format('DD-MM-YYYY HH:mm:ss');
+        console.log(event);
                     $('#modalTitle').html(event.title);
                     //$('#modalBody #ff').html(event.description);
                     $('#modalBody #Paciente').html(event.title);
@@ -139,7 +139,7 @@
             }
             });
       },
-      eventResize: function(event, delta, revertFunc) {
+      eventResize: function(event, delta, revertFunc){
         var id = event.id;
         var start = moment(event.start, 'DD-MM-YYYY HH:mm:ss').format('DD-MM-YYYY HH:mm:ss');
         var end = moment(event.end, 'DD-MM-YYYY HH:mm:ss').format('DD-MM-YYYY HH:mm:ss');
@@ -274,6 +274,7 @@ $(document).on('click', '#removeBtn', function(){
             </div>
           </div>
         </div>
+        
 <div class="modal fade" id="createEventModal" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
