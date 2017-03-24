@@ -36,8 +36,8 @@
                     <li>
                         <a style="padding-right: 0px;" href="{{ route('lang.switch', $lang) }}" class="tyti">
                             <span class="menu-title">
-                                @if($lang == 'en') <img src="images/Alianzas/english.png" width="20px">
-                                @elseif($lang == 'es') <img src="images/Alianzas/spanish.png" width="30px">
+                                @if($lang == 'es') <img src="images/Alianzas/spanish.png" width="30px">
+                                @elseif($lang == 'en') <img src="images/Alianzas/english.png" width="20px">
                                 @endif
                             </span>
                         </a>
