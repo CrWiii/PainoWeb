@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\News;
 
 class HomeController extends Controller{
     
@@ -20,7 +21,8 @@ class HomeController extends Controller{
         return view('PreguntasFrecuentes');
     }
     public function Noticias(){
-        return view('Noticias');
+        $news = News::where('state',1)->get();
+        return view('Noticias', compact('news'));
     }
     public function language($lang, ChangeLocale $changeLocale){
         $lang = in_array($lang, config('app.languages')) ? $lang : config('app.fallback_locale');

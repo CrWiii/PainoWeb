@@ -36,6 +36,7 @@ Route::group(['middleware' => 'web'], function(){
 	Route::get('newsList','NoticeController@index');
 	Route::resource('News','NoticeController');
 	Route::get('registerNew','NoticeController@create');
+	Route::get('deleteNew','NoticeController@delete');
 	Route::get('editNew','NoticeController@edit');
 	Route::get('updateNew','NoticeController@update');
 

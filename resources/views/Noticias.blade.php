@@ -633,82 +633,45 @@
         <div class="vc_tta-container" data-vc-action="collapse">
             <div>
                 <div class="vc_tta-tabs-container">
-                    <div class="widget Blog" data-version="1" id="Blog1">
-                        <article>
-                            <div class="blog-post clearfix">
-                                <div class="post-title-container">
-                                <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
-                                <div class="post-materials clearfix">
-                                    <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
-                                    <span style="padding-right: 20px;padding-left: 20px;">
-                                        <i class="fa fa-calendar-o"></i>
-                                            <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="media-materials" id="thumb4633291745960409272"></div>
-                                <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
-                                <div class="post-content clearfix">
-                                    <div class="post-content-blog">
-                                        <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
-                                            Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
-                                        </div>
-                                    </div>
-                                <div class="continue-reading pull-left"></div>
-                                <div class="blog-classic-share pull-right clearfix">
-                                    <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
-                                    @if (Auth::guest())
-                                    @else
-                                    <div class="pull-left share-wrapper">
-                                        <ul class="pull-left" style="list-style:none;list-style-type: none;">
-                                            <li>
-                                                <button class="btn btn-primary">Editar</button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-primary">Elimiar</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    @endif
-                                </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+                    
+                @foreach($news as $new)
 
                     <div class="widget Blog" data-version="1" id="Blog1">
                         <article>
                             <div class="blog-post clearfix">
                                 <div class="post-title-container">
-                                <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
+                                <h1 style="margin-bottom: 5px !important;"><a href="">{{$new->title}}</a></h1>
                                 <div class="post-materials clearfix">
-                                    <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
+                                    <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">{{$new->created_by}}</a></span></span>
                                     <span style="padding-right: 20px;padding-left: 20px;">
                                         <i class="fa fa-calendar-o"></i>
-                                            <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
+                                            <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00"> {{date_format($new->created_at , 'd/m/Y')}}</abbr></a>
                                     </span>
                                 </div>
                             </div>
                             <div class="media-materials" id="thumb4633291745960409272"></div>
-                                <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
+                                <img style="display: block;margin-left: auto;margin-right: auto" src="{{$new->img}}">
                                 <div class="post-content clearfix">
                                     <div class="post-content-blog">
-                                        <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
-                                            Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
+                                        <div id="4633291745960409272" style="display: block;padding: 20px;text-align: center;"> 
+                                            {{$new->description}}
                                         </div>
                                     </div>
                                 <div class="continue-reading pull-left"></div>
                                 <div class="blog-classic-share pull-right clearfix">
-                                    <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
+                                    <div class="pull-left"><!--<a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a>--></div>
                                     @if (Auth::guest())
                                     @else
                                     <div class="pull-left share-wrapper">
                                         <ul class="pull-left" style="list-style:none;list-style-type: none;">
                                             <li>
-                                                <button class="btn btn-primary">Editar</button>
+                                            
+                                            <button type="button" class="btn btn-primary-sm" id="EditNewBtn" data-id="{{$new->id}}">Editar</button>
+                                                <!--<button class="btn btn-primary">Editar</button>-->
                                             </li>
                                             <li>
-                                                <button class="btn btn-primary">Elimiar</button>
+                                            <button type="button" class="btn btn-primary-sm" id="DeteleNewBtn" data-id="{{$new->id}}">Elimiar</button>
+                                                <!--<button class="btn btn-primary">Elimiar</button>-->
                                             </li>
                                         </ul>
                                     </div>
@@ -718,49 +681,8 @@
                             </div>
                         </article>
                     </div>
+                @endforeach
 
-                    <div class="widget Blog" data-version="1" id="Blog1">
-                        <article>
-                            <div class="blog-post clearfix">
-                                <div class="post-title-container">
-                                <h1 style="margin-bottom: 5px !important;"><a href="">Strawberry Watermelon and Feta Salad</a></h1>
-                                <div class="post-materials clearfix">
-                                    <span><i class="fa fa-user"></i><span class="material-font"> by </span><span class="author-name"><a href="" rel="author" title="author profile">Javier Paino</a></span></span>
-                                    <span style="padding-right: 20px;padding-left: 20px;">
-                                        <i class="fa fa-calendar-o"></i>
-                                            <a class="timestamp-link" href="http://2016-themexpose.blogspot.pe/2010/07/strawberry-watermelon-and-feta-salad.html" rel="bookmark" title="permanent link"><abbr class="published" title="2010-07-20T18:15:00-07:00">Jueves, Noviembre 24, 2016</abbr></a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="media-materials" id="thumb4633291745960409272"></div>
-                                <img style="display: block;margin-left: auto;margin-right: auto" src="images/template.jpg">
-                                <div class="post-content clearfix">
-                                    <div class="post-content-blog">
-                                        <div id="4633291745960409272" style="display: block;padding: 20px;text-align: justify;"> 
-                                            Quisque in ornare mollis urna, a pharetra lectus bibendum et. Aenean sodales cursus nulla, faucibus tempor nibh porta id. Pellentesque non nibh eros. Nunc lectus lacus, interdum et consequat et, varius sit amet ipsum. Fusce convallis, lorem sit amet bibendum accumsan, mark example consectetursup adipisicingsub nec mattis dui nisi a lacus. Fusce non nisl pretium tellus eleifend tincidunt id id lorem. In hac habitasse platea dictumst. Pellentesque orci libero, fringilla et ultrices ut, cursus eu ipsum. Aenean bibendum dui quis pellentesque dictum. Cras
-                                        </div>
-                                    </div>
-                                <div class="continue-reading pull-left"></div>
-                                <div class="blog-classic-share pull-right clearfix">
-                                    <div class="pull-left"><a class="open-share" href="http://2016-themexpose.blogspot.pe/"></a></div>
-                                    @if (Auth::guest())
-                                    @else
-                                    <div class="pull-left share-wrapper">
-                                        <ul class="pull-left" style="list-style:none;list-style-type: none;">
-                                            <li>
-                                                <button class="btn btn-primary">Editar</button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-primary">Elimiar</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    @endif
-                                </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
                             
                 </div>
 
@@ -863,39 +785,7 @@
                           <th>Acciones</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Lorem </td>
-                          <td>ipsum asdasda gassdasd ...</td>
-                          <td>22/03/2017</td>
-                          <td><button type="button" class="btn btn-default-sm" id="EditNewBtn" data-id="1">Editar</button>
-                          <button type="button" class="btn btn-default-sm" id="DeteleNewBtn" data-id="1">Elimiar</button></td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>amet</td>
-                          <td>consectetur asdasda gassdasd ...</td>
-                          <td>22/03/2017</td>
-                          <td><button type="button" class="btn btn-default-sm" id="EditNewBtn" data-id="2">Editar</button>
-                          <button type="button" class="btn btn-default-sm" id="DeteleNewBtn" data-id="2">Elimiar</button></td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Integer</td>
-                          <td>nec asdasda gassdasd ...</td>
-                          <td>22/03/2017</td>
-                          <td><button type="button" class="btn btn-default-sm" id="EditNewBtn" data-id="3">Editar</button>
-                          <button type="button" class="btn btn-default-sm" id="DeteleNewBtn" data-id="3">Elimiar</button></td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>libero</td>
-                          <td>Sed asdasda gassdasd ...</td>
-                          <td>22/03/2017</td>
-                          <td><button type="button" class="btn btn-default-sm" id="EditNewBtn" data-id="4">Editar</button>
-                          <button type="button" class="btn btn-default-sm" id="DeteleNewBtn" data-id="4">Elimiar</button></td>
-                        </tr>
+                      <tbody id="NLC">
                       </tbody>
                     </table>
                   </div>
@@ -1017,11 +907,27 @@
             });
         $('#editNew').modal();
     });
+    var newdelid= 0;
     $(document).on('click','#DeteleNewBtn',function(){
+        newdelid = $(this).attr('data-id');
         $('#DeleteNewConfirm').modal();
     });
     $(document).on('click','#ConfirmDeleteNewBtn',function(){
-        $('#DeleteNewConfirm').modal('hide');
+        var id = newdelid;
+        $.ajax({
+            url: 'deleteNew',
+            data: '&id='+id,
+            type: 'GET',
+            success: function(data){
+                $('#DeleteNewConfirm').modal('hide');
+                $('tbody#NLC').empty();
+                refresh();
+            },
+            error: function(e){
+
+            }
+        });
+        
     });
 
     $(document).on('click','#RegisterNew',function(){
@@ -1040,6 +946,37 @@
                   
 
     });
+
+    $(document).on('click', '#ListsNewsbtn',function(){
+        $('tbody#NLC').empty();
+        refresh();
+    });
+
+
+function refresh(){
+    $.ajax({
+            url: 'newsList',
+            type: 'GET',
+            success: function(data){
+                //console.log(data);
+                var CONTENTLIST = '';
+
+                $(data).each(function(){
+                    CONTENTLIST += '<tr>'+
+                                   '<td>'+this.id+'</td>'+
+                                   '<td>'+this.title+'</td>'+
+                                   '<td>'+this.description.substring(0, 30)+'</td>'+
+                                   '<td>'+this.created_at+'</td>'+
+                                   '<td><button type="button" class="btn btn-default-sm" id="EditNewBtn" data-id="'+this.id+'">Editar</button>'+
+                                   '<button type="button" class="btn btn-default-sm" id="DeteleNewBtn" data-id="'+this.id+'">Elimiar</button></td></tr>';
+                });
+
+                $('tbody#NLC').append(CONTENTLIST);
+            }
+        });
+}
+
+
 
     
 </script>
