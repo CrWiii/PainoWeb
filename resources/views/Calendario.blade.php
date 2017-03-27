@@ -61,7 +61,7 @@
       eventLimit: true,
       editable: true,
       selectable: true,
-
+      slotDuration: '00:15:00',
       businessHours: {
         dow: [ 2, 3, 4 ],
         start: '10:00',
