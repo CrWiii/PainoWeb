@@ -109,7 +109,6 @@ class NoticeController extends Controller{
     return Response($new);
     }
     public function update(Request $request){
-        dd($request->all());
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'description' => 'required',

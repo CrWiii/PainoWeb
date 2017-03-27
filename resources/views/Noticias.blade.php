@@ -866,8 +866,8 @@
                 <div class="form-group{{ $errors->has('img') ? ' has-error' : '' }}">
                    <div class="col-md-12">
                     <label>Imagen:</label>
-                        <label class="btn btn-primary" for="my-file-selector">
-                            <input id="image" name="imagen" type="file" style="display:none;" onchange="$('#upload-file-info-edit').html($(this).val());">
+                        <label class="btn btn-primary" for="image">
+                            <input id="image" name="image" type="file" style="display:none;" onchange="$('#upload-file-info-edit').html($(this).val());">
                             Cargar
                         </label>
                         <span class='label label-info' id="upload-file-info-edit"></span>
@@ -936,7 +936,7 @@
         var id = $(this).attr('data-id');
         $('#titleEdt').val('');
         $('textarea#descriptionEdt').val('');
-        $('#image').val('');
+        $('input#image').val('');
         $('#id').val('');
         $.ajax({
             url: 'editNew',
@@ -946,7 +946,7 @@
                 console.log(data);
                 $('#titleEdt').val(data.title);
                 $('textarea#descriptionEdt').val(data.description);
-                //$('span#upload-file-info-edit').show().html(data.img);
+                $('span#upload-file-info-edit').show().html(data.img);
                 $('#id').val(data.id);
             },
             error: function(e){
