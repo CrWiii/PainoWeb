@@ -775,7 +775,7 @@
 
 
 <div class="modal fade" id="ListNews" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -834,6 +834,9 @@
       </div>
       <div class="modal-body">
        <div class="panel-body">
+        <form action="{{ route('updateNew') }}" enctype="multipart/form-data" method="POST">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="id" id="id">
             <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                     <div class="col-md-12">
                         <label>Título:</label>
@@ -864,10 +867,10 @@
                    <div class="col-md-12">
                     <label>Imagen:</label>
                         <label class="btn btn-primary" for="my-file-selector">
-                            <input id="image" type="file" style="display:none;" onchange="$('#upload-file-info').html($(this).val());">
-                            Button Text Here
+                            <input id="image" name="imagen" type="file" style="display:none;" onchange="$('#upload-file-info-edit').html($(this).val());">
+                            Cargar
                         </label>
-                        <span class='label label-info' id="upload-file-info"></span>
+                        <span class='label label-info' id="upload-file-info-edit"></span>
 
                         @if ($errors->has('img'))
                             <span class="help-block">
@@ -883,13 +886,18 @@
         <button type="submit" class="btn btn-primary" id="Guardar">Guardar</button>
       </div>
     </div>
+    </form>
   </div>
 </div>
 
 <script type="text/javascript">
-  $(document).on("click","#RegisterNew",function(e){
-    $(this).parents("form").ajaxForm(options);
-  });
+    $(document).on("click","#RegisterNew",function(e){
+        $(this).parents("form").ajaxForm(options);
+    });
+
+    $(document).on("click","#Guardar",function(e){
+        $(this).parents("form").ajaxForm(options);
+    });
 
   var options = { 
     complete: function(response){
@@ -928,13 +936,18 @@
         var id = $(this).attr('data-id');
         $('#titleEdt').val('');
         $('textarea#descriptionEdt').val('');
+        $('#image').val('');
+        $('#id').val('');
         $.ajax({
             url: 'editNew',
             data: '&id='+id,
             type: 'GET',
             success: function(data){
+                console.log(data);
                 $('#titleEdt').val(data.title);
                 $('textarea#descriptionEdt').val(data.description);
+                //$('span#upload-file-info-edit').show().html(data.img);
+                $('#id').val(data.id);
             },
             error: function(e){
             }
@@ -956,6 +969,7 @@
                 $('#DeleteNewConfirm').modal('hide');
                 $('tbody#NLC').empty();
                 refresh();
+                location.reload();
             },
             error: function(e){
 

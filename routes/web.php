@@ -38,8 +38,7 @@ Route::group(['middleware' => 'web'], function(){
 	
 	Route::get('deleteNew','NoticeController@delete');
 	Route::get('editNew','NoticeController@edit');
-	Route::get('updateNew','NoticeController@update');
-
+	Route::post('updateNew', ['as' => 'updateNew', 'uses' => 'NoticeController@update']);
 	Route::post('registerNew', ['as' => 'registerNew', 'uses' => 'NoticeController@create']);
 
 });

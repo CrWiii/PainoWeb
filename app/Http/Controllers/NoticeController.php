@@ -23,6 +23,7 @@ class NoticeController extends Controller{
         //dd($request->all());
         $validator = Validator::make($request->all(), [
             'title' => 'required',
+            'description' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
           ]);
 
@@ -108,30 +109,38 @@ class NoticeController extends Controller{
     return Response($new);
     }
     public function update(Request $request){
-        if (\Auth::guest()){
-        }else{
-            if($request->ajax()){
-
-                /*if($request->hasFile('profilePic')){
-                    $file = array('profilePic' => Input::file('profilePic'));
-                    $destinationPath = 'img/'; // upload path
-                    $extension = Input::file('profilePic')->getClientOriginalExtension(); 
-                    $fileName = rand(11111,99999).'.'.$extension; // renaming image
-                    Input::file('profilePic')->move($destinationPath, $fileName);
-                }*/
-
-                $affectedRows = News::where('id',$request->id)->update(array(
-                    'title' => $request->title,
-                    'description' => $request->description,
-                    //'img' => ,
-                    'state' => 1,
-                    'user_id' => \Auth::user()->id,
-                    ));
+        dd($request->all());
+        $validator = Validator::make($request->all(), [
+            'title' => 'required',
+            'description' => 'required',
+            //'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
+          ]);
+        $imgfu = '';
+        $New = News::findOrFail($request->id);
+        if ($validator->passes()) {
+            $input = $request->all();
+            if(!empty($request->image)){
+                $input['image'] = time().'.'.$request->image->getClientOriginalExtension();
+                $request->image->move(public_path('images/blog'), $input['image']);
+                $imgfu = '/images/blog/'.time().'.'.$request->image->getClientOriginalExtension();
+            }else{
+                $imgfu = $New->img;
             }
+            
+
+            
+                $New->title = $request->title;
+                $New->description = $request->description;
+                $New->img = $imgfu;
+                $New->state = 1;
+                $New->created_by = 'Javier Paino';
+                $New->user_id = \Auth::user()->id;
+                $New->update();
+
+            return response()->json(['success'=>'done']);
+            //return Redirect('Noticias');
         }
+        return response()->json(['error'=>$validator->errors()->all()]);
     }
-    public function show(){
-        
-    }
-    
+
 }
