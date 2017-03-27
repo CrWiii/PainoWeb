@@ -715,6 +715,12 @@
       </div>
       <div class="modal-body">
        <div class="panel-body">
+       
+        <form action="{{ route('registerNew') }}" enctype="multipart/form-data" method="POST">
+            <div class="alert alert-danger print-error-msg" style="display:none">
+                <ul></ul>
+            </div>
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                     <div class="col-md-12">
                         <label>Título:</label>
@@ -761,6 +767,7 @@
         <button type="submit" class="btn btn-primary" id="RegisterNew">Register</button>
       </div>
     </div>
+    </form>
   </div>
 </div>
 
@@ -930,7 +937,7 @@
         
     });
 
-    $(document).on('click','#RegisterNew',function(){
+    /*$(document).on('click','#RegisterNew',function(){
         var title = $('#titleReg').val();
         var description = $('textarea#descriptionReg').val();
         var img = $('input#my-file-selector').val();
@@ -945,7 +952,7 @@
         });
                   
 
-    });
+    });*/
 
     $(document).on('click', '#ListsNewsbtn',function(){
         $('tbody#NLC').empty();
