@@ -654,8 +654,34 @@
                                 <div class="post-content clearfix">
                                     <div class="post-content-blog">
                                         <div id="4633291745960409272" style="display: block;padding: 20px;text-align: center;"> 
-                                            {{$new->description}}
+                                            <span class="teaser">{{str_limit($new->description, 450)}}</span>
+                                            <span class="complete" style="display: none">{{$new->description}}</span>
+                                            @if (strlen($new->description) > 450) 
+                                            <a id="more" class="more">Ver más</a>
+                                            @endif
                                         </div>
+
+                                        <script type="text/javascript">
+                                            $(document).on('click', 'a#more', function(){
+                                                var cons = $(this).attr('class');
+                                                switch(cons){
+                                                    case 'more':
+                                                        $('.complete').show();
+                                                        $('.teaser').hide();
+                                                        $(this).text("Ver menos");
+                                                        $(this).removeClass('more').addClass('less');
+                                                    break;
+
+                                                    case 'less':
+                                                        $('.complete').hide();
+                                                        $('.teaser').show();
+                                                        $(this).text("Ver más");
+                                                        $(this).removeClass('less').addClass('more'); 
+                                                    break;
+                                                }
+                                            });
+                                        </script>
+
                                     </div>
                                 <div class="continue-reading pull-left"></div>
                                 <div class="blog-classic-share pull-right clearfix">
