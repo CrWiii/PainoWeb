@@ -136,10 +136,10 @@ class NoticeController extends Controller{
                 $New->user_id = \Auth::user()->id;
                 $New->update();
 
-            return response()->json(['success'=>'done']);
-            //return Redirect('Noticias');
+            //return response()->json(['success'=>'done']);
+            return Redirect('Noticias');
         }
-        return response()->json(['error'=>$validator->errors()->all()]);
+        //return response()->json(['error'=>$validator->errors()->all()]);
     }
 
 }
