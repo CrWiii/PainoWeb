@@ -682,8 +682,10 @@
                         </article>
                     </div>
                 @endforeach
-
-                            
+                    <div class="blog-footer" style="text-align: center">
+                        {!! $news->render() !!}    
+                    </div>
+                        
                 </div>
 
                 <div class="vc_tta-panels-container">
@@ -748,8 +750,8 @@
                    <div class="col-md-12">
                     <label>Imagen:</label>
                         <label class="btn btn-primary" for="my-file-selector">
-                            <input id="my-file-selector" type="file" style="display:none;" onchange="$('#upload-file-info').html($(this).val());">
-                            Button Text Here
+                            <input id="my-file-selector" type="file" name="image" style="display:none;" onchange="$('#upload-file-info').html($(this).val());">
+                            Cargar
                         </label>
                         <span class='label label-info' id="upload-file-info"></span>
 
@@ -862,7 +864,7 @@
                    <div class="col-md-12">
                     <label>Imagen:</label>
                         <label class="btn btn-primary" for="my-file-selector">
-                            <input id="my-file-selector" type="file" style="display:none;" onchange="$('#upload-file-info').html($(this).val());">
+                            <input id="image" type="file" style="display:none;" onchange="$('#upload-file-info').html($(this).val());">
                             Button Text Here
                         </label>
                         <span class='label label-info' id="upload-file-info"></span>
@@ -882,7 +884,32 @@
       </div>
     </div>
   </div>
-</div> 
+</div>
+
+<script type="text/javascript">
+  $(document).on("click","#RegisterNew",function(e){
+    $(this).parents("form").ajaxForm(options);
+  });
+
+  var options = { 
+    complete: function(response){
+        if($.isEmptyObject(response.responseJSON.error)){
+            $("input[name='title']").val('');
+            alert('Image Upload Successfully.');
+        }else{
+            printErrorMsg(response.responseJSON.error);
+        }
+    }
+  };
+
+  function printErrorMsg (msg) {
+    $(".print-error-msg").find("ul").html('');
+    $(".print-error-msg").css('display','block');
+    $.each( msg, function( key, value ) {
+        $(".print-error-msg").find("ul").append('<li>'+value+'</li>');
+    });
+  }
+</script>
 
 <script>
     $(document).on('click','#createNewbtn',function(){

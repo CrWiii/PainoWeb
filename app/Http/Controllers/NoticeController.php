@@ -16,32 +16,34 @@ class NoticeController extends Controller{
     }
 
     public function index(){
-        $news = News::where('state',1)->get();
+        $news = News::where('state',1)->orderBy('id','DESC')->get();
         return Response($news);
     }
     public function create(Request $request){
+        //dd($request->all());
         $validator = Validator::make($request->all(), [
             'title' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
           ]);
 
         if ($validator->passes()) {
             $input = $request->all();
             $input['image'] = time().'.'.$request->image->getClientOriginalExtension();
-            $request->image->move(public_path('images'), $input['image']);
+            $request->image->move(public_path('images/blog'), $input['image']);
 
             $New = new News;
                 $New->title = $request->title;
                 $New->description = $request->description;
-                $New->img = '/images/template.jpg';
+                $New->img = '/images/blog/'.time().'.'.$request->image->getClientOriginalExtension();//'/images/template.jpg';
                 $New->state = 1;
                 $New->created_by = 'Javier Paino';
                 $New->user_id = \Auth::user()->id;
                 $New->save();
 
-            return response()->json(['success'=>'done']);
+            //return response()->json(['success'=>'done']);
+            return Redirect('Noticias');
         }
-        return response()->json(['error'=>$validator->errors()->all()]);
+        //return response()->json(['error'=>$validator->errors()->all()]);
     
     }
 

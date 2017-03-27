@@ -21,7 +21,7 @@ class HomeController extends Controller{
         return view('PreguntasFrecuentes');
     }
     public function Noticias(){
-        $news = News::where('state',1)->get();
+        $news = News::where('state',1)->orderBy('id','DESC')->paginate(3);
         return view('Noticias', compact('news'));
     }
     public function language($lang, ChangeLocale $changeLocale){
