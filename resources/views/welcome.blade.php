@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="{{url('images/fab.png')}}">
-        <title>Dr. Paino</title>
+        <title>Doctor Javier Paino</title>
         <link href="{{url('bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css"/>
         <script src="{{url('bootstrap/jquery.min.js')}}" type="text/javascript"></script>       
         <script src="{{url('bootstrap/js/bootstrap.js')}}" type="text/javascript"></script>
